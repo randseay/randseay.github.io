@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    {% include head.html %}
+
+    <body>
+        {% include header.html %}
+        {% if page.title == "Home" %}
+            {% include hero.html %}
+        {% endif %}
+
+        <div class="page-content">
+            <div class="container">
+                {{ content }}
+            </div>
+        </div>
+
+        {% include footer.html %}
+        {% include heel.html %}
+    </body>
+</html>

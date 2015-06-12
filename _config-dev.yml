@@ -1,0 +1,30 @@
+# Site settings
+title: Rand Seay | Designer and Developer
+email: rand@skosh.io
+description: > # this means to ignore newlines until "baseurl:"
+  This is my online portfolio.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://randseay.github.io/" # the base hostname & protocol for your site
+twitter_username: randseay
+github_username:  randseay
+
+# Build settings
+markdown: kramdown
+
+exclude: [
+  _scss,
+  .git,
+  .gitignore,
+  .DS_Store,
+  .sass-cache,
+  bower_components,
+  css,
+  Gruntfile.js,
+  node_modules,
+  package.json,
+  README.md
+]
+
+keep_files: [
+  '_site/css'
+]
