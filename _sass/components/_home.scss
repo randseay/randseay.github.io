@@ -1,0 +1,34 @@
+/**
+ * Home
+ */
+ #process {
+    background: $gray;
+    color: $white;
+ }
+
+.process-icons {
+    margin-top: $spacing-unit;
+
+    .column {
+        padding: 0 $spacing-unit;
+        text-align: center;
+
+        img {
+            margin-bottom: $spacing-unit / 2;
+            max-width: 120px;
+            width: 100%;
+        }
+
+        @include mq($medium) {
+            p {
+                text-align: left;
+            }
+        }
+    }
+}
+
+#articles {
+    hr {
+        border-color: $brand-secondary;
+    }
+}

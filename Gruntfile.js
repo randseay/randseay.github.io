@@ -14,6 +14,28 @@ module.exports = function(grunt) {
         },
 
         copy: {
+            fontawesome: {
+                files: [
+                    {
+                        expand: true,
+                        src: [
+                            "bower_components/fontawesome/css/font-awesome.min.css"
+                        ],
+                        dest: "css/",
+                        flatten: true,
+                        filter: "isFile"
+                    },
+                    {
+                        expand: true,
+                        src: [
+                            "bower_components/fontawesome/fonts/fontawesome-webfont.*"
+                        ],
+                        dest: "fonts/",
+                        flatten: true,
+                        filter: "isFile"
+                    }
+                ]
+            },
             fuselage: {
                 files: [
                     {
@@ -93,12 +115,14 @@ module.exports = function(grunt) {
     require("load-grunt-tasks")(grunt);
 
     grunt.registerTask('serve', [
-        'copy:jquery',
-        'copy:fuselage',
+        'newer:copy:fontawesome',
+        'newer:copy:jquery',
+        'newer:copy:fuselage',
         'concurrent:serve'
     ]);
 
     grunt.registerTask('build', [
+        'newer:copy:fontawesome',
         'newer:copy:jquery',
         'newer:copy:fuselage',
         'shell:jekyllBuild',
@@ -106,6 +130,7 @@ module.exports = function(grunt) {
     ]);
 
     grunt.registerTask('deploy', [
+        'newer:copy:fontawesome',
         'newer:copy:jquery',
         'newer:copy:fuselage',
         'shell:jekyllDeploy',

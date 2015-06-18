@@ -2,13 +2,18 @@
 layout: default
 ---
 
-<div class="post">
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
+<section class="post">
+    <div class="container">
+        <header class="post-header">
+            <h1>{{ page.title }}</h1>
+            <p class="deck">
+                Ever want to know about test posts? Today is your lucky day.
+            </p>
+            <p class="byline">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+        </header>
 
-  <article class="post-content">
-    {{ content }}
-  </article>
-</div>
+        <article class="post-content">
+            {{ content }}
+        </article>
+    </div><!-- /.container -->
+</section><!-- /.post -->

@@ -1,6 +1,18 @@
 /**
  * Base
  */
+body {
+    background: url('../img/stripe-bg2.png') fixed;
+}
+
+section {
+    padding: ($spacing-unit * 2) 0;
+
+    &:first-child {
+        padding-top: $spacing-unit;
+    }
+}
+
 .container {
     margin: 0 auto;
     max-width: 1200px;
@@ -14,23 +26,12 @@ hr {
     border-top: none;
 }
 
-/**
- * Home
- */
-.feature-icon {
-    padding: 0 $spacing-unit;
-    text-align: center;
+p a:visited,
+h3 a:visited {
+    color: $brand-primary;
 
-    img {
-        margin-bottom: $spacing-unit / 2;
-        max-height: 140px;
-        width: 100%;
-    }
-
-    @include mq($medium) {
-        p {
-            text-align: left;
-        }
+    &:hover {
+        border-bottom: $brand-primary;
     }
 }
 
@@ -53,15 +54,4 @@ hr {
             fill: $gray;
         }
     }
-}
-
-/**
- * Definitions
- */
-.def-title {
-    font-size: modular-scale(3);
-}
-
-.def-options {
-    list-style: none;
 }

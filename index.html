@@ -3,12 +3,87 @@ layout: default
 title: Home
 ---
 
-<div class="row">
-    <div class="one-whole column">
-        <p class="deck">
-            This is my online portfolio!
-        </p>
-    </div><!-- /.column -->
-</div><!-- /.row -->
+<section id="hero">
+    <div class="container">
+    <div class="row">
+        <div class="column one-whole">
+            <p class="headline">Nice to meet you.</p>
+            <a href="{{ '/work' | prepend: site.baseurl }}" class="button primary rounded">View my Work</a> or
+            <a href="{{ '/contact' | prepend: site.baseurl }}" class="button small secondary rounded">Get in Touch</a>
 
-<hr>
+            <hr>
+
+            <p class="deck">
+                Welcome to my online portfolio! My name is Rand, and I am a husband,
+                father, designer, and developer. I <a href="">write about</a>,
+                <a href="">hack on</a>, and <a href="">tweet about</a> my
+                experiences.
+            </p>
+        </div><!-- /.column -->
+    </div><!-- /.row -->
+    </div><!-- /.container -->
+</section><!-- /.hero -->
+
+<section id="process">
+    <div class="container">
+        <div class="row">
+            <div class="column one-whole">
+                <h2>Process</h2>
+
+                <hr>
+
+                <p>
+                    Utilizing a creative and development process is a great
+                    idea. It maximizes efficiency and provides a strong
+                    framework in which to create precise solutions for a
+                    multitude of challenges &mdash;both visual and technical.
+                    In a world full of sloppy work, it pays to have a tried and
+                    true course of action.
+                </p>
+            </div><!-- /.column -->
+        </div><!-- /.row -->
+
+        <div class="process-icons row">
+            <div class="column one-half medium-one-fourth">
+                <img src="{{ '/img/process1.svg' | prepend: site.baseurl }}" alt="Magnifying Glass Illustration">
+
+                <h4>Research &amp; Define</h4>
+            </div><!-- /.column -->
+
+            <div class="column one-half medium-one-fourth">
+                <img src="{{ '/img/process2.svg' | prepend: site.baseurl }}" alt="Lightbulb Illustration">
+
+                <h4>Brainstorm &amp; Strategize</h4>
+            </div><!-- /.column -->
+
+            <div class="column one-half medium-one-fourth">
+                <img src="{{ '/img/process3.svg' | prepend: site.baseurl }}" alt="Wrench Illustration">
+
+                <h4>Construct &amp; Polish</h4>
+            </div><!-- /.column -->
+
+            <div class="column one-half medium-one-fourth">
+                <img src="{{ '/img/process4.svg' | prepend: site.baseurl }}" alt="Rocket Illustration">
+
+                <h4>Deploy &amp; Assess</h4>
+            </div><!-- /.column -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section><!-- /#process -->
+
+<section id="articles">
+    <div class="container">
+        <div class="row">
+            <div class="column one-whole">
+                <h2>Articles</h2>
+
+                <hr>
+
+                {% for post in site.posts %}
+                    <h4>{{ post.date | date: '%B %d, %Y' }}</h4>
+                    <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+                {% endfor %}
+            </div><!-- /.column -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section><!-- /#articles -->
