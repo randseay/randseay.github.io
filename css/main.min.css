@@ -2320,12 +2320,18 @@ h3 a:visited:hover {
 /**
  * Posts
  */
-.post-header {
-  margin-bottom: 2.6180340252rem;
+.post-header h1 {
+  color: #367F96;
+}
+
+.post hr {
+  border-color: #C94534;
 }
 
 .post-content {
+  background: #FFF;
   margin-bottom: 2.6180340252rem;
+  padding: 2.6180340252rem 0;
 }
 
 .post-content p a.button {
@@ -2335,6 +2341,12 @@ h3 a:visited:hover {
 .post-meta {
   font-size: 1.25rem;
   color: #5D5D5D;
+}
+
+#sidebar {
+  background-color: #5D5D5D;
+  color: #FFF;
+  padding: 2.6180340252rem;
 }
 
 /**

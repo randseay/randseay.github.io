@@ -3,17 +3,37 @@ layout: default
 ---
 
 <section class="post">
-    <div class="container">
-        <header class="post-header">
+    <header class="post-header">
+        <div class="container">
             <h1>{{ page.title }}</h1>
-            <p class="deck">
-                Ever want to know about test posts? Today is your lucky day.
-            </p>
-            <p class="byline">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-        </header>
 
-        <article class="post-content">
-            {{ content }}
-        </article>
-    </div><!-- /.container -->
+            {{% if page.deck %}}
+            <p class="deck">
+                {{ page.deck }}
+            </p>
+            {{% endif %}}
+        </div><!-- /.container -->
+    </header>
+
+
+    <article class="post-content">
+        <div class="container">
+            <div class="row">
+                <div class="column one-whole medium-three-fourths">
+                    <p class="byline">
+                        <small><i class="fa fa-calendar-o"></i> {{ page.date | date: "%b %-d, %Y" }}{% if page.meta %} • {{ page.meta }}{% endif %}</small><br>
+                        {% if page.author %}By {{ page.author }}{% endif %}
+                    </p>
+
+                    <hr>
+
+                    {{ content }}
+                </div><!-- /.column -->
+
+                <div class="column one-whole medium-one-fourth">
+                    {% include sidebar.html %}
+                </div><!-- /.column -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </article>
 </section><!-- /.post -->

@@ -1,12 +1,18 @@
 /**
  * Posts
  */
-.post-header {
-    margin-bottom: $spacing-unit;
+.post-header h1 {
+    color: $brand-secondary;
 }
 
+ .post hr {
+    border-color: $brand-primary;
+ }
+
 .post-content {
+    background: $white;
     margin-bottom: $spacing-unit;
+    padding: $spacing-unit 0;
 
     p a.button {
         margin-bottom: 0;

@@ -1,0 +1,17 @@
+---
+layout: page
+title: Articles
+---
+
+<section id="articles">
+    <div class="container">
+        <div class="row">
+            <div class="column one-whole">
+                {% for post in site.posts %}
+                    <h4>{{ post.date | date: '%B %d, %Y' }}</h4>
+                    <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+                {% endfor %}
+            </div><!-- /.column -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section><!-- /#articles -->
