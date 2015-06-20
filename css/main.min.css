@@ -439,6 +439,10 @@ a {
   text-decoration: none;
 }
 
+hr {
+  border-top: none;
+}
+
 textarea {
   height: auto;
   min-height: 50px;
@@ -502,12 +506,20 @@ textarea {
 }
 
 .rounded {
+  border-radius: 1000px;
+}
+
+.radius {
   border-radius: 1rem;
 }
 
 .primary {
   background: #C94534;
   color: #FFF;
+}
+
+hr.primary {
+  border-color: #C94534;
 }
 
 .primary-text {
@@ -519,6 +531,10 @@ textarea {
   color: #FFF;
 }
 
+hr.secondary {
+  border-color: #367F96;
+}
+
 .secondary-text {
   color: #367F96;
 }
@@ -526,6 +542,10 @@ textarea {
 .tertiary {
   background: #B29167;
   color: #FFF;
+}
+
+hr.tertiary {
+  border-color: #B29167;
 }
 
 .tertiary-text {
@@ -537,6 +557,10 @@ textarea {
   color: #FFF;
 }
 
+hr.info {
+  border-color: #778899;
+}
+
 .info-text {
   color: #778899;
 }
@@ -544,6 +568,10 @@ textarea {
 .success {
   background: #3B8C0C;
   color: #FFF;
+}
+
+hr.success {
+  border-color: #3B8C0C;
 }
 
 .success-text {
@@ -555,6 +583,10 @@ textarea {
   color: #FFF;
 }
 
+hr.warn {
+  border-color: #FFB83F;
+}
+
 .warn-text {
   color: #FFB83F;
 }
@@ -564,8 +596,24 @@ textarea {
   color: #FFF;
 }
 
+hr.alert {
+  border-color: #CE4844;
+}
+
 .alert-text {
   color: #CE4844;
+}
+
+.gray {
+  background: #e9e9e9;
+}
+
+hr.gray {
+  border-color: #b6b6b6;
+}
+
+.gray-text {
+  color: #b6b6b6;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -1327,6 +1375,18 @@ small {
   }
 }
 
+.drop-cap span.initial-phrase {
+  color: #367F96;
+  font-variant: small-caps;
+}
+
+.drop-cap::first-letter {
+  color: #367F96;
+  float: left;
+  font-size: 324%;
+  line-height: 0.95;
+}
+
 figcaption,
 .caption {
   color: #5D5D5D;
@@ -1414,18 +1474,6 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, hr a:hov
 p a:hover, blockquote a:hover, pre a:hover, table a:hover,
 ul a:hover, ol a:hover, dl a:hover, figure a:hover, address a:hover {
   border-bottom: 1px solid #C94534;
-}
-
-h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited, hr a:visited,
-p a:visited, blockquote a:visited, pre a:visited, table a:visited,
-ul a:visited, ol a:visited, dl a:visited, figure a:visited, address a:visited {
-  color: #70261d;
-}
-
-h1 a:visited:hover, h2 a:visited:hover, h3 a:visited:hover, h4 a:visited:hover, h5 a:visited:hover, h6 a:visited:hover, hr a:visited:hover,
-p a:visited:hover, blockquote a:visited:hover, pre a:visited:hover, table a:visited:hover,
-ul a:visited:hover, ol a:visited:hover, dl a:visited:hover, figure a:visited:hover, address a:visited:hover {
-  border-bottom: 1px solid #70261d;
 }
 
 h1 a.disabled,
@@ -1785,12 +1833,14 @@ label {
 
 input,
 textarea {
-  display: inline-block;
   border: 1px solid #909090;
+  display: inline-block;
 }
 
 input[type="checkbox"],
 input[type="radio"] {
+  border: 0;
+  cursor: pointer;
   margin-bottom: 1.3090170126rem;
 }
 
@@ -1803,12 +1853,26 @@ input[type="radio"] + label {
   vertical-align: baseline;
 }
 
+input[type="range"] {
+  border: 0;
+}
+
 input[type="file"] {
   cursor: pointer;
   text-align: start;
 }
 
+input[type="file"]::file-upload-button {
+  visibility: hidden;
+  width: 0;
+}
+
 input[type="file"]::-webkit-file-upload-button {
+  visibility: hidden;
+  width: 0;
+}
+
+input[type="file"]::-moz-file-upload-button {
   visibility: hidden;
   width: 0;
 }
@@ -2079,16 +2143,6 @@ section:first-child {
 hr {
   border-bottom: 1px solid #e9e9e9;
   border-top: none;
-}
-
-p a:visited,
-h3 a:visited {
-  color: #C94534;
-}
-
-p a:visited:hover,
-h3 a:visited:hover {
-  border-bottom: #C94534;
 }
 
 /**
