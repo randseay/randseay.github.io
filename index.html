@@ -7,11 +7,6 @@ title: Home
     <div class="container">
     <div class="row">
         <div class="column one-whole">
-            <p class="headline">Nice to meet you.</p>
-            <a href="{{ '/work' | prepend: site.baseurl }}" class="button primary radius">View my Work</a> or
-            <a href="{{ '/contact' | prepend: site.baseurl }}" class="button small secondary radius">Get in Touch</a>
-
-            <hr>
 
             <p class="deck">
                 Welcome to my online portfolio! My name is Rand, and I am a
@@ -23,6 +18,28 @@ title: Home
                 <a href="https://twitter.com/{{ site.twitter_username }}">
                 tweet about</a> my experiences.
             </p>
+
+            <hr>
+
+            <form action="" id="navForm" class="input-form" autocomplete="off">
+                <input name="navInput" type="text" class="h1" autofocus placeholder="Where to boss?">
+            </form>
+
+            <a href="{{ '/work' | prepend: site.baseurl }}" class="button secondary radius">
+                <i class="fa fa-briefcase"></i> View my Work
+            </a>
+
+            <a href="{{ '/about' | prepend: site.baseurl }}" class="button secondary radius">
+                <i class="fa fa-user"></i> Learn About Me
+            </a>
+
+            <a href="{{ '/articles' | prepend: site.baseurl }}" class="button secondary radius">
+                <i class="fa fa-book"></i> Read My Articles
+            </a>
+
+            <a href="{{ '/contact' | prepend: site.baseurl }}" class="button secondary radius">
+                <i class="fa fa-phone"></i> Get in Touch
+            </a>
         </div><!-- /.column -->
     </div><!-- /.row -->
     </div><!-- /.container -->
