@@ -3,4 +3,43 @@ layout: page
 title: About
 ---
 
-<p class="deck">Learn about me.</p>
+<div class="container">
+    <h1 class="page-title">
+        {{ page.title }}
+    </h1>
+
+    <hr>
+
+    <p class="deck">
+        My name is Rand, and I am a husband, father, designer, and developer
+        with an appetite for work that matters. I keep a
+        <a href="{{ '/articles/' | prepend: site.baseurl }}">weblog</a>,
+        collaborate on
+        <a href="https://github.com/{{ site.github_username }}">GitHub</a>, and
+        <a href="https://twitter.com/{{ site.twitter_username }}">tweet</a>
+        about life.
+    </p>
+</div><!-- /.container -->
+
+<section class="about">
+    <div class="container">
+        <div class="row">
+            <div class="column one-whole medium-one-third">
+                <img class="headshot round" src="{{ '/img/rand-headshot7.jpg' | prepend: site.baseurl }}" alt="Headshot of Me">
+            </div><!-- /.column -->
+
+            <div class="column one-whole medium-two-thirds">
+                <p>
+                    I was formally educated at the
+                    <a target="_blank" href="https://und.edu">University of
+                    North Dakota</a>, where I received my Bachelor of Fine Arts
+                    in Graphic Design &amp; New Art Media. After a successful
+                    start as a graphic designer for an
+                    <a target="_blank" href="http://admonkeys.com">ad
+                    agency</a> in Grand Forks, ND, I dove headlong into learning
+                    web development.
+                </p>
+            </div><!-- /.column -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section><!-- /#about -->

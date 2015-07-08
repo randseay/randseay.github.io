@@ -7,10 +7,6 @@ body {
 
 section {
     padding: ($spacing-unit * 2) 0;
-
-    &:first-child {
-        padding-top: $spacing-unit;
-    }
 }
 
 .container {

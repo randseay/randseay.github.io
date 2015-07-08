@@ -2124,10 +2124,6 @@ section {
   padding: 5.2360680503rem 0;
 }
 
-section:first-child {
-  padding-top: 2.6180340252rem;
-}
-
 .container {
   margin: 0 auto;
   max-width: 1200px;
@@ -2285,9 +2281,9 @@ hr {
 }
 
 /**
- * Home
+ * Home Page
  */
-#process {
+.process {
   background: #5D5D5D;
   color: #FFF;
 }
@@ -2303,7 +2299,7 @@ hr {
 
 .process-icons .column img {
   margin-bottom: 1.3090170126rem;
-  max-width: 120px;
+  max-width: 100px;
   width: 100%;
 }
 
@@ -2313,8 +2309,17 @@ hr {
   }
 }
 
-#articles hr {
-  border-color: #367F96;
+/**
+ * About Page
+ */
+.about {
+  background: #e9e9e9;
+}
+
+.headshot {
+  border-radius: 50%;
+  box-shadow: 0 0 20px -5px rgba(153, 153, 153, 0.9);
+  width: 100%;
 }
 
 /**
@@ -2350,6 +2355,10 @@ hr {
 
 .page-heading {
   font-size: 2.9452882783rem;
+}
+
+.post {
+  padding-top: 0;
 }
 
 .post-list {
