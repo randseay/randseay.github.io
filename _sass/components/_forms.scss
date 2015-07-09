@@ -3,6 +3,8 @@
  */
 
 .input-form {
+    position: relative;
+
     input {
         border: 0;
         border-radius: $border-radius;
@@ -12,6 +14,24 @@
 
         &:focus {
             border: 0;
+        }
+    }
+
+    .isValid {
+        display: none;
+    }
+
+    &.valid {
+        input {
+            color: $debug-color-2;
+        }
+
+        .isValid {
+            color: $debug-color-2;
+            display: inline;
+            position: absolute;
+            right: $spacing-unit / 2;
+            top: $spacing-unit / 2;
         }
     }
 }

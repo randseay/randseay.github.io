@@ -3,45 +3,46 @@ layout: default
 title: Home
 ---
 
-<section id="hero">
+<section class="hero">
     <div class="container">
-    <div class="row">
-        <div class="column one-whole">
+        <div class="row">
+            <div class="column one-whole">
 
-            <p class="deck">
-                Welcome to my online portfolio! My name is Rand, and I am a
-                husband, father, designer, and developer. I
-                <a href="{{ '/articles' | prepend: site.baseurl }}">write
-                about</a> design &amp; development,
-                <a href="https://github.com/{{ site.github_username }}">hack
-                on</a> code, and
-                <a href="https://twitter.com/{{ site.twitter_username }}">
-                tweet about</a> my experiences.
-            </p>
+                <p class="deck">
+                    Welcome to my online portfolio! My name is Rand, and I am a
+                    husband, father, designer, and developer. I
+                    <a href="{{ '/articles' | prepend: site.baseurl }}">write
+                    about</a> design &amp; development,
+                    <a href="https://github.com/{{ site.github_username }}">hack
+                    on</a> code, and
+                    <a href="https://twitter.com/{{ site.twitter_username }}">
+                    tweet about</a> my experiences.
+                </p>
 
-            <hr>
+                <hr>
 
-            <form action="" id="navForm" class="input-form" autocomplete="off">
-                <input name="navInput" type="text" class="h1" autofocus placeholder="Where to boss?">
-            </form>
+                <a href class="button secondary radius" data-nav="work">
+                    <i class="fa fa-briefcase"></i> View my Work
+                </a>
 
-            <a href="{{ '/work' | prepend: site.baseurl }}" class="button secondary radius">
-                <i class="fa fa-briefcase"></i> View my Work
-            </a>
+                <a href class="button secondary radius" data-nav="about">
+                    <i class="fa fa-user"></i> Learn About Me
+                </a>
 
-            <a href="{{ '/about' | prepend: site.baseurl }}" class="button secondary radius">
-                <i class="fa fa-user"></i> Learn About Me
-            </a>
+                <a href class="button secondary radius" data-nav="articles">
+                    <i class="fa fa-book"></i> Read My Articles
+                </a>
 
-            <a href="{{ '/articles' | prepend: site.baseurl }}" class="button secondary radius">
-                <i class="fa fa-book"></i> Read My Articles
-            </a>
+                <a href class="button secondary radius" data-nav="contact">
+                    <i class="fa fa-phone"></i> Get in Touch
+                </a>
 
-            <a href="{{ '/contact' | prepend: site.baseurl }}" class="button secondary radius">
-                <i class="fa fa-phone"></i> Get in Touch
-            </a>
-        </div><!-- /.column -->
-    </div><!-- /.row -->
+                <form id="navForm" class="input-form" autocomplete="off">
+                    <input name="navInput" id="navInput" type="text" class="h1" autofocus placeholder="Type to navigate the site.">
+                    <i class="fa fa-check-circle fa-2x isValid"></i>
+                </form>
+            </div><!-- /.column -->
+        </div><!-- /.row -->
     </div><!-- /.container -->
 </section><!-- /.hero -->
 

@@ -2,17 +2,7 @@
  * Hero
  */
 .hero {
-    margin-top: $spacing-unit;
-    padding: $spacing-unit 0;
-
-    img {
-        margin-top: $spacing-unit;
-        width: 100%;
-    }
-
-    .button {
-        margin-bottom: 0;
-    }
+    padding: $spacing-unit 0 ($spacing-unit * 2);
 }
 
 .headline {
