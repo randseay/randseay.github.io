@@ -2263,17 +2263,7 @@ hr {
  * Hero
  */
 .hero {
-  margin-top: 2.6180340252rem;
-  padding: 2.6180340252rem 0;
-}
-
-.hero img {
-  margin-top: 2.6180340252rem;
-  width: 100%;
-}
-
-.hero .button {
-  margin-bottom: 0;
+  padding: 2.6180340252rem 0 5.2360680503rem;
 }
 
 .headline {
@@ -2283,7 +2273,7 @@ hr {
 /**
  * Home Page
  */
-.process {
+section.process {
   background: #5D5D5D;
   color: #FFF;
 }
@@ -2310,9 +2300,16 @@ hr {
 }
 
 /**
+ * Articles Page
+ */
+section.articles {
+  background: #FFF;
+}
+
+/**
  * About Page
  */
-.about {
+section.about {
   background: #e9e9e9;
 }
 
@@ -2320,6 +2317,20 @@ hr {
   border-radius: 50%;
   box-shadow: 0 0 20px -5px rgba(153, 153, 153, 0.9);
   width: 100%;
+}
+
+/**
+ * Work Page
+ */
+section.work {
+  background: #e9e9e9;
+}
+
+/**
+ * Contact Page
+ */
+section.contact {
+  background: #367F96;
 }
 
 /**
@@ -2404,6 +2415,41 @@ hr {
 .post-meta {
   font-size: 1.25rem;
   color: #5D5D5D;
+}
+
+/**
+ * Forms
+ */
+.input-form {
+  position: relative;
+}
+
+.input-form input {
+  border: 0;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px -5px rgba(153, 153, 153, 0.9);
+  color: #C94534;
+  line-height: initial;
+}
+
+.input-form input:focus {
+  border: 0;
+}
+
+.input-form .isValid {
+  display: none;
+}
+
+.input-form.valid input {
+  color: #3B8C0C;
+}
+
+.input-form.valid .isValid {
+  color: #3B8C0C;
+  display: inline;
+  position: absolute;
+  right: 1.3090170126rem;
+  top: 1.3090170126rem;
 }
 
 #sidebar {
