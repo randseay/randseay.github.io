@@ -1,0 +1,75 @@
+/**
+ * Modal Styles
+ */
+.help-text {
+    margin-bottom: 0;
+
+    [for="helpTrigger"] {
+        margin-bottom: 0;
+    }
+}
+
+.modal-control {
+    font-size: 1.8rem;
+}
+
+.modal-engine {
+    display: none;
+}
+
+.modal-close {
+    color: $brand-primary;
+    position: absolute;
+    right: $spacing-unit;
+    top: $spacing-unit;
+}
+
+.modal {
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    padding-top: $spacing-unit * 2;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all 0.5s cubic-bezier(0.6, -0.5, 0.3, 1.5);
+    z-index: -100;
+}
+
+.modal-bg {
+    background: rgba(0,0,0,0.7);
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    padding-top: $spacing-unit * 2;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: all 0.5s cubic-bezier(0.6, -0.5, 0.3, 1.5);
+}
+
+.modal-inner {
+    background: $white;
+    border-radius: $border-radius;
+    box-shadow: 0 0 20px -5px rgba(153,153,153,0.9);
+    margin: 0 auto;
+    max-width: 960px;
+    padding: $spacing-unit;
+    position: relative;
+    transform: scale(0.5);
+    transition: all 0.5s cubic-bezier(0.6, -0.5, 0.3, 1.5);
+    width: 90%;
+}
+
+.modal-engine:checked ~ #helpModal {
+    opacity: 1;
+    z-index: 800;
+
+    .modal-bg {
+        opacity: 1;
+    }
+
+    .modal-inner {
+        transform: scale(1);
+    }
+}

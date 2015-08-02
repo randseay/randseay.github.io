@@ -58,6 +58,16 @@ var DIRECTORY = [
         ]
     },
     {
+        'name': 'help',
+        'url': '#helpTrigger',
+        'type': 'internal',
+        'keywords': [
+            'help',
+            'how',
+            'what'
+        ]
+    },
+    {
         'name': 'home',
         'url': '/',
         'type': 'internal',
