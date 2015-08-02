@@ -1,12 +1,46 @@
 ---
 layout: default
 title: Home
+js: /js/nav.js
 ---
 
 <section class="hero">
     <div class="container">
         <div class="row">
-            <div class="column one-whole">
+            <div class="column one-whole large-one-half">
+                <img class="logo" src="{{ '/img/2013-logo-big.svg' | prepend: site.baseurl }}" alt="Rand Seay Logo">
+            </div><!-- /.column -->
+
+            <nav class="home-nav column one-whole large-one-half">
+                <div class="row">
+                    <div class="column one-whole medium-one-fourth">
+                        <a href class="button secondary radius" data-nav="work">
+                            <i class="fa fa-briefcase"></i> <br>Work
+                        </a>
+                    </div><!-- /.column -->
+
+                    <div class="column one-whole medium-one-fourth">
+                        <a href class="button secondary radius" data-nav="about">
+                            <i class="fa fa-user"></i> <br>About
+                        </a>
+                    </div><!-- /.column -->
+
+                    <div class="column one-whole medium-one-fourth">
+                        <a href class="button secondary radius" data-nav="articles">
+                            <i class="fa fa-book"></i> <br>Articles
+                        </a>
+                    </div><!-- /.column -->
+
+                    <div class="column one-whole medium-one-fourth">
+                        <a href class="button secondary radius" data-nav="contact">
+                            <i class="fa fa-phone"></i> <br>Contact
+                        </a>
+                    </div><!-- /.column -->
+                </div><!-- /.row -->
+            </nav><!-- /.column -->
+        </div><!-- /.row -->
+
+                <hr>
 
                 <p class="deck">
                     Welcome to my online portfolio! My name is Rand, and I am a
@@ -21,28 +55,10 @@ title: Home
 
                 <hr>
 
-                <a href class="button secondary radius" data-nav="work">
-                    <i class="fa fa-briefcase"></i> View my Work
-                </a>
-
-                <a href class="button secondary radius" data-nav="about">
-                    <i class="fa fa-user"></i> Learn About Me
-                </a>
-
-                <a href class="button secondary radius" data-nav="articles">
-                    <i class="fa fa-book"></i> Read My Articles
-                </a>
-
-                <a href class="button secondary radius" data-nav="contact">
-                    <i class="fa fa-phone"></i> Get in Touch
-                </a>
-
                 <form id="navForm" class="input-form" autocomplete="off">
                     <input name="navInput" id="navInput" type="text" class="h1" autofocus placeholder="Type to navigate the site.">
                     <i class="fa fa-check-circle fa-2x isValid"></i>
                 </form>
-            </div><!-- /.column -->
-        </div><!-- /.row -->
     </div><!-- /.container -->
 </section><!-- /.hero -->
 

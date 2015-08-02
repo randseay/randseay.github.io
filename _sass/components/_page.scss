@@ -4,10 +4,15 @@
 .page-title {
     color: $brand-secondary;
     font-weight: 100;
+    margin-top: $spacing-unit;
 }
 
 .page-content {
     padding: $spacing-unit 0 0;
+
+    &.inner {
+        padding: ($spacing-unit * 3.5) 0 0;
+    }
 }
 
 .page-heading {

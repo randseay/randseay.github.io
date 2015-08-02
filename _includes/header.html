@@ -1,4 +1,8 @@
+{% if page.title == "Home" %}
+<header class="site-header hidden">
+{% else %}
 <header class="site-header">
+{% endif %}
     <div class="container">
         <a class="site-title" href="{{ site.baseurl }}/">
             <img src="{{ '/img/2013-logo-big.svg' | prepend: site.baseurl }}" alt="Rand Seay Logo">

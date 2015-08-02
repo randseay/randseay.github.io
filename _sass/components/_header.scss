@@ -4,7 +4,11 @@
 .site-header {
     background: $white;
     border-bottom: 1px solid $gray-tint;
+    box-shadow: 0 0 20px -5px rgba(153,153,153,0.9);
     min-height: 60px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
 
     .container {
         position: relative;
