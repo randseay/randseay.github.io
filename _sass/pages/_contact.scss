@@ -4,15 +4,16 @@
 section.contact {
     background: $brand-secondary;
     color: $white;
-}
 
-.contact-call-to-action {
-    text-align: center;
-    width: 100%;
+    .call-to-action {
+        text-align: center;
+        width: 100%;
 
-    @include button($white, $text: $brand-primary);
+        @include button($white, $text: $brand-primary);
 
-    i.fa {
-        margin-bottom: $spacing-unit / 2;
+        i.fa {
+            margin-bottom: $spacing-unit / 2;
+        }
     }
 }
+

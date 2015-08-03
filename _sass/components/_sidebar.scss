@@ -2,4 +2,15 @@
     background-color: $gray;
     color: $white;
     padding: $spacing-unit;
+
+    .call-to-action {
+        text-align: center;
+        width: 100%;
+
+        @include button($white, $text: $brand-secondary);
+
+        i.fa {
+            margin-bottom: $spacing-unit / 2;
+        }
+    }
 }
