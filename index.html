@@ -110,6 +110,25 @@ js: /js/nav.js
     </div><!-- /.container -->
 </section><!-- /.process -->
 
+<section class="cases">
+    <div class="container">
+        <div class="row">
+            <div class="column one-whole">
+                <h2>Case Studies</h2>
+
+                <hr>
+
+                {% for post in site.posts %}
+                    {% if post.type == 'case' %}
+                        <h4>{{ post.date | date: '%B %d, %Y' }}</h4>
+                        <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+                    {% endif %}
+                {% endfor %}
+            </div><!-- /.column -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section><!-- /.cases -->
+
 <section class="articles">
     <div class="container">
         <div class="row">
@@ -119,8 +138,10 @@ js: /js/nav.js
                 <hr>
 
                 {% for post in site.posts %}
-                    <h4>{{ post.date | date: '%B %d, %Y' }}</h4>
-                    <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+                    {% if post.type == 'blog' %}
+                        <h4>{{ post.date | date: '%B %d, %Y' }}</h4>
+                        <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+                    {% endif %}
                 {% endfor %}
             </div><!-- /.column -->
         </div><!-- /.row -->
