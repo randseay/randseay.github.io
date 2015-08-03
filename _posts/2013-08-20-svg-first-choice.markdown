@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "SVG Should Be Your First Choice"
+type: blog
 date: 2013-08-20 18:37:21
 author: Rand Seay
 permalink: /posts/svgs-should-be-your-first-choice

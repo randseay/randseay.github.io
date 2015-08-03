@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Please Use Smart Guides in InDesign, Illustrator"
+type: blog
 date: 2013-08-17 15:19:47
 author: Rand Seay
 permalink: /posts/please-use-smart-guides

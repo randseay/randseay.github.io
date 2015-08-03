@@ -9,6 +9,11 @@ title: Articles
     </h1>
 
     <hr>
+
+    <p class="deck">
+        These are my thoughts and experiences with development tools,
+        technology, and life. There may even be a short story or two.
+    </p>
 </div><!-- /.container -->
 
 <section class="articles">
@@ -16,8 +21,10 @@ title: Articles
         <div class="row">
             <div class="column one-whole">
                 {% for post in site.posts %}
-                    <h4>{{ post.date | date: '%B %d, %Y' }}</h4>
-                    <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+                    {% if post.type == 'blog' %}
+                        <h4>{{ post.date | date: '%B %d, %Y' }}</h4>
+                        <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+                    {% endif %}
                 {% endfor %}
             </div><!-- /.column -->
         </div><!-- /.row -->

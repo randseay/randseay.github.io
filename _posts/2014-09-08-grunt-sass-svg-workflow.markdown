@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "A Grunt, Sass, and SVG Workflow"
+type: blog
 date: 2014-09-08 18:37:21
 author: Rand Seay
 permalink: /posts/grunt-sass-svg-workflow

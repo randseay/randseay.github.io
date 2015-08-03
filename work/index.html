@@ -9,13 +9,23 @@ title: Work
     </h1>
 
     <hr>
+
+    <p class="deck">
+        I stay very busy with a wide array of projects –some of which I am
+        unable to showcase due to proprietary reasons. Enjoy!
+    </p>
 </div><!-- /.container -->
 
 <section class="work">
     <div class="container">
         <div class="row">
             <div class="column one-whole">
-                Check this out.
+                {% for post in site.posts %}
+                    {% if post.type == 'case' %}
+                        <h4>{{ post.date | date: '%B %d, %Y' }}</h4>
+                        <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+                    {% endif %}
+                {% endfor %}
             </div><!-- /.column -->
         </div><!-- /.row -->
     </div><!-- /.container -->
