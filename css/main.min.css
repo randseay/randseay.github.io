@@ -2379,6 +2379,41 @@ section.work {
  */
 section.contact {
   background: #367F96;
+  color: #FFF;
+}
+
+.contact-call-to-action {
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  font-weight: normal;
+  line-height: 1;
+  margin-bottom: 2.6180340252rem;
+  padding: 1.7453560168rem;
+  background: rgba(255, 255, 255, 0);
+  border: 1px solid #FFF;
+  color: #FFF;
+}
+
+.contact-call-to-action:hover {
+  background: #FFF;
+  color: #C94534;
+}
+
+.contact-call-to-action.disabled,
+.contact-call-to-action[disabled] {
+  border-color: white;
+  color: white;
+}
+
+.contact-call-to-action.disabled:hover,
+.contact-call-to-action[disabled]:hover {
+  background: rgba(255, 255, 255, 0);
+  color: white;
+}
+
+.contact-call-to-action i.fa {
+  margin-bottom: 1.3090170126rem;
 }
 
 /**
