@@ -5,8 +5,16 @@ section.about {
     background: $gray-tint;
 }
 
+section.technologies {
+    background: $white;
+}
+
 .headshot {
     border-radius: 50%;
     box-shadow: 0 0 20px -5px rgba(153,153,153,0.9);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
     width: 100%;
 }
