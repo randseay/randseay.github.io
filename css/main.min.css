@@ -514,29 +514,29 @@ textarea {
 }
 
 .primary {
-  background: #C94534;
+  background: #FF6633;
   color: #FFF;
 }
 
 hr.primary {
-  border-color: #C94534;
+  border-color: #FF6633;
 }
 
 .primary-text {
-  color: #C94534;
+  color: #FF6633;
 }
 
 .secondary {
-  background: #367F96;
+  background: #6DBBB7;
   color: #FFF;
 }
 
 hr.secondary {
-  border-color: #367F96;
+  border-color: #6DBBB7;
 }
 
 .secondary-text {
-  color: #367F96;
+  color: #6DBBB7;
 }
 
 .tertiary {
@@ -1266,7 +1266,7 @@ h1, .h1 {
 }
 
 body {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 1.53rem;
   line-height: 1.618034;
   font-weight: 200;
@@ -1304,7 +1304,7 @@ small {
 }
 
 .headline {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: 100;
   font-size: 4.2360680659rem;
   line-height: 1;
@@ -1376,12 +1376,12 @@ small {
 }
 
 .drop-cap span.initial-phrase {
-  color: #367F96;
+  color: #6DBBB7;
   font-variant: small-caps;
 }
 
 .drop-cap::first-letter {
-  color: #367F96;
+  color: #6DBBB7;
   float: left;
   font-size: 324%;
   line-height: 0.95;
@@ -1464,60 +1464,60 @@ pre > code {
   padding-left: 0;
 }
 
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, hr a,
-p a, blockquote a, pre a, table a,
-ul a, ol a, dl a, figure a, address a {
-  color: #C94534;
+h1 a:not(.button), h2 a:not(.button), h3 a:not(.button), h4 a:not(.button), h5 a:not(.button), h6 a:not(.button), hr a:not(.button),
+p a:not(.button), blockquote a:not(.button), pre a:not(.button), table a:not(.button),
+ul a:not(.button), ol a:not(.button), dl a:not(.button), figure a:not(.button), address a:not(.button) {
+  color: #FF6633;
 }
 
-h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, hr a:hover,
-p a:hover, blockquote a:hover, pre a:hover, table a:hover,
-ul a:hover, ol a:hover, dl a:hover, figure a:hover, address a:hover {
-  border-bottom: 1px solid #C94534;
+h1 a:not(.button):hover, h2 a:not(.button):hover, h3 a:not(.button):hover, h4 a:not(.button):hover, h5 a:not(.button):hover, h6 a:not(.button):hover, hr a:not(.button):hover,
+p a:not(.button):hover, blockquote a:not(.button):hover, pre a:not(.button):hover, table a:not(.button):hover,
+ul a:not(.button):hover, ol a:not(.button):hover, dl a:not(.button):hover, figure a:not(.button):hover, address a:not(.button):hover {
+  border-bottom: 1px solid #FF6633;
 }
 
-h1 a.disabled,
-h1 a[disabled], h2 a.disabled,
-h2 a[disabled], h3 a.disabled,
-h3 a[disabled], h4 a.disabled,
-h4 a[disabled], h5 a.disabled,
-h5 a[disabled], h6 a.disabled,
-h6 a[disabled], hr a.disabled,
-hr a[disabled],
-p a.disabled,
-p a[disabled], blockquote a.disabled,
-blockquote a[disabled], pre a.disabled,
-pre a[disabled], table a.disabled,
-table a[disabled],
-ul a.disabled,
-ul a[disabled], ol a.disabled,
-ol a[disabled], dl a.disabled,
-dl a[disabled], figure a.disabled,
-figure a[disabled], address a.disabled,
-address a[disabled] {
+h1 a:not(.button).disabled,
+h1 a:not(.button)[disabled], h2 a:not(.button).disabled,
+h2 a:not(.button)[disabled], h3 a:not(.button).disabled,
+h3 a:not(.button)[disabled], h4 a:not(.button).disabled,
+h4 a:not(.button)[disabled], h5 a:not(.button).disabled,
+h5 a:not(.button)[disabled], h6 a:not(.button).disabled,
+h6 a:not(.button)[disabled], hr a:not(.button).disabled,
+hr a:not(.button)[disabled],
+p a:not(.button).disabled,
+p a:not(.button)[disabled], blockquote a:not(.button).disabled,
+blockquote a:not(.button)[disabled], pre a:not(.button).disabled,
+pre a:not(.button)[disabled], table a:not(.button).disabled,
+table a:not(.button)[disabled],
+ul a:not(.button).disabled,
+ul a:not(.button)[disabled], ol a:not(.button).disabled,
+ol a:not(.button)[disabled], dl a:not(.button).disabled,
+dl a:not(.button)[disabled], figure a:not(.button).disabled,
+figure a:not(.button)[disabled], address a:not(.button).disabled,
+address a:not(.button)[disabled] {
   color: #7c7c7c;
   border-bottom: 1px solid;
 }
 
-h1 a.disabled:hover,
-h1 a[disabled]:hover, h2 a.disabled:hover,
-h2 a[disabled]:hover, h3 a.disabled:hover,
-h3 a[disabled]:hover, h4 a.disabled:hover,
-h4 a[disabled]:hover, h5 a.disabled:hover,
-h5 a[disabled]:hover, h6 a.disabled:hover,
-h6 a[disabled]:hover, hr a.disabled:hover,
-hr a[disabled]:hover,
-p a.disabled:hover,
-p a[disabled]:hover, blockquote a.disabled:hover,
-blockquote a[disabled]:hover, pre a.disabled:hover,
-pre a[disabled]:hover, table a.disabled:hover,
-table a[disabled]:hover,
-ul a.disabled:hover,
-ul a[disabled]:hover, ol a.disabled:hover,
-ol a[disabled]:hover, dl a.disabled:hover,
-dl a[disabled]:hover, figure a.disabled:hover,
-figure a[disabled]:hover, address a.disabled:hover,
-address a[disabled]:hover {
+h1 a:not(.button).disabled:hover,
+h1 a:not(.button)[disabled]:hover, h2 a:not(.button).disabled:hover,
+h2 a:not(.button)[disabled]:hover, h3 a:not(.button).disabled:hover,
+h3 a:not(.button)[disabled]:hover, h4 a:not(.button).disabled:hover,
+h4 a:not(.button)[disabled]:hover, h5 a:not(.button).disabled:hover,
+h5 a:not(.button)[disabled]:hover, h6 a:not(.button).disabled:hover,
+h6 a:not(.button)[disabled]:hover, hr a:not(.button).disabled:hover,
+hr a:not(.button)[disabled]:hover,
+p a:not(.button).disabled:hover,
+p a:not(.button)[disabled]:hover, blockquote a:not(.button).disabled:hover,
+blockquote a:not(.button)[disabled]:hover, pre a:not(.button).disabled:hover,
+pre a:not(.button)[disabled]:hover, table a:not(.button).disabled:hover,
+table a:not(.button)[disabled]:hover,
+ul a:not(.button).disabled:hover,
+ul a:not(.button)[disabled]:hover, ol a:not(.button).disabled:hover,
+ol a:not(.button)[disabled]:hover, dl a:not(.button).disabled:hover,
+dl a:not(.button)[disabled]:hover, figure a:not(.button).disabled:hover,
+figure a:not(.button)[disabled]:hover, address a:not(.button).disabled:hover,
+address a:not(.button)[disabled]:hover {
   border-bottom-color: #7c7c7c;
 }
 
@@ -1533,14 +1533,15 @@ button,
   line-height: 1;
   margin-bottom: 2.6180340252rem;
   padding: 1.7453560168rem;
+  text-align: center;
   background: rgba(255, 255, 255, 0);
-  border: 1px solid #C94534;
-  color: #C94534;
+  border: 1px solid #FF6633;
+  color: #FF6633;
 }
 
 button:hover,
 .button:hover {
-  background: #C94534;
+  background: #FF6633;
   color: #FFF;
 }
 
@@ -1548,8 +1549,8 @@ button.disabled,
 button[disabled],
 .button.disabled,
 .button[disabled] {
-  border-color: #d77163;
-  color: #d77163;
+  border-color: #ff9470;
+  color: #ff9470;
 }
 
 button.disabled:hover,
@@ -1557,7 +1558,12 @@ button[disabled]:hover,
 .button.disabled:hover,
 .button[disabled]:hover {
   background: rgba(255, 255, 255, 0);
-  color: #d77163;
+  color: #ff9470;
+}
+
+button.extended,
+.button.extended {
+  width: 100%;
 }
 
 button.secondary,
@@ -1567,14 +1573,15 @@ button.secondary,
   line-height: 1;
   margin-bottom: 2.6180340252rem;
   padding: 1.7453560168rem;
+  text-align: center;
   background: rgba(255, 255, 255, 0);
-  border: 1px solid #367F96;
-  color: #367F96;
+  border: 1px solid #6DBBB7;
+  color: #6DBBB7;
 }
 
 button.secondary:hover,
 .button.secondary:hover {
-  background: #367F96;
+  background: #6DBBB7;
   color: #FFF;
 }
 
@@ -1582,8 +1589,8 @@ button.secondary.disabled,
 button.secondary[disabled],
 .button.secondary.disabled,
 .button.secondary[disabled] {
-  border-color: #4ba3be;
-  color: #4ba3be;
+  border-color: #97cecc;
+  color: #97cecc;
 }
 
 button.secondary.disabled:hover,
@@ -1591,7 +1598,7 @@ button.secondary[disabled]:hover,
 .button.secondary.disabled:hover,
 .button.secondary[disabled]:hover {
   background: rgba(255, 255, 255, 0);
-  color: #4ba3be;
+  color: #97cecc;
 }
 
 button.tertiary,
@@ -1601,6 +1608,7 @@ button.tertiary,
   line-height: 1;
   margin-bottom: 2.6180340252rem;
   padding: 1.7453560168rem;
+  text-align: center;
   background: rgba(255, 255, 255, 0);
   border: 1px solid #B29167;
   color: #B29167;
@@ -1635,6 +1643,7 @@ button.info,
   line-height: 1;
   margin-bottom: 2.6180340252rem;
   padding: 1.7453560168rem;
+  text-align: center;
   background: rgba(255, 255, 255, 0);
   border: 1px solid #778899;
   color: #778899;
@@ -1669,6 +1678,7 @@ button.success,
   line-height: 1;
   margin-bottom: 2.6180340252rem;
   padding: 1.7453560168rem;
+  text-align: center;
   background: rgba(255, 255, 255, 0);
   border: 1px solid #3B8C0C;
   color: #3B8C0C;
@@ -1703,6 +1713,7 @@ button.warn,
   line-height: 1;
   margin-bottom: 2.6180340252rem;
   padding: 1.7453560168rem;
+  text-align: center;
   background: rgba(255, 255, 255, 0);
   border: 1px solid #FFB83F;
   color: #FFB83F;
@@ -1737,6 +1748,7 @@ button.alert,
   line-height: 1;
   margin-bottom: 2.6180340252rem;
   padding: 1.7453560168rem;
+  text-align: center;
   background: rgba(255, 255, 255, 0);
   border: 1px solid #CE4844;
   color: #CE4844;
@@ -2181,7 +2193,7 @@ hr {
 }
 
 .site-title {
-  color: #C94534;
+  color: #FF6633;
   float: left;
   font-size: 2.6180340252rem;
   line-height: 60px;
@@ -2208,7 +2220,7 @@ hr {
 }
 
 #menu-icon li svg path {
-  fill: #367F96;
+  fill: #6DBBB7;
 }
 
 @media screen and (min-width: 640px) {
@@ -2381,7 +2393,7 @@ section.work {
  * Contact Page
  */
 section.contact {
-  background: #367F96;
+  background: #6DBBB7;
   color: #FFF;
 }
 
@@ -2393,6 +2405,7 @@ section.contact .call-to-action {
   line-height: 1;
   margin-bottom: 2.6180340252rem;
   padding: 1.7453560168rem;
+  text-align: center;
   background: rgba(255, 255, 255, 0);
   border: 1px solid #FFF;
   color: #FFF;
@@ -2400,7 +2413,7 @@ section.contact .call-to-action {
 
 section.contact .call-to-action:hover {
   background: #FFF;
-  color: #C94534;
+  color: #FF6633;
 }
 
 section.contact .call-to-action.disabled,
@@ -2442,7 +2455,7 @@ section.contact .call-to-action i.fa {
  * Page content
  */
 .page-title {
-  color: #367F96;
+  color: #6DBBB7;
   font-weight: 100;
   margin-top: 2.6180340252rem;
 }
@@ -2486,11 +2499,11 @@ section.contact .call-to-action i.fa {
  * Posts
  */
 .post-header h1 {
-  color: #367F96;
+  color: #6DBBB7;
 }
 
 .post hr {
-  border-color: #C94534;
+  border-color: #FF6633;
 }
 
 .post-content {
@@ -2519,7 +2532,7 @@ section.contact .call-to-action i.fa {
   border: 0;
   border-radius: 1rem;
   box-shadow: 0 0 20px -5px rgba(153, 153, 153, 0.9);
-  color: #C94534;
+  color: #FF6633;
   line-height: initial;
 }
 
@@ -2557,6 +2570,7 @@ section.contact .call-to-action i.fa {
   line-height: 1;
   margin-bottom: 2.6180340252rem;
   padding: 1.7453560168rem;
+  text-align: center;
   background: rgba(255, 255, 255, 0);
   border: 1px solid #FFF;
   color: #FFF;
@@ -2564,7 +2578,7 @@ section.contact .call-to-action i.fa {
 
 #sidebar .call-to-action:hover {
   background: #FFF;
-  color: #367F96;
+  color: #6DBBB7;
 }
 
 #sidebar .call-to-action.disabled,
@@ -2861,7 +2875,7 @@ section.contact .call-to-action i.fa {
 }
 
 .modal-close {
-  color: #C94534;
+  color: #FF6633;
   position: absolute;
   right: 2.6180340252rem;
   top: 2.6180340252rem;
