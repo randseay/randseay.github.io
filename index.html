@@ -117,15 +117,10 @@ js: /js/nav.js
                 <h2>Case Studies</h2>
 
                 <hr>
-
-                {% for post in site.posts %}
-                    {% if post.type == 'case' %}
-                        <h4>{{ post.date | date: '%B %d, %Y' }}</h4>
-                        <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-                    {% endif %}
-                {% endfor %}
             </div><!-- /.column -->
         </div><!-- /.row -->
+
+        {% include list-posts.html type='case' %}
     </div><!-- /.container -->
 </section><!-- /.cases -->
 
@@ -136,14 +131,9 @@ js: /js/nav.js
                 <h2>Articles</h2>
 
                 <hr>
-
-                {% for post in site.posts %}
-                    {% if post.type == 'blog' %}
-                        <h4>{{ post.date | date: '%B %d, %Y' }}</h4>
-                        <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-                    {% endif %}
-                {% endfor %}
             </div><!-- /.column -->
         </div><!-- /.row -->
+
+        {% include list-posts.html type='blog' %}
     </div><!-- /.container -->
 </section><!-- /.articles -->

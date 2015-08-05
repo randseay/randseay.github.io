@@ -1,15 +1,15 @@
 ---
 layout: post
 title: "SVG Should Be Your First Choice"
-type: blog
 date: 2013-08-20 18:37:21
 author: Rand Seay
+categories: Blog
+tags: [Web Development, SVG]
 permalink: /posts/svgs-should-be-your-first-choice
-categories: Development SVG
 deck: "With great browser support and increasingly diverse ways of accessing the web, you can stop worrying about the quality of your graphics by using SVG."
 ---
 
-As a graphic designer with plenty of print experience, The *first* thing I reach for when I need a visual element is a vector-based file. If there are none to be had, something inside of me sighs sadly as I settle for a pixelled fallback. Here's why.
+As a graphic designer with plenty of print experience, The *first* thing I reach for when I need a visual element is a vector-based file. If there are none to be had, something inside of me sighs sadly as I settle for a pixelled fallback<!--more-->. Here's why.
 
 Pixel-based files rely on a level of quality that is built into them, represented as a density. It comes down to how many dots (or pixels) we can cram into a certain area. The higher that number, the better the quality, and the larger the image can be before it begins to break down and look bad. Usually a good rule of thumb is 300 dpi for print. At this level it is generally agreed that the naked eye cannot detect the individual dots, and the image looks crisp. A vector graphic, on the other hand, utilizes geometrical primitives such as points, lines, curves, and shapes &mdash;which are all mathematical expressions&mdash; to represent images. The level of quality is no longer built into the file, and is only limited by the output capabilities of the printer. In the world of print, this is wonderful. I can put a logo on the side of an airplane using the same vector file that is on the business card. All without losing an ounce of clarity.
 

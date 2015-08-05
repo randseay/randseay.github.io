@@ -1,15 +1,15 @@
 ---
 layout: post
 title: "A Grunt, Sass, and SVG Workflow"
-type: blog
 date: 2014-09-08 18:37:21
 author: Rand Seay
+categories: Blog
+tags: [Web Development, SVG, Grunt, Sass]
 permalink: /posts/grunt-sass-svg-workflow
-categories: Development SVG Grunt Sass
 deck: "Combine Grunt, Sass, and SVG to create a dynamic, efficient, and intuitive development environment. Here's one way to do it."
 ---
 
-We are right in the middle of building a web app at [Skosh Interactive](https://skosh.io). It was mere splash page and newsletter signup that needed to grow into Flask app with quite a few features –and ideally be mobile-friendly. Because our own front-end framework is not yet ready for the big leagues, we decided on [Foundation](http://foundation.zurb.com) –with [Sass](http://sass-lang.com/), of course. And SVG (I might be a little addicted, sue me).
+We are right in the middle of building a web app at [Skosh Interactive](https://skosh.io). It was mere splash page and newsletter signup that needed to grow into Flask app with quite a few features –and ideally be mobile-friendly<!--more-->. Because our own front-end framework is not yet ready for the big leagues, we decided on [Foundation](http://foundation.zurb.com) –with [Sass](http://sass-lang.com/), of course. And SVG (I might be a little addicted, sue me).
 
 I had just stumbled across a [screencast by Chris Coyier](http://css-tricks.com/video-screencasts/screencast-134-tour-site-progress-built-jekyll-grunt-sass-svg-system/), and I was fired up about implementing a modern workflow. So I branched off and dove in. I tried to plan out all of the packages I would need and which tools I wanted to incorporate. It was `npm instal` this and `npm install` that. The project is private right now, but the `devDependencies` section of my `package.json` file looked like this.
 

@@ -16,8 +16,8 @@
     }
 
     .logo {
-        -webkit-animation: translateDown 0.75s cubic-bezier(0.7,0,0.3,1) both;
-        animation: translateDown 0.75s cubic-bezier(0.7,0,0.3,1) both;
+        -webkit-animation: translateDown 0.5s cubic-bezier(0.7,0,0.3,1) both;
+        animation: translateDown 0.5s cubic-bezier(0.7,0,0.3,1) both;
         display: block;
         margin: 0 auto $spacing-unit;
         max-width: 700px;

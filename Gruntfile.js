@@ -82,7 +82,7 @@ module.exports = function(grunt) {
         sass: {
             options: {
                 includePaths: ['bower_components/fuselage/scss/components'],
-                outputStyle: 'expanded',
+                outputStyle: 'compressed',
                 sourceMap: true
             },
             dist: {

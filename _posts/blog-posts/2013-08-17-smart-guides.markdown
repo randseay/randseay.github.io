@@ -1,15 +1,15 @@
 ---
 layout: post
 title: "Please Use Smart Guides in InDesign, Illustrator"
-type: blog
 date: 2013-08-17 15:19:47
 author: Rand Seay
+categories: blog
+tags: [Design, Illustrator, InDesign]
 permalink: /posts/please-use-smart-guides
-categories: Design Illustrator InDesign
 deck: "You won't drive collaborating designers crazy, and everything will be lined up in a simple, dependable, and clean way."
 ---
 
-If you have spent any amount of time using InDesign or Illustrator, I guarantee you have wanted to line up the edges of two (or more) elements. This is one of the most fundamental uses of the program. I want a box. I want a rectangle. I want them the same height and I want them aligned with each other. Maybe it's a photo or text box or *anything* else. It would be common t o line up text boxes along margins, or visual elements to share some sort of imaginary line. Getting it "close enough" just can't cut it sometimes. You have a few options.
+If you have spent any amount of time using InDesign or Illustrator, I guarantee you have wanted to line up the edges of two (or more) elements. This is one of the most<!--more--> fundamental uses of the program. I want a box. I want a rectangle. I want them the same height and I want them aligned with each other. Maybe it's a photo or text box or *anything* else. It would be common t o line up text boxes along margins, or visual elements to share some sort of imaginary line. Getting it "close enough" just can't cut it sometimes. You have a few options.
 
 ### Panic
 

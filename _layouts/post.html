@@ -9,11 +9,10 @@ layout: default
         <div class="container">
             <h1>{{ page.title }}</h1>
 
-            {{% if page.deck %}}
-            <p class="deck">
-                {{ page.deck }}
+            <p class="byline">
+                <small><i class="fa fa-calendar-o"></i> {{ page.date | date: "%b %-d, %Y" }}{% if page.meta %} • {{ page.meta }}{% endif %}</small><br>
+                {% if page.author %}By {{ page.author }}{% endif %}
             </p>
-            {{% endif %}}
         </div><!-- /.container -->
     </header>
 
@@ -22,12 +21,13 @@ layout: default
         <div class="container">
             <div class="row">
                 <div class="column one-whole medium-three-fourths">
-                    <p class="byline">
-                        <small><i class="fa fa-calendar-o"></i> {{ page.date | date: "%b %-d, %Y" }}{% if page.meta %} • {{ page.meta }}{% endif %}</small><br>
-                        {% if page.author %}By {{ page.author }}{% endif %}
-                    </p>
+                    {{% if page.deck %}}
+                        <p class="deck">
+                            {{ page.deck }}
+                        </p>
 
-                    <hr>
+                        <hr class="primary">
+                    {{% endif %}}
 
                     {{ content }}
                 </div><!-- /.column -->

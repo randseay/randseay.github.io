@@ -2,7 +2,10 @@
  * Modal Styles
  */
 .help-text {
+    color: $gray-tint-text;
+    font-size: modular-scale(2);
     margin-bottom: 0;
+    text-align: right;
 
     [for="helpTrigger"] {
         margin-bottom: 0;

@@ -1,0 +1,20 @@
+<!--
+    In the include statement, pass the post type in as a 'type' parameter
+    i.e.
+        include list-posts.html type='blog'
+-->
+
+<div class="row">
+    <div class="column one-whole post-list">
+        {% for post in site.posts %}
+            {% if post.categories contains include.type %}
+                <div class="post-preview">
+                    <h4>{{ post.date | date: '%B %d, %Y' }}</h4>
+                    <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+                    {{ post.excerpt | remove: '</p>' }}
+                    &hellip; <a href="{{ post.url | prepend: site.baseurl }}">read more</a></p>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div><!-- /.column -->
+</div><!-- /.row -->

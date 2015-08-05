@@ -1,15 +1,15 @@
 ---
 layout: post
 title: "UND Proctoring Web Application"
-type: case
 date: 2015-08-03 11:06:01
 author: Rand Seay
 permalink: /case/und-proctoring
-categories: Work, Web Application
+categories: Case
+tags: [Web Application]
 deck: "The University of North Dakota Online & Distance Education needed a new system to manage test proctoring for term-based online & distance courses. We built it."
 ---
 
-UND Online & Distance Education already had a Proctoring system that [our team](https://cts.ndus.edu/sits-departments/enterprise-services/) was maintaining, but it was built eons ago in Coldfusion 9. To its credit, this app has been chugging along faithfully for years, handling substantial traffic and playing a critical role in online education at UND &mdash;but it was time for a rebuild.
+UND Online & Distance Education already had a Proctoring system that [our team](https://cts.ndus.edu/sits-departments/enterprise-services/) was maintaining, but it was built eons ago in Coldfusion 9. To its credit, this app has been chugging along faithfully<!--more--> for years, handling substantial traffic and playing a critical role in online education at UND &mdash;but it was time for a rebuild.
 
 <a href="https://apps2.und.edu/proctoring" class="button radius">Go to the finished product</a>
 

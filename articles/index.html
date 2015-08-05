@@ -18,15 +18,6 @@ title: Articles
 
 <section class="articles">
     <div class="container">
-        <div class="row">
-            <div class="column one-whole">
-                {% for post in site.posts %}
-                    {% if post.type == 'blog' %}
-                        <h4>{{ post.date | date: '%B %d, %Y' }}</h4>
-                        <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-                    {% endif %}
-                {% endfor %}
-            </div><!-- /.column -->
-        </div><!-- /.row -->
+        {% include list-posts.html type='blog' %}
     </div><!-- /.container -->
 </section><!-- /.articles -->
