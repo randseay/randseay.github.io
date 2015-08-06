@@ -99,7 +99,7 @@ module.exports = function(grunt) {
             jekyllBuild: {
                 command: "jekyll build --config _config-dev.yml"
             },
-            jekyllDeploy: {
+            jekyllPrepDeploy: {
                 command: "jekyll build --config _config.yml"
             }
         },
@@ -129,11 +129,11 @@ module.exports = function(grunt) {
         'sass'
     ]);
 
-    grunt.registerTask('deploy', [
+    grunt.registerTask('prep-deploy', [
         'newer:copy:fontawesome',
         'newer:copy:jquery',
         'newer:copy:fuselage',
-        'shell:jekyllDeploy',
+        'shell:jekyllPrepDeploy',
         'sass',
         'newer:copy:styles'
     ]);

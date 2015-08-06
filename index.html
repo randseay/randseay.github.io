@@ -120,7 +120,11 @@ js: /js/nav.js
             </div><!-- /.column -->
         </div><!-- /.row -->
 
-        {% include list-posts.html type='case' %}
+        {% include list-cases.html limit=2 %}
+
+        <hr>
+
+        <a href="{{ site.baseurl }}/work" class="button secondary radius">View more case studies</a>
     </div><!-- /.container -->
 </section><!-- /.cases -->
 
@@ -134,6 +138,10 @@ js: /js/nav.js
             </div><!-- /.column -->
         </div><!-- /.row -->
 
-        {% include list-posts.html type='blog' %}
+        {% include list-articles.html limit=2 %}
+
+        <hr>
+
+        <a href="{{ site.baseurl }}/articles" class="button secondary radius">View more articles</a>
     </div><!-- /.container -->
 </section><!-- /.articles -->
