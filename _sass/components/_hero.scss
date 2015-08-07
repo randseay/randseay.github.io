@@ -11,7 +11,7 @@
         }
 
         @include mq($large) {
-            margin-top: $spacing-unit * 2.5;
+            margin-top: $spacing-unit * 2;
         }
     }
 

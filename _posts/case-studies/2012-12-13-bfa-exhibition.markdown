@@ -13,22 +13,27 @@ It was held in the Colonel Eugene E. Myers Art Gallery in the Hughes Fine Art Ce
 
 Each of the five images are 20x28 and took approximately 15 hours to create. I painstakingly placed each word or character into the image, thus reconstructing the famous photograph the text was about.
 
-The first is the Flag Raising at Iwo Jima
+<figure class="image">
+    <img class="drop-shadow" src="{{ '/img/work/bfa-exhibition/bfa-flagraising.jpg' | prepend: site.baseurl }}" alt="Flag Raising at Iwo Jima">
+    <figcaption>The Flag Raising at Iwo Jima</figcaption>
+</figure>
 
-<img class="drop-shadow" src="{{ '/img/work/bfa-exhibition/bfa-flagraising.jpg' | prepend: site.baseurl }}" alt="Flag Raising at Iwo Jima">
+<figure class="image">
+    <img class="drop-shadow" src="{{ '/img/work/bfa-exhibition/bfa-tankman.jpg' | prepend: site.baseurl }}" alt="Tank Man">
+    <figcaption>The Tank Man</figcaption>
+</figure>
 
-The second is the Tank Man
+<figure class="image">
+    <img class="drop-shadow" src="{{ '/img/work/bfa-exhibition/bfa-vjday.jpg' | prepend: site.baseurl }}" alt="VJ (Victory over Japan) Day">
+    <figcaption>The VJ (Victory over Japan) Day</figcaption>
+</figure>
 
-<img class="drop-shadow" src="{{ '/img/work/bfa-exhibition/bfa-tankman.jpg' | prepend: site.baseurl }}" alt="Tank Man">
+<figure class="image">
+    <img class="drop-shadow" src="{{ '/img/work/bfa-exhibition/bfa-sudanfamine.jpg' | prepend: site.baseurl }}" alt="Sudan Famine">
+    <figcaption>The Sudan Famine</figcaption>
+</figure>
 
-The third is the VJ (Victory over Japan) Day
-
-<img class="drop-shadow" src="{{ '/img/work/bfa-exhibition/bfa-vjday.jpg' | prepend: site.baseurl }}" alt="VJ (Victory over Japan) Day">
-
-The fourth is the Sudan Famine
-
-<img class="drop-shadow" src="{{ '/img/work/bfa-exhibition/bfa-sudanfamine.jpg' | prepend: site.baseurl }}" alt="Sudan Famine">
-
-And lastly, the Self-Immolating Monk
-
-<img class="drop-shadow" src="{{ '/img/work/bfa-exhibition/bfa-monk.jpg' | prepend: site.baseurl }}" alt="Self-Immolating Monk">
+<figure class="image">
+    <img  class="drop-shadow" src="{{ '/img/work/bfa-exhibition/bfa-monk.jpg' | prepend: site.baseurl }}" alt="Self-Immolating Monk">
+    <figcaption>The Self-Immolating Monk</figcaption>
+</figure>

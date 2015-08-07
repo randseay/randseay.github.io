@@ -11,21 +11,21 @@ deck: "You won't drive collaborating designers crazy, and everything will be lin
 
 If you have spent any amount of time using InDesign or Illustrator, I guarantee you have wanted to line up the edges of two (or more) elements. This is one of the most<!--more--> fundamental uses of the program. I want a box. I want a rectangle. I want them the same height and I want them aligned with each other. Maybe it's a photo or text box or *anything* else. It would be common t o line up text boxes along margins, or visual elements to share some sort of imaginary line. Getting it "close enough" just can't cut it sometimes. You have a few options.
 
-### Panic
+## Panic
 
 Sadly, this is always an option.
 
-### Eyeball it
+## Eyeball it
 
 It's possible to zoom in *real* close and make micro-adjustments, it's also tedious and time-consuming. This can appear accurate, but in very precise designs, this is not going to do the trick. As someone becomes a more experienced designer, their attention to detail grows. Not being satisfied with "eyeballing it" is the mark of a maturing designer.
 
-### Use a white box or shape
+## Use a white box or shape
 
 Using a rectangle that is the same color as the background is a clever solution, but one with many drawbacks. By overlapping elements –even slightly– it creates potential hazards. Elements are different sizes (or shapes) than they appear, and any nudging or adjustments begin to alter the design in unintended ways. Depending on the media, artifacts can be created at print or upon exporting. Files that exhibit this method are a nightmare to inherit, and cannot be picked up easily by new designers.
 
 There is a place for overlapping shapes, but the resulting elements should always be "cut-out" using the `pathfinding` palette.
 
-### Use Smart Guides
+## Use Smart Guides
 
 *The shortcut is `cmd-U`*
 

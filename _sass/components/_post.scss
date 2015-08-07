@@ -19,3 +19,36 @@
     font-size: modular-scale(1) * 1.25;
     color: $gray;
 }
+
+figure.image {
+    position: relative;
+    margin-bottom: $spacing-unit * 2;
+
+    figcaption {
+        font-size: modular-scale(1) * 1.25;
+        font-style: italic;
+        text-align: center;
+        z-index: 10;
+
+        &:before {
+            border-top: 1px solid $gray-tint-text;
+            display: block;
+            content: '';
+            margin: ($spacing-unit / 2) 25% ($spacing-unit / 3);
+            width: 50%;
+        }
+
+        @include mq($xlarge) {
+            left: -125px;
+            position: absolute;
+            width: 110px;
+            top: 0;
+            text-align: right;
+
+            &:before {
+                margin: 0 0 ($spacing-unit / 3) 50%;
+            }
+
+        }
+    }
+}

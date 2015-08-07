@@ -15,7 +15,7 @@ Pixel-based files rely on a level of quality that is built into them, represente
 
 Here's the big point &mdash;the exact same concept holds true in the web development world, where pixels have ruled since the beginning time. Pixels are the comfort zone, but the future of the web is not pixel-friendly. Any given visual element needs to be viewed in a multitude of sizes and shapes. Meet the SVG (Scalable Vector Graphic), your new best friend. You can see that [support for the svg](http://caniuse.com/svg) is better than ever before, and will only continue to improve. In a world where displays are not only varying greatly in size, but becoming far more powerful (think retina), pixels are less and less suited to keep up. If you have poked around my site, you can see that I have used SVGs wherever possible, taking major steps in future-proofing it. Honestly, they are not as cut and dry to work with right now, but with resources like Chris Coyier's articles about [using SVGs](http://css-tricks.com/using-svg/) and [SVG fallbacks](http://css-tricks.com/svg-fallbacks/), as well as the [W3C Recommendation](http://www.w3.org/TR/SVG/Overview.html), there are definitely ways to learn.
 
-### Quick Reasons Why SVG is a Good Idea
+## Quick Reasons Why SVG is a Good Idea
 
 - Resolution Independent. (Bye-Bye pixel density)
 - Relatively small file size. (Depending on the complexity of the graphic.)

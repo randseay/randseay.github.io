@@ -11,22 +11,27 @@ deck: "The University of North Dakota celebrates Homecoming with an annual Spiri
 
 The University of North Dakota Homecoming Spirit Run was a 1.5 mile, 5K, and 10K family walk/run hosted by the UND Wellness Center. In this project I worked closely with the event coordinator, and handled nearly all<!--more--> the design work associated with it. This included developing the logo and branding the entire event. On the print side there were posters, flyers, table tents, route maps, handouts, T-shirts, and banners, including a parade banner and Start and Finish Banners. The Spirit Run was also promoted campus-wide using screens, web sliders, and both the Health & Wellness Unit and the Wellness Center Facebook page with customized Cover design. The event was very successful, and well, looked good.
 
-The logo design
+<figure class="image">
+    <img src="{{ '/img/work/green-gallop-2012/greengallop-logo.jpg' | prepend: site.baseurl }}" alt="Green Gallop 2012 Logo Design">
+    <figcaption>The logo design</figcaption>
+</figure>
 
-<img src="{{ '/img/work/green-gallop-2012/greengallop-logo.jpg' | prepend: site.baseurl }}" alt="Green Gallop 2012 Logo Design">
+<figure class="image">
+    <img src="{{ '/img/work/green-gallop-2012/greengallop-map.jpg' | prepend: site.baseurl }}" alt="Green Gallop 2012 Map Design">
+    <figcaption>The map design</figcaption>
+</figure>
 
-The map design
+<figure class="image">
+    <img src="{{ '/img/work/green-gallop-2012/greengallop-flyer.jpg' | prepend: site.baseurl }}" alt="Green Gallop 2012 Flyer Design">
+    <figcaption>The flyer design</figcaption>
+</figure>
 
-<img src="{{ '/img/work/green-gallop-2012/greengallop-map.jpg' | prepend: site.baseurl }}" alt="Green Gallop 2012 Map Design">
+<figure class="image">
+    <img src="{{ '/img/work/green-gallop-2012/greengallop-shirts.jpg' | prepend: site.baseurl }}" alt="Green Gallop 2012 Shirt Designs">
+    <figcaption>The shirt designs</figcaption>
+</figure>
 
-The flyer design
-
-<img src="{{ '/img/work/green-gallop-2012/greengallop-flyer.jpg' | prepend: site.baseurl }}" alt="Green Gallop 2012 Flyer Design">
-
-The shirt designs
-
-<img src="{{ '/img/work/green-gallop-2012/greengallop-shirts.jpg' | prepend: site.baseurl }}" alt="Green Gallop 2012 Shirt Designs">
-
-The banner designs
-
-<img class="drop-shadow" src="{{ '/img/work/green-gallop-2012/greengallop-banners.jpg' | prepend: site.baseurl }}" alt="Green Gallop 2012 Banner Designs">
+<figure class="image">
+    <img class="drop-shadow" src="{{ '/img/work/green-gallop-2012/greengallop-banners.jpg' | prepend: site.baseurl }}" alt="Green Gallop 2012 Banner Designs">
+    <figcaption>The banner designs</figcaption>
+</figure>

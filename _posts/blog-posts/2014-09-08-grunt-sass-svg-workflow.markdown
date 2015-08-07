@@ -32,7 +32,7 @@ I had just stumbled across a [screencast by Chris Coyier](http://css-tricks.com/
 }
 {% endhighlight %}
 
-### Styles (Sass and Foundation)
+## Styles (Sass and Foundation)
 
 With these tools installed, the next step was configuring Grunt to do my bidding.  I ended up creating a task that handles all of the styles for the project. It compiles my sass files, autoprefixes them, and compiles my customized version of Foundation. Here are the various sections of the `Gruntfile` that dealt with the styles.
 
@@ -76,7 +76,7 @@ The `foundation-custom.scss` file is a sass file that I created that contains ju
     "path/to/bower_components/foundation/scss/foundation.scss";
 {% endhighlight %}
 
-### SVG System
+## SVG System
 
 The other slick system I wanted to get working was the `svgstore` system that creates and utilizes SVG sprites. I place all of my svg files in an `svg` directory, and it grabs them all and embeds it into my html in a hidden location. From there, I can reference any SVG I would like, and it displays it where I need it. The setup is as follows.
 
