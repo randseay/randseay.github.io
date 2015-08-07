@@ -30,6 +30,14 @@ layout: default
                     {{% endif %}}
 
                     {{ content }}
+
+                    {% if page.categories contains 'case' %}
+                        {% include prev-next-cases.html%}
+                    {% endif %}
+
+                    {% if page.categories contains 'blog' %}
+                        {% include prev-next-articles.html %}
+                    {% endif %}
                 </div><!-- /.column -->
 
                 <div class="column one-whole medium-one-fourth">
