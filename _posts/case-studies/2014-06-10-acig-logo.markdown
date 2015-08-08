@@ -1,0 +1,33 @@
+---
+layout: post
+title: "Anderson Crain Investment Group Logo Design"
+date: 2014-06-10 19:43:38
+author: Rand Seay
+permalink: /case/acig-logo
+categories: Case
+tags: [Logo, Design]
+deck: "The Anderson-Crain Investment Group was looking for a logo that they could establish a brand around, and decided to work with us at Skosh. After moving through the creative process, we were quite happy with the outcome."
+---
+
+[Anderson-Crain Investment Group](http://anderson-crain.com/) is a private equity real estate company that is active in the Midwest, Southwest, and Northeast markets<!--more-->. At [Skosh](http://skosh.io), we had the pleasure of working with them to put together a logo and color scheme on which the could build their brand. The final result is a clean, competent, and professional look that helps them stand out in their field at a critical stage in their growth.
+
+Anderson-Crain is an organization that emulates integrity and professionalism, and their logo needed to do the same. The version of the logo that ended up winning out is a sturdy design of four blocks, with one letter in each block. The words are set in a serif font, in small caps.
+
+<figure class="image">
+    <img src="{{ '/img/work/acig-logo/acig-full.jpg' | prepend: site.baseurl }}" alt="Anderson-Craign Investment Group Logo">
+    <figcaption>The logo design in full color</figcaption>
+</figure>
+
+<figure class="image">
+    <img src="{{ '/img/work/acig-logo/acig-full-black.jpg' | prepend: site.baseurl }}" alt="Anderson-Crain Investment Group Logo (One Color)">
+    <figcaption>The logo design in one color</figcaption>
+</figure>
+
+## Brand Overview
+
+In addition to designing the logo and creating a full logo set, we felt it important to provide a brand overview, detailing the color formulas and general guidelines regarding the utilization of the logo.
+
+<figure class="image">
+    <img class="drop-shadow" src="{{ '/img/work/acig-logo/acig-brand.jpg' | prepend: site.baseurl }}" alt="Anderson-Crain Investment Group Brand Overview">
+    <figcaption>The brand overview</figcaption>
+</figure>
