@@ -20,7 +20,8 @@
     color: $gray;
 }
 
-figure.image {
+figure.image,
+figure.code {
     position: relative;
     margin-bottom: $spacing-unit * 2;
 

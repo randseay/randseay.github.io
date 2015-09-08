@@ -1,0 +1,19 @@
+@charset "utf-8";
+@import "functions";
+@import "normalize";
+@import "reset";
+@import "ratios";
+@import "defaults";
+@import "../settings";
+@import "mixins";
+
+// Forms with React post
+#myForm form {
+    margin-bottom: $spacing-unit;
+    padding: $spacing-unit / 2;
+
+    input[type='submit'] {
+        margin-bottom: 0;
+    }
+}
+

@@ -2,6 +2,32 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
+        browserify: {
+            options: {
+                browserifyOptions: {
+                    debug: true
+                },
+                transform: ['babelify'],
+                extensions: ['.jsx'],
+            },
+            dev: {
+                options: {
+                    alias: ['react:']  // Make React available externally for dev tools
+                },
+                src: ['js/_react/forms-with-react.jsx'],
+                dest: 'js/examples/forms-with-react.js'
+            },
+            prod: {
+                options: {
+                    browserifyOptions: {
+                        debug: false
+                    }
+                },
+                src: '<%= browserify.dev.src %>',
+                dest: '<%= browserify.dev.dest %>'
+            }
+        },
+
         concurrent: {
             serve: [
                 'sass',
@@ -74,6 +100,15 @@ module.exports = function(grunt) {
                         dest: "css/",
                         flatten: true,
                         filter: "isFile"
+                    },
+                    {
+                        expand: true,
+                        src: [
+                            "_site/css/examples/*.css"
+                        ],
+                        dest: "css/examples/",
+                        flatten: true,
+                        filter: "isFile"
                     }
                 ]
             }
@@ -86,9 +121,18 @@ module.exports = function(grunt) {
                 sourceMap: true
             },
             dist: {
-                files: {
-                    '_site/css/main.min.css': '_sass/main.scss'
-                }
+                files: [
+                    {
+                        '_site/css/main.min.css': '_sass/main.scss'
+                    },
+                    {
+                        expand: true,
+                        cwd: '_sass',
+                        src: ['examples/*.scss'],
+                        dest: '_site/css',
+                        ext: '.css'
+                    }
+                ]
             }
         },
 
@@ -108,6 +152,10 @@ module.exports = function(grunt) {
             styles: {
                 files: ['_sass/**/*.scss', '_sass/*.scss'],
                 tasks: ['sass']
+            },
+            react: {
+                files: ['js/_react/*.*'],
+                tasks: ['browserify:dev']
             }
         }
     });
@@ -115,6 +163,7 @@ module.exports = function(grunt) {
     require("load-grunt-tasks")(grunt);
 
     grunt.registerTask('serve', [
+        'newer:browserify:dev',
         'newer:copy:fontawesome',
         'newer:copy:jquery',
         'newer:copy:fuselage',
@@ -122,6 +171,7 @@ module.exports = function(grunt) {
     ]);
 
     grunt.registerTask('build', [
+        'newer:browserify:dev',
         'newer:copy:fontawesome',
         'newer:copy:jquery',
         'newer:copy:fuselage',
@@ -130,6 +180,7 @@ module.exports = function(grunt) {
     ]);
 
     grunt.registerTask('prep-deploy', [
+        'newer:browserify:prod',
         'newer:copy:fontawesome',
         'newer:copy:jquery',
         'newer:copy:fuselage',

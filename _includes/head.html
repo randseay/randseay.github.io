@@ -8,6 +8,9 @@
 
     <link rel="shortcut icon" href="{{ '/img/favicon.ico' | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ '/css/font-awesome.min.css' | prepend: site.baseurl }}">
+    {% for css in page.css %}
+        <link rel="stylesheet" href="{{ css | prepend: site.baseurl }}">
+    {% endfor %}
     <link rel="stylesheet" href="{{ '/css/main.min.css' | prepend: site.baseurl }}">
     <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,600' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'/>

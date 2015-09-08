@@ -28,5 +28,6 @@ exclude: [
 ]
 
 keep_files: [
-  '_site/css'
+  '_site/css',
+  '_site/css/examples'
 ]

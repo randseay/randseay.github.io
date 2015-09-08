@@ -11,7 +11,7 @@ deck: "Combine Grunt, Sass, and SVG to create a dynamic, efficient, and intuitiv
 
 We are right in the middle of building a web app at [Skosh Interactive](https://skosh.io). It was mere splash page and newsletter signup that needed to grow into Flask app with quite a few features –and ideally be mobile-friendly<!--more-->. Because our own front-end framework is not yet ready for the big leagues, we decided on [Foundation](http://foundation.zurb.com) –with [Sass](http://sass-lang.com/), of course. And SVG (I might be a little addicted, sue me).
 
-I had just stumbled across a [screencast by Chris Coyier](http://css-tricks.com/video-screencasts/screencast-134-tour-site-progress-built-jekyll-grunt-sass-svg-system/), and I was fired up about implementing a modern workflow. So I branched off and dove in. I tried to plan out all of the packages I would need and which tools I wanted to incorporate. It was `npm instal` this and `npm install` that. The project is private right now, but the `devDependencies` section of my `package.json` file looked like this.
+I had just stumbled across a [screencast by Chris Coyier](http://css-tricks.com/video-screencasts/screencast-134-tour-site-progress-built-jekyll-grunt-sass-svg-system/), and I was fired up about implementing a modern workflow. So I branched off and dove in. I tried to plan out all of the packages I would need and which tools I wanted to incorporate. It was `npm install` this and `npm install` that. The project is private right now, but the `devDependencies` section of my `package.json` file looked like this.
 
 {% highlight json %}
 {
