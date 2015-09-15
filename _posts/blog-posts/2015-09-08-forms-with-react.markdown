@@ -11,7 +11,7 @@ js: /js/examples/forms-with-react.js
 deck: "It can be tricky to handle elaborate form features such as repeatable sections and context-sensitive hiding or showing. Here is one approach using React."
 ---
 
-[React's form documentation](https://facebook.github.io/react/docs/forms.html) focuses on basic properties and outlines the differences between *controlled* and *uncontrolled* components within forms, but composing more advanced forms is left up to the imagination of the developer<!--more-->. The majority of one-off contact forms could be handled as a single component &mdash;`<Form />`, for instance.
+[React's form documentation](https://facebook.github.io/react/docs/forms.html) focuses on basic properties and outlines the differences between *controlled* and *uncontrolled* components within forms, but composing more advanced forms is left up to the imagination of the developer<!--more-->. What's more is that React is all about *one-way data flow down the component heirarchy*, which can be challenging to reconcile in form management. There is form creation to deal with, as well as form submission. This article will focus on form creation, an will not address handling form submissions in React. The majority of one-off contact forms could be handled as a single component &mdash;`<Form />`, for instance.
 
 <figure class='code'>
 {% highlight js %}
@@ -242,4 +242,16 @@ Output:
 
 <figure class='code'>
     <div id='myForm4' class='form-example drop-shadow'></div>
+</figure>
+
+Collecting a user's favorite color can be quite arbitrary, but this particular user base is rather opinionated when it comes to their favorite hue. So much so, in fact, that it becomes necessary to accommodate multiple color submissions for each user. A repeatable section can be used to to meet this need, but handling this in React seems to require some interpretation. 
+
+<figure class='code'>
+{% highlight js %}
+
+{% endhighlight %}
+</figure>
+
+<figure class='code'>
+    <div id='myForm5' class='form-example drop-shadow'></div>
 </figure>
