@@ -114,6 +114,24 @@ module.exports = function(grunt) {
             }
         },
 
+        notify: {
+            sass: {
+                options: {
+                    message: 'Sass compiled.'
+                }
+            },
+            js: {
+                options: {
+                    message: 'JavaScript compiled.'
+                }
+            },
+            serve: {
+                options: {
+                    message: 'Jekyll serving at http://127.0.0.1:4000/'
+                }
+            }
+        },
+
         sass: {
             options: {
                 includePaths: ['bower_components/fuselage/scss/components'],
@@ -151,11 +169,11 @@ module.exports = function(grunt) {
         watch: {
             styles: {
                 files: ['_sass/**/*.scss', '_sass/*.scss'],
-                tasks: ['sass']
+                tasks: ['sass', 'notify:sass']
             },
             react: {
                 files: ['js/_react/*.*'],
-                tasks: ['browserify:dev']
+                tasks: ['browserify:dev', 'notify:js']
             }
         }
     });
@@ -164,19 +182,25 @@ module.exports = function(grunt) {
 
     grunt.registerTask('serve', [
         'newer:browserify:dev',
+        'notify:js',
         'newer:copy:fontawesome',
         'newer:copy:jquery',
         'newer:copy:fuselage',
+        'sass',
+        'notify:sass',
+        'notify:serve',
         'concurrent:serve'
     ]);
 
     grunt.registerTask('build', [
         'newer:browserify:dev',
+        'notify:js',
         'newer:copy:fontawesome',
         'newer:copy:jquery',
         'newer:copy:fuselage',
         'shell:jekyllBuild',
-        'sass'
+        'sass',
+        'notify:sass'
     ]);
 
     grunt.registerTask('prep-deploy', [
