@@ -4,12 +4,11 @@ var React = require('react');
 
 var InputGroup = React.createClass({
     render: function() {
-        var inputInfo = this.props;
         var input;
-        switch (inputInfo.type) {
+        switch (this.props.type) {
             case 'textarea':
                 input = (
-                    <textarea id={this.props.id} name={this.props.id}></textarea>
+                    <textarea id={this.props.id} name={this.props.id} rows='5'></textarea>
                 );
                 break;
             case 'select':
