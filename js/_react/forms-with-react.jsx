@@ -2,40 +2,46 @@
 
 var React = require('react');
 
-var InputGroup = React.createClass({
+var Dropdown = React.createClass({
     render: function() {
-        var input;
-        switch (this.props.type) {
-            case 'textarea':
-                input = (
-                    <textarea id={this.props.id} name={this.props.id} rows='5'></textarea>
-                );
-                break;
-            case 'select':
-                input = (
-                    <select id={this.props.id} name={this.props.id}>
-                        {this.props.children}
-                    </select>
-                );
-                break;
-            default:
-                input = (
-                    <input id={this.props.id} name={this.props.id} type={this.props.type} />
-                );
-        }
         return (
             <label htmlFor={this.props.id}>{this.props.title}
-                {input}
+                <select id={this.props.id} name={this.props.id} onChange={this.props.handleChange}>
+                    {this.props.options.map(function(option, i) {
+                        return <option val={option} key={i}>{option}</option>
+                    })}
+                </select>
+            </label>
+        );
+    }
+});
+
+var InputGroup = React.createClass({
+    render: function() {
+        return (
+            <label htmlFor={this.props.id}>{this.props.title}
+                <input id={this.props.id} name={this.props.id} type={this.props.type} />
             </label>
         );
     }
 });
 
 var Form = React.createClass({
+    getInitialState: function() {
+        return {
+            otherColor: false
+        };
+    },
+    handleChangeColor: function(event) {
+        this.setState({
+            otherColor: event.target.value == 'Other'
+        });
+    },
     handleSubmit: function(event) {
         event.preventDefault();
     },
     render: function() {
+        var colorOptions = ['Red', 'Blue', 'Green', 'Other'];
         var inputs;
         switch (this.props.example) {
             case 1:
@@ -58,12 +64,27 @@ var Form = React.createClass({
                     <div>
                         <InputGroup id={'email3'} type={'email'} title={'Email Address'} />
                         <InputGroup id={'password3'} type={'password'} title={'Password'} />
-                        <InputGroup id={'color3'} type={'select'} title={'Favorite Color'} >
-                            <option val='red'>Red</option>
-                            <option val='blue'>Blue</option>
-                            <option val='green'>Green</option>
-                        </InputGroup>
-                        <InputGroup id={'description3'} type={'textarea'} title={'Additional Info'} />
+                        <Dropdown id={'color3'} type={'select'} title={'Favorite Color'} options={colorOptions} />
+                    </div>
+                );
+                break;
+            case 4:
+                inputs = (
+                    <div>
+                        <InputGroup id={'email4'} type={'email'} title={'Email Address'} />
+                        <InputGroup id={'password4'} type={'password'} title={'Password'} />
+
+                        <Dropdown
+                            id={'color4'}
+                            type={'select'}
+                            title={'Favorite Color'}
+                            options={colorOptions}
+                            handleChange={this.handleChangeColor} />
+
+                        {this.state.otherColor
+                            ? <InputGroup id={'otherColor4'} type={'text'} title={'Which Color?'} />
+                            : null
+                        }
                     </div>
                 );
         }
@@ -84,3 +105,4 @@ var Form = React.createClass({
 React.render(<Form example={1} />, document.getElementById('myForm1'));
 React.render(<Form example={2} />, document.getElementById('myForm2'));
 React.render(<Form example={3} />, document.getElementById('myForm3'));
+React.render(<Form example={4} />, document.getElementById('myForm4'));
