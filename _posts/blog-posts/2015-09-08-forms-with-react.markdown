@@ -23,7 +23,11 @@ var Form = React.createClass({
         return (
             <form>
                 <fieldset>
-                    <legend>Basic Stuff</legend>
+                    <legend>RSVP</legend>
+
+                    <label htmlFor='name'>Name
+                        <input id='name' name='name' type='text' />
+                    </label>
 
                     <label htmlFor='email'>Email Address
                         <input id='email' name='email' type='email' />
@@ -43,9 +47,9 @@ React.render(<Form />, document.getElementById('myForm'));
 
 Here's the output.
 
-<figure class='code'>
+<figure id='figure-1' class='code'>
     <div id='myForm1' class='form-example drop-shadow'></div>
-    <figcaption>Styles courtesy of <a href='http://fuselage.skosh.io'>Fuselage</a></figcaption>
+    <figcaption>Figure 1. Styles courtesy of <a href='http://fuselage.skosh.io'>Fuselage</a></figcaption>
 </figure>
 
 But moving into the realm of a form framework is not so simple. It quickly becomes necessary to abstract away elements of the form into other React components. A natural way to break up a web form is into **input groups** &mdash;that is, a label and an element that takes input. This covers the majority of use cases that forms must handle, as evidenced by personal experience and the forms that can be built for [Foundation](http://foundation.zurb.com/docs/components/forms.html) or [Bootstrap](http://getbootstrap.com/components/#input-groups). Here is what a component `<InputGroup />` could look like.
@@ -73,8 +77,8 @@ var Form = React.createClass({
                 <fieldset>
                     <legend>Basic Stuff</legend>
 
+                    <InputGroup id={'name'} type={'text'} title={'Name'} />
                     <InputGroup id={'email'} type={'email'} title={'Email Address'} />
-                    <InputGroup id={'password'} type={'password'} title={'Password'} />
 
                     <input type='submit' />
                 </fieldset>
@@ -89,8 +93,9 @@ React.render(<Form />, document.getElementById('myForm'));
 
 The output is the same, but now the `<InputGroup />` component can be used repeatedly for other input groups.
 
-<figure class='code'>
+<figure id='figure-2' class='code'>
     <div id='myForm2' class='form-example drop-shadow'></div>
+    <figcaption>Figure 2.</figcaption>
 </figure>
 
 Creating the `<InputGroup />` component is a great first step, but it cannot yet handle textareas, selects, inline checkboxes, or inline radio buttons. It could be modified to handle these elements, or new React components could be used. The following example shows the functionality of a `<select>` element offloaded to a new component, called `<Dropdown />`, which accepts an array of options that render as the `<select>`'s options.
@@ -128,20 +133,20 @@ var InputGroup = React.createClass({
 // Form component
 var Form = React.createClass({
     render: function() {
-        var colorOptions = ['Red', 'Blue', 'Green', 'Other'];
+        var dietaryOptions = ['None', 'Gluten-free', 'Nut-free', 'Vegan', 'Other'];
         return (
             <form>
                 <fieldset>
-                    <legend>Basic Stuff</legend>
+                    <legend>RSVP</legend>
 
+                    <InputGroup id={'name'} type={'text'} title={'Name'} />
                     <InputGroup id={'email'} type={'email'} title={'Email Address'} />
-                    <InputGroup id={'password'} type={'password'} title={'Password'} />
 
                     <Dropdown 
-                        id={'color'} 
+                        id={'diet'} 
                         type={'select'} 
-                        title={'Favorite Color'} 
-                        options={colorOptions} />
+                        title={'Dietary Needs'} 
+                        options={dietaryOptions} />
 
                     <input type='submit' />
                 </fieldset>
@@ -156,11 +161,12 @@ React.render(<Form />, document.getElementById('myForm'));
 
 Output.
 
-<figure class='code'>
+<figure id='figure-3' class='code'>
     <div id='myForm3' class='form-example drop-shadow'></div>
+    <figcaption>Figure 3.</figcaption>
 </figure>
 
-In the context of this example, selecting "Other" from the dropdown should show a new text input in which the user could specify another color. Subscribing to the [React line of thinking](https://facebook.github.io/react/docs/interactivity-and-dynamic-uis.html#what-components-should-have-state), this should be managed using the `<Form />` component's **state**. The change is handled in a new method, *handleChangeColor*, which is passed to `<Dropdown />` as a property.
+In the context of this example, selecting "Other" from the dropdown should show a new text input in which the user could specify a dietary consideration. Subscribing to the [React line of thinking](https://facebook.github.io/react/docs/interactivity-and-dynamic-uis.html#what-components-should-have-state), this should be managed using the `<Form />` component's **state**. The change is handled in a new method, *handleChangeDiet*, which is passed to `<Dropdown />` as a property.
 
 <figure class='code'>
 {% highlight js %}
@@ -171,7 +177,7 @@ var Dropdown = React.createClass({
     render: function() {
         return (
             <label htmlFor={this.props.id}>{this.props.title}
-                // Set 'onChange' to the passed-in change handler
+                {/* Set 'onChange' to the passed-in change handler */}
                 <select id={this.props.id} name={this.props.id} onChange={this.props.handleChange}>
                     {this.props.options.map(function(option, i) {
                         return <option val={option} key={i}>{option}</option>
@@ -197,33 +203,32 @@ var InputGroup = React.createClass({
 var Form = React.createClass({
     getInitialState: function() {
         return {
-            otherColor: false
+            otherDiet: false
         };
     },
-    handleChangeColor: function(event) {
+    handleChangeDiet: function(event) {
         this.setState({
-            otherColor: event.target.value == 'Other'
+            otherDiet: event.target.value == 'Other'
         });
     },
     render: function() {
-        var colorOptions = ['Red', 'Blue', 'Green', 'Other'];
         return (
             <form>
                 <fieldset>
-                    <legend>Basic Stuff</legend>
+                    <legend>RSVP</legend>
 
+                    <InputGroup id={'name'} type={'text'} title={'Name'} />
                     <InputGroup id={'email'} type={'email'} title={'Email Address'} />
-                    <InputGroup id={'password'} type={'password'} title={'Password'} />
 
                     <Dropdown 
-                        id={'color'} 
+                        id={'diet'} 
                         type={'select'} 
-                        title={'Favorite Color'} 
-                        options={colorOptions} 
-                        handleChange={this.handleChangeColor} /> // Set up the change handler
+                        title={'Dietary Considerations'} 
+                        options={DIETARY_OPTIONS} 
+                        handleChange={this.handleChangeDiet} /> {/* Set up the change handler */}
 
-                    {this.state.otherColor
-                        ? <InputGroup id={'otherColor4'} type={'text'} title={'Which Color?'} />
+                    {this.state.otherDiet
+                        ? <InputGroup id={'otherDiet'} type={'text'} title={'Please Specify'} />
                         : null
                     }
 
@@ -234,24 +239,156 @@ var Form = React.createClass({
     }
 });
 
+var DIETARY_OPTIONS = ['None', 'Gluten-free', 'Nut-free', 'Vegan', 'Other'];
+
 React.render(<Form />, document.getElementById('myForm'));
 {% endhighlight %}
 </figure>
 
 Output:
 
-<figure class='code'>
+<figure id='figure-4' class='code'>
     <div id='myForm4' class='form-example drop-shadow'></div>
+    <figcaption>Figure 4.</figcaption>
 </figure>
 
-Collecting a user's favorite color can be quite arbitrary, but this particular user base is rather opinionated when it comes to their favorite hue. So much so, in fact, that it becomes necessary to accommodate multiple color submissions for each user. A repeatable section can be used to to meet this need, but handling this in React seems to require some interpretation. 
+Another feasible expecation for this example form is a way to share it with multiple people, in this case it will be as few as one or as many as five. A repeatable section can be used to to meet this need, but handling this in React seems to require some interpretation regarding state. <!-- FINISH -->
 
 <figure class='code'>
 {% highlight js %}
+var React = require('react');
 
+// Repeatable component
+var Repeatable = React.createClass({
+    getInitialState: function() {
+        return {
+            repeatedItems: [new Array().concat(this.props.children)]
+        };
+    },
+    handleClick: function(cmd) {
+        var newItems = this.state.repeatedItems;
+
+        if (cmd == 'inc' && newItems.length < this.props.maxRepeat) {
+            newItems.push(new Array().concat(this.props.children));
+        } else if (cmd == 'dec' && newItems.length > this.props.minRepeat) {
+            newItems.splice(-1,1);
+        }
+
+        this.setState({
+            repeatedItems: newItems
+        });
+    },
+    render: function() {
+        var titleRepeat = this.props.titleRepeat;
+        var repeatedItems = this.state.repeatedItems;
+        return (
+            <div>
+                {this.state.repeatedItems.map(function(itemGroup, i) {
+                    return (
+                        <fieldset key={i + 1}>
+                            <legend>{titleRepeat}</legend>
+
+                            {itemGroup.map(function(item) {
+                                return React.cloneElement(item, {id: item.props.id + '-' + (i + 1)});
+                            })}
+                        </fieldset>
+                    );
+                })}
+
+                <a onClick={this.handleClick.bind(this, 'dec')}>Remove</a>
+                <a onClick={this.handleClick.bind(this, 'inc')}>Add</a>
+            </div>
+        );
+    }
+});
+
+// Dropdown component
+var Dropdown = React.createClass({
+    render: function() {
+        return (
+            <label htmlFor={this.props.id}>{this.props.title}
+                <select id={this.props.id} name={this.props.id} onChange={this.props.handleChange}>
+                    {this.props.options.map(function(option, i) {
+                        return <option val={option} key={i}>{option}</option>
+                    })}
+                </select>
+            </label>
+        );
+    }
+});
+
+// InputGroup component
+var InputGroup = React.createClass({
+    render: function() {
+        return (
+            <label htmlFor={this.props.id}>{this.props.title}
+                <input id={this.props.id} name={this.props.id} type={this.props.type} />
+            </label>
+        );
+    }
+});
+
+// Form component
+var Form = React.createClass({
+    getInitialState: function() {
+        return {
+            otherDiet: false
+        };
+    },
+    handleChangeDiet: function(event) {
+        this.setState({
+            otherDiet: event.target.value == 'Other'
+        });
+    },
+    render: function() {
+        return (
+            <form>
+                <fieldset>
+                    <legend>Basic Stuff</legend>
+
+                    <InputGroup id={'name'} type={'text'} title={'Name'} />
+                    <InputGroup id={'email'} type={'email'} title={'Email Address'} />
+
+                    <Dropdown
+                        id={'diet'}
+                        type={'select'}
+                        title={'Dietary Considerations'}
+                        options={DIETARY_OPTIONS}
+                        handleChange={this.handleChangeDiet} />
+
+                    {this.state.otherDiet
+                        ? <InputGroup id={'otherDiet'} type={'text'} title={'Please Specify'} />
+                        : null
+                    }
+
+                    <Repeatable minRepeat={1} maxRepeat={5} titleRepeat='Invitee'>
+                            <InputGroup 
+                                id={'inviteeName'} 
+                                type='text' 
+                                title='Invite Name' 
+                                key={'inviteeName'} />
+
+                            <InputGroup 
+                                id={'inviteeEmail'} 
+                                type='email' 
+                                title='Invitee Email' 
+                                key={'inviteeEmail'} />
+                    </Repeatable>
+
+                    <input type='submit' />
+                </fieldset>
+            </form>
+        );
+    }
+});
+
+var DIETARY_OPTIONS = ['None', 'Gluten-free', 'Nut-free', 'Vegan', 'Other'];
+
+React.render(<Form />, document.getElementById('myForm'));
 {% endhighlight %}
 </figure>
 
-<figure class='code'>
+<figure id='figure-5' class='code'>
     <div id='myForm5' class='form-example drop-shadow'></div>
+    <figcaption>Figure 5.</figcaption>
 </figure>

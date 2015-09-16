@@ -13,7 +13,21 @@
     padding: $spacing-unit / 2;
 
     input[type='submit'] {
+        clear: both;
+        float: left;
         margin-bottom: 0;
     }
 }
 
+a.repeat-control {
+    cursor: pointer;
+    float: right;
+
+    &:nth-child(n+2) {
+        margin-right: $spacing-unit / 2;
+    }
+}
+
+fieldset fieldset {
+    margin-bottom: $spacing-unit;
+}

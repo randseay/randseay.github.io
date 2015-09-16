@@ -2,6 +2,48 @@
 
 var React = require('react');
 
+var Repeatable = React.createClass({
+    getInitialState: function() {
+        return {
+            repeatedItems: [new Array().concat(this.props.children)]
+        };
+    },
+    handleClick: function(cmd) {
+        var newItems = this.state.repeatedItems;
+
+        if (cmd == 'inc' && newItems.length < this.props.maxRepeat) {
+            newItems.push(new Array().concat(this.props.children));
+        } else if (cmd == 'dec' && newItems.length > this.props.minRepeat) {
+            newItems.splice(-1,1);
+        }
+
+        this.setState({
+            repeatedItems: newItems
+        });
+    },
+    render: function() {
+        var titleRepeat = this.props.titleRepeat;
+        return (
+            <div>
+                {this.state.repeatedItems.map(function(itemGroup, i) {
+                    return (
+                        <fieldset key={i + 1}>
+                            <legend>{titleRepeat}</legend>
+
+                            {itemGroup.map(function(item) {
+                                return React.cloneElement(item, {id: item.props.id + '-' + (i + 1)});
+                            })}
+                        </fieldset>
+                    );
+                })}
+
+                <a onClick={this.handleClick.bind(this, 'dec')} className='button tiny repeat-control'>Remove</a>
+                <a onClick={this.handleClick.bind(this, 'inc')} className='button tiny repeat-control'>Add</a>
+            </div>
+        );
+    }
+});
+
 var Dropdown = React.createClass({
     render: function() {
         return (
@@ -29,69 +71,109 @@ var InputGroup = React.createClass({
 var Form = React.createClass({
     getInitialState: function() {
         return {
-            otherColor: false
+            otherDiet: false
         };
     },
-    handleChangeColor: function(event) {
+    handleChangeDiet: function(event) {
         this.setState({
-            otherColor: event.target.value == 'Other'
+            otherDiet: event.target.value == 'Other'
         });
     },
     handleSubmit: function(event) {
         event.preventDefault();
     },
     render: function() {
-        var colorOptions = ['Red', 'Blue', 'Green', 'Other'];
         var inputs;
         switch (this.props.example) {
             case 1:
                 inputs = (
-                    <label htmlFor='email'>Email Address
-                        <input id='email' name='email' type='email' />
-                    </label>
+                    <div>
+                        <label htmlFor='name'>Name
+                            <input id='name' name='name' type='text' />
+                        </label>
+
+                        <label htmlFor='email'>Email Address
+                            <input id='email' name='email' type='email' />
+                        </label>
+                    </div>
                 );
                 break;
             case 2:
                 inputs = (
                     <div>
+                        <InputGroup id={'name2'} type={'text'} title={'Name'} />
                         <InputGroup id={'email2'} type={'email'} title={'Email Address'} />
-                        <InputGroup id={'password2'} type={'password'} title={'Password'} />
                     </div>
                 );
                 break;
             case 3:
                 inputs = (
                     <div>
+                        <InputGroup id={'name3'} type={'text'} title={'Name'} />
                         <InputGroup id={'email3'} type={'email'} title={'Email Address'} />
-                        <InputGroup id={'password3'} type={'password'} title={'Password'} />
-                        <Dropdown id={'color3'} type={'select'} title={'Favorite Color'} options={colorOptions} />
+                        <Dropdown id={'diet3'} type={'select'} title={'Dietary Needs'} options={DIETARY_OPTIONS} />
                     </div>
                 );
                 break;
             case 4:
                 inputs = (
                     <div>
+                        <InputGroup id={'name4'} type={'text'} title={'Name'} />
                         <InputGroup id={'email4'} type={'email'} title={'Email Address'} />
-                        <InputGroup id={'password4'} type={'password'} title={'Password'} />
 
                         <Dropdown
-                            id={'color4'}
+                            id={'diet4'}
                             type={'select'}
-                            title={'Favorite Color'}
-                            options={colorOptions}
-                            handleChange={this.handleChangeColor} />
+                            title={'Dietary Considerations'}
+                            options={DIETARY_OPTIONS}
+                            handleChange={this.handleChangeDiet} />
 
-                        {this.state.otherColor
-                            ? <InputGroup id={'otherColor4'} type={'text'} title={'Which Color?'} />
+                        {this.state.otherDiet
+                            ? <InputGroup id={'otherDiet4'} type={'text'} title={'Please Specify'} />
                             : null
                         }
                     </div>
                 );
+                break;
+            case 5:
+                inputs= (
+                    <div>
+                        <InputGroup id={'name5'} type={'text'} title={'Name'} />
+                        <InputGroup id={'email5'} type={'email'} title={'Email Address'} />
+
+                        <Dropdown
+                            id={'diet5'}
+                            type={'select'}
+                            title={'Dietary Considerations'}
+                            options={DIETARY_OPTIONS}
+                            handleChange={this.handleChangeDiet} />
+
+                        {this.state.otherDiet
+                            ? <InputGroup id={'otherDiet5'} type={'text'} title={'Please Specify'} />
+                            : null
+                        }
+
+                        <Repeatable minRepeat={1} maxRepeat={5} titleRepeat='Invitee'>
+                            <InputGroup
+                                id={'inviteeName5'}
+                                type='text'
+                                title='Invite Name'
+                                key={'inviteeName5'} />
+
+                            <InputGroup
+                                id={'inviteeEmail5'}
+                                type='email'
+                                title='Invitee Email'
+                                key={'inviteeEmail5'} />
+                        </Repeatable>
+                    </div>
+                );
+                break;
         }
         return (
             <form onSubmit={this.handleSubmit}>
                 <fieldset>
-                    <legend>Basic Stuff</legend>
+                    <legend>RSVP</legend>
 
                     {inputs}
 
@@ -102,7 +184,10 @@ var Form = React.createClass({
     }
 });
 
+var DIETARY_OPTIONS = ['None', 'Gluten-free', 'Nut-free', 'Vegan', 'Other'];
+
 React.render(<Form example={1} />, document.getElementById('myForm1'));
 React.render(<Form example={2} />, document.getElementById('myForm2'));
 React.render(<Form example={3} />, document.getElementById('myForm3'));
 React.render(<Form example={4} />, document.getElementById('myForm4'));
+React.render(<Form example={5} />, document.getElementById('myForm5'));
