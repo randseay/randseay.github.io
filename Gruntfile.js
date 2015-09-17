@@ -186,6 +186,7 @@ module.exports = function(grunt) {
         'newer:copy:fontawesome',
         'newer:copy:jquery',
         'newer:copy:fuselage',
+        'newer:copy:styles',
         'sass',
         'notify:sass',
         'notify:serve',
@@ -198,6 +199,7 @@ module.exports = function(grunt) {
         'newer:copy:fontawesome',
         'newer:copy:jquery',
         'newer:copy:fuselage',
+        'newer:copy:styles',
         'shell:jekyllBuild',
         'sass',
         'notify:sass'
