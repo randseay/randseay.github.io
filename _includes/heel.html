@@ -4,3 +4,4 @@
 {% for script in page.js %}
     <script src='{{ page.js | prepend: site.baseurl }}'></script>
 {% endfor %}
+{% include google-analytics.html %}

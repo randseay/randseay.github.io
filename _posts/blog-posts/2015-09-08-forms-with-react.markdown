@@ -1,17 +1,16 @@
 ---
 layout: post
 title: "Not-so-simple Forms with React"
-date: 2015-09-08 14:47:47
+date: 2015-09-17 14:05:59
 author: Rand Seay
 categories: blog
+comments: true
 tags: [Web Development, React, Forms]
 permalink: /posts/forms-with-react
 css: /css/examples/forms-with-react.css
 js: /js/examples/forms-with-react.js
 deck: "It can be tricky to handle elaborate form features such as repeatable sections and context-sensitive hiding or showing. Here is one approach using React."
 ---
-
-## Preface
 
 [React's form documentation](https://facebook.github.io/react/docs/forms.html) focuses on basic properties and outlines the differences between *controlled* and *uncontrolled* components within forms, but composing more advanced forms is left up to the imagination of the developer<!--more-->. What's more is that React is all about *one-way data flow down the component heirarchy*, which can be challenging to reconcile in form management. There is form creation to deal with, as well as form submission. This article will focus on form creation, an will not address handling form submissions in React. The majority of one-off contact forms could be handled as a single component &mdash;`<Form />`, for instance.
 
@@ -432,5 +431,5 @@ The `<Repeatable />` component could do with quite a few optimizations to make i
 
 ## Closing Thoughts
 
-React is a powerful tool for building interfaces, but make sure you are using the right tool for the job. Functional and aesthetic consistency within a large number of forms may warrant a framework like what has been begun here, but a large number of forms can be handled on a case by case basis, with an emphasis on data collection rather than form creation.
+React is a powerful tool for building interfaces, but make sure you are using the right tool for the job. Functional and aesthetic consistency within a large number of forms may warrant a framework like what has begun to form here, but a vast number of forms can be handled on a case by case basis. React is enjoyable to play with, but can become unruly very easily. There are many ways to solve a problem, and the examples presented are one potential way.
 
