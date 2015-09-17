@@ -4,6 +4,7 @@ title: "Please Use Smart Guides in InDesign, Illustrator"
 date: 2013-08-17 15:19:47
 author: Rand Seay
 categories: blog
+comments: true
 tags: [Design, Illustrator, InDesign]
 permalink: /posts/please-use-smart-guides
 deck: "You won't drive collaborating designers crazy, and everything will be lined up in a simple, dependable, and clean way."

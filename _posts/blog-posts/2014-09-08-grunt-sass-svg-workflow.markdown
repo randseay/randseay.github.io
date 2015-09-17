@@ -4,6 +4,7 @@ title: "A Grunt, Sass, and SVG Workflow"
 date: 2014-09-08 18:37:21
 author: Rand Seay
 categories: Blog
+comments: true
 tags: [Web Development, SVG, Grunt, Sass]
 permalink: /posts/grunt-sass-svg-workflow
 deck: "Combine Grunt, Sass, and SVG to create a dynamic, efficient, and intuitive development environment. Here's one way to do it."

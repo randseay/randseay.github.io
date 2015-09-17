@@ -4,6 +4,7 @@ title: "SVG Should Be Your First Choice"
 date: 2013-08-20 18:37:21
 author: Rand Seay
 categories: Blog
+comments: true
 tags: [Web Development, SVG]
 permalink: /posts/svgs-should-be-your-first-choice
 deck: "With great browser support and increasingly diverse ways of accessing the web, you can stop worrying about the quality of your graphics by using SVG."
