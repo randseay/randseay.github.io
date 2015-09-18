@@ -21,6 +21,8 @@
     font-size: modular-scale(3);
     line-height: 60px;
     margin-bottom: 0;
+    position: relative;
+    z-index: 101;
 
     img {
         max-height: 40px;
@@ -28,6 +30,9 @@
 }
 
 #menu-icon {
+    position: relative;
+    z-index: 101;
+
     li {
         display: block;
         float: right;
@@ -38,11 +43,46 @@
         text-align: center;
 
         svg {
-            width: 27px;
+            cursor: pointer;
             height: 22px;
+            width: 27px;
 
             path {
                 fill: $brand-secondary;
+            }
+
+            .menu-first-bar,
+            .menu-third-bar {
+                transition-duration: 0.15s;
+                transform-origin: 50% 50%;
+            }
+
+            .menu-second-bar {
+                transition-delay: 0.15s;
+                transition-duration: 0.15s;
+                transition-property: opacity;
+            }
+
+            &.is-active {
+                .menu-first-bar,
+                .menu-third-bar {
+                    transition-delay: 0.15s;
+                }
+
+                .menu-first-bar {
+                    transform: translateY(6px) rotate(45deg);
+                    -webkit-transform: translateY(6px) rotate(45deg);
+                }
+
+                .menu-second-bar {
+                    opacity: 0;
+                    transition-duration: 0s;
+                }
+
+                .menu-third-bar {
+                    transform: translateY(-6px) rotate(-45deg);
+                    -webkit-transform: translateY(-6px) rotate(-45deg);
+                }
             }
         }
     }
@@ -53,27 +93,34 @@
 }
 
 .site-nav {
-    background: rgba(230,230,230,.9);
+    background: rgba(230,230,230,0.9);
+    bottom: 0;
     position: fixed;
     left: 0;
+    list-style: none;
+    right: 0;
     top: 0;
     width: 100%;
     transform: translateY(-100%);
     -webkit-transform: translateY(-100%);
-    transition-property: transform;
-    transition-duration: 0.4s;
+    transition-property: display transform;
+    transition-duration: 0.25s;
+    z-index: 1;
 
     &.is-visible {
         height: 100%;
+        opacity: 1;
         padding-top: 25%;
-        top: 60px;
+        top: 0;
         transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transition-duration: 0.25s;
 
         li {
             display: block;
             font-size: modular-scale(3);
             list-style: none;
-            padding: $spacing-unit / 2;
+            padding: $spacing-unit / 3;
             text-align: center;
         }
     }
@@ -83,16 +130,10 @@
         height: auto;
         width: auto;
         left: auto;
-        list-style: none;
         position: absolute;
         right: $spacing-unit / 2;
         text-align: right;
-        top: 75px;
-
-        .page-link {
-            display: block;
-            padding: 5px 10px;
-        }
+        top: 35px;
 
         li {
             display: inline-block;

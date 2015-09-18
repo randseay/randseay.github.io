@@ -1,6 +1,7 @@
 /**
  * Base
  */
+
 body {
     background: url('../img/stripe-bg2.png') fixed;
 }
@@ -52,4 +53,11 @@ hr {
  */
 code, pre, kbd {
     font-size: 1.45rem;
+}
+
+/**
+ * Helpers
+ */
+.lock-position {
+    overflow: hidden;
 }

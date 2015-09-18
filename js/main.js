@@ -9,9 +9,23 @@ $(document).keydown(function(e) {
 // Main
 $(document).ready(function() {
     $('#menu-icon').click(function() {
+        $('#menu-icon li svg').attr('class', function(index, attr) {
+            return attr == 'is-active' ? null : 'is-active';
+        });
         $('.site-nav').toggleClass('is-visible');
-        $('.site-nav a.button').toggleClass('small');
-    })
+        $('html, body').attr('class', function(index, attr) {
+            return $('.site-nav').hasClass('is-visible') ? 'lock-position' : null;
+            if ($('.site-nav').hasClass('is-visible')) {
+            }
+        });
+        if ($('.site-nav a.button').hasClass('small')) {
+            $('.site-nav a.button').removeClass('small');
+        } else {
+            setTimeout(function() {
+                $('.site-nav a.button').addClass('small');
+            }, 250);
+        }
+    });
 
     // Modal helpers
     $('#helpModal .modal-close').on('click', function() {
@@ -21,8 +35,12 @@ $(document).ready(function() {
     // media query change
     function WidthChange(mq) {
         if (mq.matches) {
+            $('#menu-icon li svg').attr('class', function(index, attr) {
+                return null;
+            });
             $('.site-nav').removeClass('is-visible');
-        $('.site-nav a.button').addClass('small');
+            $('html, body').removeClass('lock-position');
+            $('.site-nav a.button').addClass('small');
         }
     }
 
