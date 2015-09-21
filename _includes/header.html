@@ -21,7 +21,7 @@
         <nav class="site-nav">
             {% assign sorted_pages = site.pages | sort: 'nav_order' %}
             {% for node in sorted_pages| sort: title %}
-                {% if node.layout == "page" %}
+                {% if node.layout == "page" and node.nav_order %}
                     {% assign url_parts = node.url | split: "/" %}
                     {% if url_parts.last == "index.html" %}
                     <li>
