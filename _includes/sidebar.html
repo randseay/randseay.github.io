@@ -7,4 +7,15 @@
         code, and <a href="https://twitter.com/{{ site.twitter_username }}">
         tweet</a> about my experiences.
     </p>
+
+    {% if page.categories contains 'case' %}
+        <a class="right button extended" href="{{ '/feed.cases.xml' | site.baseurl }}">
+            Case Studies via RSS <i class='fa fa-rss'></i>
+        </a>
+    {% else if page.categories contains 'articles' %}
+        <a class="right button extended" href="{{ '/feed.articles.xml' | site.baseurl }}">
+            Articles via RSS <i class='fa fa-rss'></i>
+        </a>
+    {% endif %}
 </aside>
+
