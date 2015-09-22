@@ -1,13 +1,16 @@
 ---
-layout: post
-title: "A Grunt, Sass, and SVG Workflow"
-date: 2014-09-08 18:37:21
 author: Rand Seay
 categories: Blog
 comments: true
-tags: [Web Development, SVG, Grunt, Sass]
-permalink: /posts/grunt-sass-svg-workflow
+date: 2014-09-08 18:37:21
 deck: "Combine Grunt, Sass, and SVG to create a dynamic, efficient, and intuitive development environment. Here's one way to do it."
+layout: post
+permalink: /posts/grunt-sass-svg-workflow
+published: true
+sitemap:
+    priority: 0.75
+tags: [Web Development, SVG, Grunt, Sass]
+title: "A Grunt, Sass, and SVG Workflow"
 ---
 
 We are right in the middle of building a web app at [Skosh Interactive](https://skosh.io). It was mere splash page and newsletter signup that needed to grow into Flask app with quite a few features –and ideally be mobile-friendly<!--more-->. Because our own front-end framework is not yet ready for the big leagues, we decided on [Foundation](http://foundation.zurb.com) –with [Sass](http://sass-lang.com/), of course. And SVG (I might be a little addicted, sue me).

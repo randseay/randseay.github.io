@@ -1,13 +1,14 @@
 ---
-layout: post
-title: "SVG Should Be Your First Choice"
-date: 2013-08-20 18:37:21
 author: Rand Seay
 categories: Blog
 comments: true
-tags: [Web Development, SVG]
-permalink: /posts/svgs-should-be-your-first-choice
+date: 2013-08-20 18:37:21
 deck: "With great browser support and increasingly diverse ways of accessing the web, you can stop worrying about the quality of your graphics by using SVG."
+layout: post
+permalink: /posts/svgs-should-be-your-first-choice
+published: true
+tags: [Web Development, SVG]
+title: "SVG Should Be Your First Choice"
 ---
 
 As a graphic designer with plenty of print experience, The *first* thing I reach for when I need a visual element is a vector-based file. If there are none to be had, something inside of me sighs sadly as I settle for a pixelled fallback<!--more-->. Here's why.

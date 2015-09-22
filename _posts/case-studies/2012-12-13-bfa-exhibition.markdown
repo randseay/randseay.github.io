@@ -1,12 +1,13 @@
 ---
-layout: post
-title: "BFA Senior Exhibition: Pictures Worth Countless Words"
-date: 2012-12-13 23:32:14
 author: Rand Seay
-permalink: /case/bfa-exhibition
 categories: Case
-tags: [Show]
+date: 2012-12-13 23:32:14
 deck: "The final step in my Bachelor of Fine Arts in Graphic Design & New Art Media, my Senior Exhibition was a culmination of my art education."
+layout: post
+permalink: /case/bfa-exhibition
+published: true
+tags: [Show]
+title: "BFA Senior Exhibition: Pictures Worth Countless Words"
 ---
 
 It was held in the Colonel Eugene E. Myers Art Gallery in the Hughes Fine Art Center on the University of North Dakota campus from November 26-29. Entitled "Pictures Worth Countless Words", I recreated well-known photographs<!--more--> using only type, which was generated from my research of each particular photograph. Articles, interviews, accounts, and even diary exerpts were the building blocks of my final designs. I received tremendous feedback and couldn't have been more pleased with the outcome.

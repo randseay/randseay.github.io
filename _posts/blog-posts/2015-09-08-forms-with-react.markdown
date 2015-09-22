@@ -1,15 +1,18 @@
 ---
-layout: post
-title: "Not-so-simple Forms with React"
-date: 2015-09-17 14:05:59
 author: Rand Seay
 categories: blog
 comments: true
-tags: [Web Development, React, Forms]
-permalink: /posts/forms-with-react
 css: /css/examples/forms-with-react.css
-js: /js/examples/forms-with-react.js
+date: 2015-09-17 14:05:59
 deck: "It can be tricky to handle elaborate form features such as repeatable sections and context-sensitive hiding or showing. Here is one approach using React."
+js: /js/examples/forms-with-react.js
+layout: post
+permalink: /posts/forms-with-react
+published: true
+sitemap:
+    priority: 1.0
+tags: [Web Development, React, Forms]
+title: "Not-so-simple Forms with React"
 ---
 
 [React's form documentation](https://facebook.github.io/react/docs/forms.html) focuses on basic properties and outlines the differences between *controlled* and *uncontrolled* components within forms, but composing more advanced forms is left up to the imagination of the developer<!--more-->. What's more is that React is all about *one-way data flow down the component heirarchy*, which can be challenging to reconcile in form management. There is form creation to deal with, as well as form submission. This article will focus on form creation, an will not address handling form submissions in React. The majority of one-off contact forms could be handled as a single component &mdash;`<Form />`, for instance.

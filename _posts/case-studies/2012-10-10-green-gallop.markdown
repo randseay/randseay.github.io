@@ -1,12 +1,13 @@
 ---
-layout: post
-title: "Green Gallop 2012"
-date: 2012-10-10 11:31:21
 author: Rand Seay
-permalink: /case/green-gallop-2012
 categories: Case
-tags: [Campaign]
+date: 2012-10-10 11:31:21
 deck: "The University of North Dakota celebrates Homecoming with an annual Spirit Run called the Green Gallop. The old branding was thrown out the window and the rest is history."
+layout: post
+permalink: /case/green-gallop-2012
+published: true
+tags: [Campaign]
+title: "Green Gallop 2012"
 ---
 
 The University of North Dakota Homecoming Spirit Run was a 1.5 mile, 5K, and 10K family walk/run hosted by the UND Wellness Center. In this project I worked closely with the event coordinator, and handled nearly all<!--more--> the design work associated with it. This included developing the logo and branding the entire event. On the print side there were posters, flyers, table tents, route maps, handouts, T-shirts, and banners, including a parade banner and Start and Finish Banners. The Spirit Run was also promoted campus-wide using screens, web sliders, and both the Health & Wellness Unit and the Wellness Center Facebook page with customized Cover design. The event was very successful, and well, looked good.

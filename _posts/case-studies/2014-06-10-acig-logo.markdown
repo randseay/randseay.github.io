@@ -1,12 +1,15 @@
 ---
-layout: post
-title: "Anderson Crain Investment Group Logo Design"
-date: 2014-06-10 19:43:38
 author: Rand Seay
-permalink: /case/acig-logo
 categories: Case
-tags: [Logo, Design]
+date: 2014-06-10 19:43:38
 deck: "The Anderson-Crain Investment Group was looking for a logo that they could establish a brand around, and decided to work with us at Skosh. After moving through the creative process, we were quite happy with the outcome."
+layout: post
+permalink: /case/acig-logo
+published: true
+sitemap:
+    priority: 0.75
+tags: [Logo, Design]
+title: "Anderson Crain Investment Group Logo Design"
 ---
 
 [Anderson-Crain Investment Group](http://anderson-crain.com/) is a private equity real estate company that is active in the Midwest, Southwest, and Northeast markets<!--more-->. At [Skosh](http://skosh.io), we had the pleasure of working with them to put together a logo and color scheme on which the could build their brand. The final result is a clean, competent, and professional look that helps them stand out in their field at a critical stage in their growth.
