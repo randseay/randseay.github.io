@@ -5,7 +5,7 @@ comments: true
 date: 2014-09-08 18:37:21
 deck: "Combine Grunt, Sass, and SVG to create a dynamic, efficient, and intuitive development environment. Here's one way to do it."
 layout: post
-permalink: /posts/grunt-sass-svg-workflow
+permalink: /articles/grunt-sass-svg-workflow
 published: true
 sitemap:
     priority: 0.75

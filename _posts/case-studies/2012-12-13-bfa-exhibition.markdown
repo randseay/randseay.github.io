@@ -4,7 +4,7 @@ categories: Case
 date: 2012-12-13 23:32:14
 deck: "The final step in my Bachelor of Fine Arts in Graphic Design & New Art Media, my Senior Exhibition was a culmination of my art education."
 layout: post
-permalink: /case/bfa-exhibition
+permalink: /cases/bfa-exhibition
 published: true
 tags: [Show]
 title: "BFA Senior Exhibition: Pictures Worth Countless Words"

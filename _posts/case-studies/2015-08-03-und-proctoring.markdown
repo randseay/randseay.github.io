@@ -4,7 +4,7 @@ categories: Case
 date: 2015-08-03 11:06:01
 deck: "The University of North Dakota Online & Distance Education needed a new system to manage test proctoring for term-based online & distance courses. We built it."
 layout: post
-permalink: /case/und-proctoring
+permalink: /cases/und-proctoring
 published: true
 sitemap:
     priority: 1.0

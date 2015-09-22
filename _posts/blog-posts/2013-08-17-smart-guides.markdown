@@ -5,7 +5,7 @@ comments: true
 date: 2013-08-17 15:19:47
 deck: "You won't drive collaborating designers crazy, and everything will be lined up in a simple, dependable, and clean way."
 layout: post
-permalink: /posts/please-use-smart-guides
+permalink: /articles/please-use-smart-guides
 published: true
 tags: [Design, Illustrator, InDesign]
 title: "Please Use Smart Guides in InDesign, Illustrator"

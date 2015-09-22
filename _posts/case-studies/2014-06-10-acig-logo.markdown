@@ -4,7 +4,7 @@ categories: Case
 date: 2014-06-10 19:43:38
 deck: "The Anderson-Crain Investment Group was looking for a logo that they could establish a brand around, and decided to work with us at Skosh. After moving through the creative process, we were quite happy with the outcome."
 layout: post
-permalink: /case/acig-logo
+permalink: /cases/acig-logo
 published: true
 sitemap:
     priority: 0.75

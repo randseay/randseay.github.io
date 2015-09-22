@@ -4,7 +4,7 @@ categories: Case
 date: 2012-02-16 17:13:08
 deck: "The University of North Dakota Wellness & Wellness Unit is comprised of many different branches, which lacked cohesion when described visually together. I implemented a typographical take on its visual identity."
 layout: post
-permalink: /case/hw-typographical-branding
+permalink: /cases/hw-typographical-branding
 title: "UND Health & Wellness Unit Typographical Branding"
 tags: [Campaign]
 published: true
