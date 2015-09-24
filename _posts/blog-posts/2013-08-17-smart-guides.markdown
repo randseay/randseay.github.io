@@ -7,6 +7,8 @@ deck: "You won't drive collaborating designers crazy, and everything will be lin
 layout: post
 permalink: /articles/please-use-smart-guides
 published: true
+sitemap:
+    lastmod: 2015-09-22 09:00:00
 tags: [Design, Illustrator, InDesign]
 title: "Please Use Smart Guides in InDesign, Illustrator"
 ---

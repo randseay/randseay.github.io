@@ -6,6 +6,8 @@ deck: "The University of North Dakota Wellness Center always has a great turnout
 layout: post
 permalink: /cases/fall-intramurals-2012
 published: true
+sitemap:
+    lastmod: 2015-09-22 09:00:00
 tags: [Campaign]
 title: "Fall Intramurals 2012 Campaign"
 ---

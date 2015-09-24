@@ -8,6 +8,7 @@ layout: post
 permalink: /articles/grunt-sass-svg-workflow
 published: true
 sitemap:
+    lastmod: 2015-09-22 09:00:00
     priority: 0.75
 tags: [Web Development, SVG, Grunt, Sass]
 title: "A Grunt, Sass, and SVG Workflow"

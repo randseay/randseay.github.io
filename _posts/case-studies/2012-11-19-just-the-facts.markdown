@@ -6,6 +6,8 @@ deck: "The University of North Dakota Health & Wellness Unit needed a way to rai
 layout: post
 permalink: /cases/just-the-facts
 published: true
+sitemap:
+    lastmod: 2015-09-22 09:00:00
 title: "Just the Facts Campaign"
 tags: [Campaign]
 ---

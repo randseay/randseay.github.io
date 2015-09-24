@@ -10,6 +10,7 @@ layout: post
 permalink: /articles/forms-with-react
 published: true
 sitemap:
+    lastmod: 2015-09-22 09:00:00
     priority: 1.0
 tags: [Web Development, React, Forms]
 title: "Not-so-simple Forms with React"

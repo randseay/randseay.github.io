@@ -5,9 +5,11 @@ date: 2012-02-16 17:13:08
 deck: "The University of North Dakota Wellness & Wellness Unit is comprised of many different branches, which lacked cohesion when described visually together. I implemented a typographical take on its visual identity."
 layout: post
 permalink: /cases/hw-typographical-branding
+published: true
+sitemap:
+    lastmod: 2015-09-22 09:00:00
 title: "UND Health & Wellness Unit Typographical Branding"
 tags: [Campaign]
-published: true
 ---
 
 The University of North Dakota Health and Wellness Unit consists of many different branches, and was in need of strong brand to unify it. Consisting of the Health & Wellness Hub<!--more-->, Student Health Services, the University Counseling Center, the Wellness Center, Work Well, and Financial Wellness, the unit offers a wide variety of services and fills many different roles. I created a consistent look and feel for materials in which the entire unit was represented, as well as a branding element to be used on individual promotional materials, tying it to the rest of the unit.

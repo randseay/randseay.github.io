@@ -6,6 +6,8 @@ deck: "The University of North Dakota celebrates Homecoming with an annual Spiri
 layout: post
 permalink: /cases/green-gallop-2012
 published: true
+sitemap:
+    lastmod: 2015-09-22 09:00:00
 tags: [Campaign]
 title: "Green Gallop 2012"
 ---
