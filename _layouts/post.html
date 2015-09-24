@@ -31,6 +31,14 @@ layout: default
 
                     {{ content }}
 
+                    {% unless page.noshare %}
+                        <div class="share">
+                            <a href="https://twitter.com/share" class="twitter-share-button primary-text" data-via="randseay" data-size="large" data-related="randseay">
+                                <i class='fa fa-circle-o-notch fa-spin'></i> Tweet
+                            </a>
+                        </div>
+                    {% endunless %}
+
                     {% if page.categories contains 'case' %}
                         {% include prev-next-cases.html%}
                     {% endif %}

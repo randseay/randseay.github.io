@@ -437,3 +437,5 @@ The `<Repeatable />` component could do with quite a few optimizations to make i
 
 React is a powerful tool for building interfaces, but make sure you are using the right tool for the job. Functional and aesthetic consistency within a large number of forms may warrant a framework like what has begun to form here, but a vast number of forms can be handled on a case by case basis. React is enjoyable to play with, but can become unruly very easily. There are many ways to solve a problem, and the examples presented are one potential way.
 
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Building some tricky forms with React? Here&#39;s some help with it: <a href="http://t.co/nDRrlGfsDr">http://t.co/nDRrlGfsDr</a></p>&mdash; Rand Seay (@randseay) <a href="https://twitter.com/randseay/status/647163902434787328">September 24, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

@@ -9,7 +9,7 @@ section.contact {
         text-align: center;
         width: 100%;
 
-        @include button($white, $text: $brand-primary);
+        @include button($white, $text: $brand-primary, $reverse: true);
 
         i.fa {
             margin-bottom: $spacing-unit / 2;

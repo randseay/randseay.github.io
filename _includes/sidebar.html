@@ -17,5 +17,18 @@
             Articles via RSS <i class='fa fa-rss'></i>
         </a>
     {% endif %}
+
+    {% unless page.notwitter %}
+        <h2><a href="https://twitter.com/randseay" class="secondary-text">Latest Tweets</a></h2>
+
+        <a class="twitter-timeline primary-text"
+            href="https://twitter.com/randseay"
+            data-widget-id="647151935640879104"
+            data-chrome="noheader nofooter noborders noscrollbar transparent"
+            data-tweet-limit="3">
+            <i class='fa fa-circle-o-notch fa-spin'></i> Tweets by @randseay
+        </a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    {% endunless %}
 </aside>
 
