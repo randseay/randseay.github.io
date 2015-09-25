@@ -10,7 +10,7 @@
             {% if post.title != page.title %}
                 <div class="post-preview">
                     <h4>{{ post.date | date: '%B %d, %Y' }}</h4>
-                    <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+                    <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
                     {{ post.excerpt | remove: '</p>' }}
                     &hellip; <a href="{{ post.url | prepend: site.baseurl }}">read more</a></p>
                 </div>
