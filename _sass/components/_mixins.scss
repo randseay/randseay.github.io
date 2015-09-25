@@ -1,0 +1,21 @@
+/*
+ * Project-specific Mixins
+ */
+
+@mixin bg-images($overlay-opacity: 0.8) {
+    background:
+        linear-gradient(
+          rgba(255, 255, 255, $overlay-opacity),
+          rgba(255, 255, 255, $overlay-opacity)
+        ),
+        url("../img/bg-main-2.jpg");
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-color: $gray-tint;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+}

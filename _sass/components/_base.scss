@@ -10,7 +10,7 @@ body {
     box-shadow: 0 0 20px -5px rgba(153,153,153,0.9);
 }
 
-section {
+section:not(.post) {
     padding: ($spacing-unit * 2) 0;
 }
 

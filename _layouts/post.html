@@ -2,10 +2,8 @@
 layout: default
 ---
 
-{% include site-nav-input.html %}
-
 <section class="post">
-    <header class="post-header">
+    <header class="post-header {% if page.imgclass %}{{ page.imgclass }}{% endif %}">
         <div class="container">
             <h1>{{ page.title }}</h1>
 

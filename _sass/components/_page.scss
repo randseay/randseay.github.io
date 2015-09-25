@@ -11,16 +11,12 @@
     padding: $spacing-unit 0 0;
 
     &.inner {
-        padding: ($spacing-unit * 3.5) 0 0;
+        padding: ($spacing-unit * 2) 0 0;
     }
 }
 
 .page-heading {
     font-size: modular-scale(3) * 1.125;
-}
-
-.post {
-    padding-top: $spacing-unit;
 }
 
 .post-meta {
