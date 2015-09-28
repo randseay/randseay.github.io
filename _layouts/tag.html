@@ -1,0 +1,33 @@
+---
+layout: page
+---
+
+<div class="container">
+    <h1 class="page-title">
+        <i class="fa fa-tag"></i>&nbsp;{{ page.title }}
+    </h1>
+
+    <hr>
+
+    {% if page.deck %}
+    <p class="deck">
+        {{ page.deck }}
+    </p>
+    {% endif %}
+
+    <h4 class='left'>
+        <a href="{{ site.baseurl }}/{{ page.path | split: '/' | first }}">
+            <i class='fa fa-arrow-circle-o-left'></i> Back to {{ page.path | split: '/' | first | capitalize }}
+        </a>
+    </h4>
+
+    <a class="right button tiny" href="{{ '/feed.xml' | site.baseurl }}">
+        Subscribe via RSS <i class='fa fa-rss'></i>
+    </a>
+</div><!-- /.container -->
+
+<section class="work">
+    <div class="container">
+        {% include list-by-tag.html tag=page.tag %}
+    </div><!-- /.container -->
+</section><!-- /.work -->

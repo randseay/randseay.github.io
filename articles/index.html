@@ -19,6 +19,9 @@ nav_order: 2
     <a class="right button tiny" href="{{ '/feed.articles.xml' | site.baseurl }}">
         Subscribe via RSS <i class='fa fa-rss'></i>
     </a>
+
+    <h2>Topics</h2>
+    {% include list-tags.html category="blog" %}
 </div><!-- /.container -->
 
 <section class="articles">

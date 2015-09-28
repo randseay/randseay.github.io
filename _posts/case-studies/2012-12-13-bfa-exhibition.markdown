@@ -8,7 +8,7 @@ permalink: /cases/bfa-exhibition
 published: true
 sitemap:
     lastmod: 2015-09-22 09:00:00
-tags: [Show]
+tags: [Exhibition]
 title: "BFA Senior Exhibition: Pictures Worth Countless Words"
 ---
 

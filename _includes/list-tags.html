@@ -1,0 +1,38 @@
+<!--
+    In the include statement, pass the category in as a 'category' parameter
+    i.e.
+        include list-tags.html category="blog"
+-->
+{% assign category = site.new_array %}
+{% assign tags = site.new_array %}
+{% assign path = "" %}
+
+{% if include.category == "blog" %}
+    {% assign category = site.categories.blog %}
+    {% assign path = "/articles" %}
+{% elsif include.category == "case" %}
+    {% assign category = site.categories.case %}
+    {% assign path = "/work" %}
+{% endif %}
+
+{% if category.size > 0 %}
+    {% for post in category %}
+        {% for tag in post.tags %}
+            {% unless tags contains tag %}
+                {% assign tags = tags | push: tag | sort %}
+            {% endunless %}
+        {% endfor %}
+    {% endfor %}
+{% endif %}
+
+<div class="row">
+    <div class="column one-whole post-list">
+    {% for tag in tags %}
+        {% assign tag_slug = tag | slugify | downcase %}
+
+        <a href='{{ site.baseurl | append: path | append: "/" | append: tag_slug }}' class='button small filled radius secondary'>
+            {{ tag }}
+        </a>
+    {% endfor %}
+    </div><!-- /.column -->
+</div><!-- /.row -->

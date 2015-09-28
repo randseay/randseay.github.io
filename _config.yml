@@ -12,6 +12,7 @@ excerpt_separator: <!--more-->
 
 # Build settings
 markdown: kramdown
+new_array: []
 
 exclude: [
   _scss,

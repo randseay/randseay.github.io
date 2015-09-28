@@ -9,7 +9,7 @@ published: true
 sitemap:
     lastmod: 2015-09-22 09:00:00
     priority: 0.75
-tags: [Logo, Design]
+tags: [Branding, Design]
 title: "Anderson Crain Investment Group Logo Design"
 ---
 

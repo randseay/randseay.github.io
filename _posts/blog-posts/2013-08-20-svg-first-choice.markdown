@@ -9,7 +9,7 @@ permalink: /articles/svgs-should-be-your-first-choice
 published: true
 sitemap:
     lastmod: 2015-09-22 09:00:00
-tags: [Web Development, SVG]
+tags: [Code, SVG]
 title: "SVG Should Be Your First Choice"
 ---
 

@@ -55,6 +55,19 @@ code, pre, kbd {
     font-size: 1.45rem;
 }
 
+.lead-in {
+    margin-top: $spacing-unit * 2;
+
+    &.deck::first-letter {
+        font-size: modular-scale(5);
+        display: block;
+        float: left;
+        position: relative;
+        line-height: .1;
+        top: -0.200em;
+    }
+}
+
 /**
  * Helpers
  */

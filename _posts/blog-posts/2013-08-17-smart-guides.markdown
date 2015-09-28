@@ -9,7 +9,7 @@ permalink: /articles/please-use-smart-guides
 published: true
 sitemap:
     lastmod: 2015-09-22 09:00:00
-tags: [Design, Illustrator, InDesign]
+tags: [Design]
 title: "Please Use Smart Guides in InDesign, Illustrator"
 ---
 
