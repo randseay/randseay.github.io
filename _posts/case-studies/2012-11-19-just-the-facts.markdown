@@ -7,6 +7,8 @@ imgclass: facts
 layout: post
 permalink: /cases/just-the-facts
 published: true
+redirect_from:
+    - /case/just-the-facts/
 sitemap:
     lastmod: 2015-09-22 09:00:00
 title: "Just the Facts Campaign"

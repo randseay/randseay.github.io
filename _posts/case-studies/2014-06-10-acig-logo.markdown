@@ -7,6 +7,8 @@ imgclass: acig
 layout: post
 permalink: /cases/acig-logo
 published: true
+redirect_from:
+    - /case/acig-logo/
 sitemap:
     lastmod: 2015-09-22 09:00:00
     priority: 0.75

@@ -7,6 +7,8 @@ imgclass: gallop
 layout: post
 permalink: /cases/green-gallop-2012
 published: true
+redirect_from:
+    - /case/green-gallop-2012/
 sitemap:
     lastmod: 2015-09-22 09:00:00
 tags: [Campaign]

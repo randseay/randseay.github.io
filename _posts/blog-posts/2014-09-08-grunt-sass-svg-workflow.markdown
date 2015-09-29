@@ -8,6 +8,8 @@ imgclass: grunt
 layout: post
 permalink: /articles/grunt-sass-svg-workflow
 published: true
+redirect_from:
+    - /posts/grunt-sass-svg-workflow/
 sitemap:
     lastmod: 2015-09-22 09:00:00
     priority: 0.75

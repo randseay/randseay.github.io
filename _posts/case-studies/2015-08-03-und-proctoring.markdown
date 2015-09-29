@@ -7,6 +7,8 @@ imgclass: proctoring
 layout: post
 permalink: /cases/und-proctoring
 published: true
+redirect_from:
+    - /case/und-proctoring/
 sitemap:
     lastmod: 2015-09-22 09:00:00
     priority: 1.0

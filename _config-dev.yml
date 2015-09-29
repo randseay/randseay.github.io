@@ -13,6 +13,8 @@ excerpt_separator: <!--more-->
 # Build settings
 markdown: kramdown
 new_array: []
+gems:
+  - jekyll-redirect-from
 
 exclude: [
   _scss,

@@ -30,6 +30,7 @@
     &.art {@include bg-images($image-name: "art", $position: center -150px);}
     &.acig {@include bg-images($image-name: "acig", $position: center -250px);}
     &.bible {@include bg-images($image-name: "bible");}
+    &.camera {@include bg-images($image-name: "camera", $position: center -125px);}
     &.church {@include bg-images($image-name: "church", $position: center -135px);}
     &.contact {@include bg-images($image-name: "contact", $overlay-opacity: 0.9);}
     &.cross {@include bg-images($image-name: "cross", $position: center -125px);}
@@ -45,6 +46,7 @@
     &.proctoring {@include bg-images($image-name: "proctoring", $position: center -60px);}
     &.react {@include bg-images($image-name: "react");}
     &.sass {@include bg-images($image-name: "sass", $overlay-opacity: 0.9);}
+    &.sheep {@include bg-images($image-name: "sheep");}
     &.svg {@include bg-images($image-name: "svg");}
     &.tablet {@include bg-images($image-name: "tablet");}
     &.und-type {@include bg-images($image-name: "und-type", $overlay-opacity: 0.9);}

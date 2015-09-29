@@ -10,6 +10,8 @@ js: /js/examples/forms-with-react.js
 layout: post
 permalink: /articles/forms-with-react
 published: true
+redirect_from:
+    - /posts/forms-with-react/
 sitemap:
     lastmod: 2015-09-22 09:00:00
     priority: 1.0

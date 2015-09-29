@@ -1,16 +1,25 @@
 ---
+imgclass: sheep
 layout: page
 title: Well this is awkward.
 ---
-<div class="container">
-    <h1 class="error-title">
-        <i class="fa fa-meh-o warn-text"></i>&nbsp;{{ page.title }}
-    </h1>
 
-    <div class='error-message'>
+<div class='page-header {{ page.imgclass }}'>
+    <div class="container">
+        <h1 class="page-title">
+            <i class="fa fa-meh-o"></i>&nbsp;{{ page.title }}
+        </h1>
+
+        <hr class="primary">
+
         <p class="deck">
-            It looks like that page doesn’t exist, kindly
-            <a href="{{ site.baseurl }}/"> head back to the home page</a>.
+            It looks like that page doesn’t exist.
         </p>
-    </div>
-</div><!-- /.container -->
+
+        <h4 class='left'>
+            <a href="{{ site.baseurl }}/">
+                <i class='fa fa-arrow-circle-o-left'></i> Back to Home Page
+            </a>
+        </h4>
+    </div><!-- /.container -->
+</div>
