@@ -1,9 +1,10 @@
 ---
 author: Rand Seay
-categories: blog
+categories: Blog
 comments: true
 date: 2013-08-17 15:19:47
 deck: "You won't drive collaborating designers crazy, and everything will be lined up in a simple, dependable, and clean way."
+imgclass: illustrator
 layout: post
 permalink: /articles/please-use-smart-guides
 published: true

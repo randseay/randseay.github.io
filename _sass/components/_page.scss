@@ -1,18 +1,27 @@
 /**
  * Page content
  */
+
+
 .page-title {
     color: $brand-secondary;
     font-weight: 100;
-    margin-top: $spacing-unit * 2;
 }
 
 .page-content {
-    padding: $spacing-unit 0 0;
-
     &.inner {
         padding: ($spacing-unit * 2) 0 0;
+
+        .page-header {
+            padding-bottom: $spacing-unit * 2;
+            padding-top: $spacing-unit * 4;
+        }
     }
+}
+
+.page-header {
+    padding-top: $spacing-unit * 2;
+    @include bgs;
 }
 
 .page-heading {

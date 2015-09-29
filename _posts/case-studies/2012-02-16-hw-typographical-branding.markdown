@@ -3,6 +3,7 @@ author: Rand Seay
 categories: Case
 date: 2012-02-16 17:13:08
 deck: "The University of North Dakota Wellness & Wellness Unit is comprised of many different branches, which lacked cohesion when described visually together. I implemented a typographical take on its visual identity."
+imgclass: und-type
 layout: post
 permalink: /cases/hw-typographical-branding
 published: true

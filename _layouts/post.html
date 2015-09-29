@@ -1,14 +1,25 @@
 ---
 layout: default
 ---
+{% assign page_category = page.url | split: "/" %}
+{% if page_category[1] == "articles" %}
+    {% assign prev_page = "Articles" %}
+{% elsif page_category[1] == "cases" %}
+    {% assign prev_page = "Case Studies" %}
+{% endif %}
 
 <section class="post">
     <header class="post-header {% if page.imgclass %}{{ page.imgclass }}{% endif %}">
         <div class="container">
+            <h4><a href='{{ page.dir | prepend: site.baseurl }}'><i class='fa fa-arrow-circle-o-left'></i> Back to {{ prev_page }}</a></h4>
             <h1>{{ page.title }}</h1>
 
             <p class="byline">
-                <small><i class="fa fa-calendar-o"></i> {{ page.date | date: "%b %-d, %Y" }}{% if page.meta %} • {{ page.meta }}{% endif %}</small><br>
+                <small>
+                    <i class="fa fa-calendar-o"></i>
+                    {{ page.date | date: "%b %-d, %Y" }}{% if page.meta %} • {{ page.meta }}{% endif %}
+                    • {{ page.content | number_of_words | divided_by: 180 }} minute read
+                </small><br>
                 {% if page.author %}By {{ page.author }}{% endif %}
             </p>
         </div><!-- /.container -->

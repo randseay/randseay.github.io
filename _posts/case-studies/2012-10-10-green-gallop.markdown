@@ -3,6 +3,7 @@ author: Rand Seay
 categories: Case
 date: 2012-10-10 11:31:21
 deck: "The University of North Dakota celebrates Homecoming with an annual Spirit Run called the Green Gallop. The old branding was thrown out the window and the rest is history."
+imgclass: gallop
 layout: post
 permalink: /cases/green-gallop-2012
 published: true

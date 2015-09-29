@@ -4,11 +4,12 @@
 .post-header {
     padding-bottom: $spacing-unit * 2;
     padding-top: $spacing-unit * 7;
-    @include bg-images(0.85);
 
     h1 {
         color: $brand-secondary;
     }
+
+    @include bgs;
 }
 
 .post-content {

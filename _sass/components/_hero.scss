@@ -24,6 +24,8 @@
         opacity: 1;
         width: 100%;
     }
+
+    @include bgs;
 }
 
 .headline {

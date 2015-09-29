@@ -4,25 +4,27 @@ title: Articles
 nav_order: 2
 ---
 
-<div class="container">
-    <h1 class="page-title">
-        <i class="fa fa-book"></i>&nbsp;{{ page.title }}
-    </h1>
+<div class='page-header'>
+    <div class="container">
+        <h1 class="page-title">
+            <i class="fa fa-book"></i>&nbsp;{{ page.title }}
+        </h1>
 
-    <hr>
+        <hr>
 
-    <p class="deck">
-        These are my thoughts and experiences with development tools,
-        technology, and life. There may even be a short story or two.
-    </p>
+        <p class="deck">
+            These are my thoughts and experiences with development tools,
+            technology, and life. There may even be a short story or two.
+        </p>
 
-    <a class="right button tiny" href="{{ '/feed.articles.xml' | site.baseurl }}">
-        Subscribe via RSS <i class='fa fa-rss'></i>
-    </a>
+        <a class="right button tiny" href="{{ '/feed.articles.xml' | site.baseurl }}">
+            Subscribe via RSS <i class='fa fa-rss'></i>
+        </a>
 
-    <h2>Topics</h2>
-    {% include list-tags.html category="blog" %}
-</div><!-- /.container -->
+        <h2>Topics</h2>
+        {% include list-tags.html category="blog" %}
+    </div><!-- /.container -->
+</div>
 
 <section class="articles">
     <div class="container">

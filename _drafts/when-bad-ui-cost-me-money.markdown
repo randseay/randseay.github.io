@@ -1,6 +1,6 @@
 ---
 author: Rand Seay
-categories: blog
+categories: Blog
 comments: true
 deck: "My interaction with an ill-thought out ATM cost me $5 more than it should have."
 layout: post

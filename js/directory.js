@@ -98,9 +98,12 @@ var DIRECTORY = [
     },
     {
         'name': 'work',
-        'url': '/work',
+        'url': '/cases',
         'type': 'internal',
         'keywords': [
+            'cases',
+            'case studies',
+            'case study',
             'my work',
             'portfolio',
             'view',

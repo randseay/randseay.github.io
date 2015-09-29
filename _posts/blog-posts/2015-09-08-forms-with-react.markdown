@@ -1,6 +1,6 @@
 ---
 author: Rand Seay
-categories: blog
+categories: Blog
 comments: true
 css: /css/examples/forms-with-react.css
 date: 2015-09-17 14:05:59

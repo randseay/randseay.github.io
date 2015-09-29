@@ -4,6 +4,7 @@ categories: Blog
 comments: true
 date: 2013-08-20 18:37:21
 deck: "With great browser support and increasingly diverse ways of accessing the web, you can stop worrying about the quality of your graphics by using SVG."
+imgclass: svg
 layout: post
 permalink: /articles/svgs-should-be-your-first-choice
 published: true

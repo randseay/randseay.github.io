@@ -14,25 +14,25 @@ js: /js/nav.js
             <nav class="home-nav column one-whole large-one-half">
                 <div class="row">
                     <div class="column one-whole medium-one-fourth">
-                        <a href class="button secondary radius" data-nav="work">
+                        <a href="{{ site.baseurl }}/cases" class="button filled secondary radius">
                             <i class="fa fa-briefcase"></i> <br>Work
                         </a>
                     </div><!-- /.column -->
 
                     <div class="column one-whole medium-one-fourth">
-                        <a href class="button secondary radius" data-nav="about">
+                        <a href="{{ site.baseurl }}/about" class="button filled secondary radius">
                             <i class="fa fa-user"></i> <br>About
                         </a>
                     </div><!-- /.column -->
 
                     <div class="column one-whole medium-one-fourth">
-                        <a href class="button secondary radius" data-nav="articles">
+                        <a href="{{ site.baseurl }}/articles" class="button filled secondary radius">
                             <i class="fa fa-book"></i> <br>Articles
                         </a>
                     </div><!-- /.column -->
 
                     <div class="column one-whole medium-one-fourth">
-                        <a href class="button secondary radius" data-nav="contact">
+                        <a href="{{ site.baseurl }}/contact" class="button filled secondary radius">
                             <i class="fa fa-phone"></i> <br>Contact
                         </a>
                     </div><!-- /.column -->
@@ -40,8 +40,10 @@ js: /js/nav.js
             </nav><!-- /.column -->
         </div><!-- /.row -->
 
-                <hr>
+        <hr>
 
+        <div class='row'>
+            <div class='column three-fourths'>
                 <p class="deck">
                     Welcome to my online portfolio! My name is Rand, and I am a
                     husband, father, designer, and developer. I
@@ -53,13 +55,20 @@ js: /js/nav.js
                     tweet about</a> my experiences.
                 </p>
 
-                <hr>
+                <p class="deck">
+                    I co-founded <a href="http://skosh.io">Skosh Interactive</a>,
+                    but you can also find me working as a front-end developer
+                    for the
+                    <a href="http://cts.ndus.edu/">North Dakota University System</a>.
+                    I built and actively maintain the front-end framework
+                    <a href='http://fuselage.skosh.io'>Fuselage</a>.
+                </p>
+            </div><!-- /.column -->
+            <div class='column one-fourth'>
+                <img class="headshot drop-shadow" src="{{ '/img/rand-headshot7a.jpg' | prepend: site.baseurl }}" alt="Headshot of Me">
+            </div><!-- /.column -->
+        </div><!-- /.row -->
 
-                <form id="navForm" class="input-form" autocomplete="off">
-                    <input name="navInput" id="navInput" type="text" class="h1" placeholder="Type to navigate the site.">
-                    <i class="fa fa-check-circle fa-2x isValid"></i>
-                </form>
-                {% include nav-help.html %}
     </div><!-- /.container -->
 </section><!-- /.hero -->
 
@@ -124,7 +133,7 @@ js: /js/nav.js
 
         <hr>
 
-        <a href="{{ site.baseurl }}/work" class="button secondary radius">View more case studies <i class="fa fa-angle-double-right"></i></a>
+        <a href="{{ site.baseurl }}/cases" class="button secondary radius">View more case studies <i class="fa fa-angle-double-right"></i></a>
     </div><!-- /.container -->
 </section><!-- /.cases -->
 
