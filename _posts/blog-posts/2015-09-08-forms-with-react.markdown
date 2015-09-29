@@ -5,6 +5,7 @@ comments: true
 css: /css/examples/forms-with-react.css
 date: 2015-09-17 14:05:59
 deck: "It can be tricky to handle elaborate form features such as repeatable sections and context-sensitive hiding or showing. Here is one approach using React."
+imgclass: react
 js: /js/examples/forms-with-react.js
 layout: post
 permalink: /articles/forms-with-react

@@ -114,6 +114,17 @@ module.exports = function(grunt) {
             }
         },
 
+        imagemin: {
+            dynamic: {
+                files : [{
+                    expand: true,
+                    cwd: 'img/',
+                    src: '**/*.{gif,jpeg,jpg,png}',
+                    dest: 'img/'
+                }]
+            }
+        },
+
         notify: {
             sass: {
                 options: {
@@ -167,6 +178,10 @@ module.exports = function(grunt) {
         },
 
         watch: {
+            images: {
+                files: ['img/**/*.{gif,jpeg,jpg,png}'],
+                tasks: ['newer:imagemin']
+            },
             styles: {
                 files: ['_sass/**/*.scss', '_sass/*.scss'],
                 tasks: ['sass', 'notify:sass']
@@ -187,6 +202,7 @@ module.exports = function(grunt) {
         'newer:copy:jquery',
         'newer:copy:fuselage',
         'newer:copy:styles',
+        'newer:imagemin',
         'sass',
         'notify:sass',
         'notify:serve',
@@ -197,6 +213,7 @@ module.exports = function(grunt) {
         'newer:browserify:dev',
         'notify:js',
         'newer:copy:fontawesome',
+        'newer:imagemin',
         'newer:copy:jquery',
         'newer:copy:fuselage',
         'newer:copy:styles',
@@ -208,6 +225,7 @@ module.exports = function(grunt) {
     grunt.registerTask('prep-deploy', [
         'newer:browserify:prod',
         'newer:copy:fontawesome',
+        'newer:imagemin',
         'newer:copy:jquery',
         'newer:copy:fuselage',
         'shell:jekyllPrepDeploy',
