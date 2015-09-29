@@ -8,6 +8,8 @@ imgclass: illustrator
 layout: post
 permalink: /articles/please-use-smart-guides
 published: true
+redirect_from:
+    - /posts/please-use-smart-guides/
 sitemap:
     lastmod: 2015-09-22 09:00:00
 tags: [Design]

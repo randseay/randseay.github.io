@@ -7,6 +7,8 @@ imgclass: und-type
 layout: post
 permalink: /cases/hw-typographical-branding
 published: true
+redirect_from:
+    - /case/hw-typographical-branding/
 sitemap:
     lastmod: 2015-09-22 09:00:00
 title: "UND Health & Wellness Unit Typographical Branding"

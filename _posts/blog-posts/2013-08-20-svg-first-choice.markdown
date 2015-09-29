@@ -9,7 +9,7 @@ layout: post
 permalink: /articles/svgs-should-be-your-first-choice
 published: true
 redirect_from:
-    - /posts/svg-should-be-your-first-choice/
+    - /posts/svgs-should-be-your-first-choice/
 sitemap:
     lastmod: 2015-09-22 09:00:00
 tags: [Code, SVG]

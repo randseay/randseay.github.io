@@ -7,6 +7,8 @@ imgclass: intramurals
 layout: post
 permalink: /cases/fall-intramurals-2012
 published: true
+redirect_from:
+    - /case/fall-intramurals-2012/
 sitemap:
     lastmod: 2015-09-22 09:00:00
 tags: [Campaign]

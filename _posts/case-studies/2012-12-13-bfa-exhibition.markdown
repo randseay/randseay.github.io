@@ -7,6 +7,8 @@ imgclass: exhibition
 layout: post
 permalink: /cases/bfa-exhibition
 published: true
+redirect_from:
+    - /case/bfa-exhibition/
 sitemap:
     lastmod: 2015-09-22 09:00:00
 tags: [Exhibition]
