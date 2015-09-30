@@ -5,28 +5,47 @@
 @mixin bg-images(
     $image-name: "../img/backgrounds/bg-macbook.jpg",
     $overlay-opacity: 0.85,
-    $position: center -200px) {
+    $position: center -200px,
+    $main: false) {
 
     $image-path: "../img/backgrounds/bg-" + $image-name + ".jpg";
-    background:
-        linear-gradient(
-          rgba(255, 255, 255, $overlay-opacity),
-          rgba(255, 255, 255, $overlay-opacity)
-        ),
-        url($image-path);
-    background-attachment: fixed;
-    background-position: $position;
-    background-repeat: no-repeat;
-    background-color: $gray-tint;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    @if $main == true {
+        animation: bgFadeIn 1s ease-in both;
+    }
     position: relative;
+
+    &:before {
+        background:
+            linear-gradient(
+              rgba(255, 255, 255, $overlay-opacity),
+              rgba(255, 255, 255, $overlay-opacity)
+            ),
+            url($image-path);
+        background-color: $gray-tint;
+        background-attachment: fixed;
+        background-position: $position;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        bottom: 0;
+        content: ' ';
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
+
+    @keyframes bgFadeIn {
+        0% { background-color: rgba(255, 255, 255, 1); }
+        100% { background-color: rgba(255, 255, 255, 0); }
+    }
 }
 
 @mixin bgs() {
-    @include bg-images($image-name: "macbook");
+    @include bg-images($image-name: "macbook", $main: true);
     &.art {@include bg-images($image-name: "art", $position: center -150px);}
     &.acig {@include bg-images($image-name: "acig", $position: center -250px);}
     &.bible {@include bg-images($image-name: "bible");}
