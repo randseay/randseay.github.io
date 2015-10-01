@@ -1,10 +1,17 @@
 ---
 layout: default
 ---
-{% assign page_category = page.url | split: "/" %}
-{% if page_category[1] == "articles" %}
+{% assign category = site.new_array %}
+{% assign path = "" %}
+{% assign prev_page = "" %}
+
+{% if page.categories contains "blog" %}
+    {% assign category = site.categories.blog %}
+    {% assign category_path = "/articles" %}
     {% assign prev_page = "Articles" %}
-{% elsif page_category[1] == "cases" %}
+{% elsif page.categories contains "case" %}
+    {% assign category = site.categories.case %}
+    {% assign category_path = "/cases" %}
     {% assign prev_page = "Case Studies" %}
 {% endif %}
 
@@ -17,7 +24,13 @@ layout: default
             <p class="byline">
                 <small>
                     <i class="fa fa-calendar-o"></i>
-                    {{ page.date | date: "%b %-d, %Y" }}{% if page.meta %} • {{ page.meta }}{% endif %}
+                    {{ page.date | date: "%b %-d, %Y" }}{% if page.meta %}{{ page.meta }}{% endif %}
+                    {% if page.tags %}
+                        in
+                        {% for tag in page.tags %}
+                            <a class="button tiny radius inline" href="{{ site.baseurl }}{{ category_path }}/{{ tag | slugify }}">{{ tag }}</a>
+                        {% endfor %}
+                    {% endif %}
                     • {{ page.content | number_of_words | divided_by: 180 }} minute read
                 </small><br>
                 {% if page.author %}By {{ page.author }}{% endif %}

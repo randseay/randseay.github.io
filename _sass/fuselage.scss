@@ -23,3 +23,8 @@
 @import "forms";
 @import "tables";
 @import "print";
+
+// Extend Fuselage
+.button.inline {
+    margin-bottom: 0;
+}
