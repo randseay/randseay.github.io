@@ -30,7 +30,7 @@ Before long I found myself watching him again. There were no masks he wore and n
 
 He had opened the bulletin as if he were reading it. After a quick scan, he carefully folded it back up and gave it to his grandfather (or so I assumed him to be). Then his grandmother helped him fish out a bag of pretzels from his pack, and I watched as he tried to select just the right one. I muffled a laugh when I saw his hand poised and his pinky stuck out in an indecisive manner. He devoured his carefully chosen twisted brown snack and his grandmother handed him a CamelBak water bottle. After a huge swig, he scrupulously closed the top and reached into the depths of the bag to pull out a book. His eyes grew big.
 
-“Thomas!” he whispers excitedly to me as he refers to the smiling train on the front cover. I am sure his grandma heard, but she did not bother to hush him. I give a mock gasp and he grins in response. In a crazy way I have control over him- my response dictates what happens next in this little exchange. He is shamelessly eager to please me and depending on what my response is, he could be spurred on or utterly put out. 
+“Thomas!” he whispers excitedly to me as he refers to the smiling train on the front cover. I am sure his grandma heard, but she did not bother to hush him. I give a mock gasp and he grins in response. In a crazy way I have control over him- my response dictates what happens next in this little exchange. He is shamelessly eager to please me and depending on what my response is, he could be spurred on or utterly put out.
 
 He is encouraged and quickly abandons Thomas in search for something in another zippered compartment. What kind of two year old knows how to work a zipper? Okay, he had a little difficulty with it, but with some help from grandma he had it open and produced a toy car. He whispered some unknown name for it and held it up proudly. My mock enthusiasm grew and his heart seemed to swell inside his little chest. Item after item came out of the backpack, all of which I greeted with different expressions. Some were even repeated, but he did not care.
 
@@ -57,3 +57,7 @@ The pastor has made his closing statements and music gave us permission to stand
 “He is so smart!” My fiancée stated. “And not many two year olds are so good with their motor skills.”
 
 The proud grandma nodded, “Yeah, he is sharp.” I couldn’t agree more.
+
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">I recently posted some old pieces of writing from my undergraduate days. Check them out! <a href="http://t.co/bUgkiwD6jP">http://t.co/bUgkiwD6jP</a> <a href="http://t.co/3dQVwvZqNN">http://t.co/3dQVwvZqNN</a></p>&mdash; Rand Seay (@randseay) <a href="https://twitter.com/randseay/status/648903434997927936">September 29, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+

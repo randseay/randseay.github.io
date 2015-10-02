@@ -38,3 +38,7 @@ After locking the door I throw on my coat and shove my hands deep into my pocket
 - **Kaiser, Manfred**. *“Weather Damage”*. [http://www.manfredkaiser.com/dangerous_weather.html](http://www.manfredkaiser.com/dangerous_weather.html) visited 18 March 2011
 - **Mayerowitz, Scott**. *“Massive Flight Cancellations Thanks to ‘Weather Bomb’”*. 11 January 2011. [http://abcnews.go.com/Travel/massive-flight-cancellations-weather-bomb/story?id=12590444](http://abcnews.go.com/Travel/massive-flight-cancellations-weather-bomb/story?id=12590444) visited 18 March 2011.
 - **Rohan KJ, Roecklein KA, Tierney Lindsey K, et al**. *A randomized controlled trial of cognitive-behavioral therapy, light therapy, and their combination for seasonal affective disorder*. J Consult Clin Psychol. 2007;75:489-500.
+
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">I recently posted some old pieces of writing from my undergraduate days. Check them out! <a href="http://t.co/bUgkiwD6jP">http://t.co/bUgkiwD6jP</a> <a href="http://t.co/3dQVwvZqNN">http://t.co/3dQVwvZqNN</a></p>&mdash; Rand Seay (@randseay) <a href="https://twitter.com/randseay/status/648903434997927936">September 29, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+

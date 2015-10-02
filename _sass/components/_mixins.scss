@@ -67,6 +67,7 @@
     &.sass {@include bg-images($image-name: "sass", $overlay-opacity: 0.9);}
     &.sheep {@include bg-images($image-name: "sheep");}
     &.svg {@include bg-images($image-name: "svg");}
+    &.sketch {@include bg-images($image-name: "sketch");}
     &.tablet {@include bg-images($image-name: "tablet");}
     &.und-type {@include bg-images($image-name: "und-type", $overlay-opacity: 0.9);}
     &.wheat {@include bg-images($image-name: "wheat", $overlay-opacity: 0.9, $position: center -300px);}
