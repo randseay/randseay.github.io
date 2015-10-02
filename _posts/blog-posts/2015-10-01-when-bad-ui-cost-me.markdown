@@ -3,8 +3,8 @@ author: Rand Seay
 categories: blog
 comments: true
 date: 2015-10-01 16:50:00
-deck: "An interaction with an ill-thought out ATM cost me more than just my pride and composure."
-imgclass: sketch
+deck: "An interaction with an ill-thought-out ATM machine cost me more than just my pride and composure."
+imgclass: money
 layout: post
 permalink: /articles/when-bad-ui-cost-me
 published: true
