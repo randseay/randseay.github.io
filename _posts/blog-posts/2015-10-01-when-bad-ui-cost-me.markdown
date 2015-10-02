@@ -54,3 +54,6 @@ They had. $2.50 each time. A needless waste, but we still had a wonderful evenin
 <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
 <br>
 
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">An interaction with an ill-thought-out ATM machine cost me more than just my pride. New article: <a href="http://t.co/GIlcND3JQu">http://t.co/GIlcND3JQu</a> <a href="https://twitter.com/hashtag/UIDesign?src=hash">#UIDesign</a> <a href="https://twitter.com/hashtag/UX?src=hash">#UX</a></p>&mdash; Rand Seay (@randseay) <a href="https://twitter.com/randseay/status/650069318424629248">October 2, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
