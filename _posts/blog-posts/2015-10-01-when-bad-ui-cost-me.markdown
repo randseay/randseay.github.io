@@ -8,26 +8,29 @@ imgclass: money
 layout: post
 permalink: /articles/when-bad-ui-cost-me
 published: true
+sitemap:
+    lastmod: 2015-10-05 10:30:00
+    priority: 0.75
 tags: [UI]
 title: "When Bad User Experience Cost Me"
 ---
 
-It all started with a mojito, or rather lack thereof. My lovely wife and I were at a wedding recently &mdash;without children, no less (Thanks Mimi and Bapa <i class='fa fa-smile-o'></i>). To my embarrassment, I neglected to buy here drink almost the entire night<!--more-->. Having been struck by this thought much later than I should have, I was eager to remedy the situation as quickly and directly as possible. Would she like a mojito? She would. Let's head to the bar.
+It all started with a mojito, or rather lack thereof. My lovely wife and I were at a wedding recently &mdash;without children, no less (Thanks Mimi and Bapa <i class='fa fa-smile-o'></i>). To my embarrassment, I neglected to buy her a drink almost the entire night<!--more-->. Having been struck by this thought much later than I should have, I was eager to remedy the situation as quickly and directly as possible. Would she like a mojito? She would. Let's head to the bar.
 
 It was a beautiful wedding, and in a very unique venue &mdash;a remodeled barn to be exact. This was wonderfully modern and eclectic and whatnot, but it meant that the place was located where most barns are; out of town. With the bar being a cash bar, and me being woefully unprepared, I didn't have enough cash for the mojito, and realized this was the start of a predicament.
 
 "The beer is free", the bartender suggested helpfully. "And there is a cash machine just around the corner."
 
-My wife doesn't like beer, and I wasn't in the mood to give in, so I approached the ATM. It appeared to be of no particular brand. There will probably be added fees, but it is definitely still worth it. After swiping my card, the touchscreen greets me with a generic wave-like background and two options overlayed on top of it. I hit the primary option and waited. The ATM proceeded to print out a little receipt and give me back my card. I looked at the slip of paper. It was my account balance &mdash;not what I wanted. Did I terminate the session by accident? *sigh*, lets do this again.
+My wife doesn't like beer, and I wasn't in the mood to give in, so I approached the ATM. It appeared to be of no particular brand. There will probably be added fees, but it is definitely still worth it. After swiping my card, the touchscreen greets me with a generic wave-like background and two options overlayed on top of it. I tapped the primary option and waited. The ATM proceeded to print out a little receipt and give me back my card. I looked at the slip of paper. It was my account balance &mdash;not what I wanted. Did I terminate the session by accident? *sigh*, lets do this again.
 
-I swiped my card and waited. The same crummy background shows up. Seriously, who thought an abstract wavy thing was ever a good idea for any background? It looked like a PowerPoint presentation.  Here are the options again.
+I swiped my card and waited. The same crummy background shows up. Who thought an abstract wavy thing was ever a good idea for any background? It looked like a PowerPoint presentation.  Ah, here are the options again.
 
 1. Get Account Balance
 1. Cancel
 
-The *Get Account Balance* button was styled to be the primary option, so I definitely picked that one. It was a solid color, was listed first, and really seemed like it was the only natural choice. The other button said *Cancel*, and was grey in color. Surely pressing it would end my session and be of no assistance in my quest to get money out of this crazy contraption. I was sure that I pressed the first option last time, but I was in a rush and could have hit the wrong button. That must have been it. Door number one again please, magic box.
+The *Get Account Balance* button was styled to be the primary option, so I definitely picked that one earlier. It was a solid color, was listed first, and really seemed like it was the only natural choice. The other button said *Cancel*, and was grey in color. Surely pressing it would end my session and be of no assistance in my quest to get money out of this crazy contraption. I was sure that I pressed the first option last time, but I was in a rush and could have hit the wrong button. That must have been it. Door number one again please, magic box.
 
-It considered my selection, and started processing. That loading text looks the same as it did last time. Is it printing again? *Ugh!* I angrily snatched the slip of paper, didn't need to read it.
+It considered my selection, and started processing. That loading text looks the same as it did last time. Is it printing again? *Ugh!* I angrily snatched the slip of paper and didn't need to read it.
 
 My wife, who was thankfully silent till now, suppressed a laugh. She gave me a *this shouldn't be this hard* look, and repositioned herself to see the screen better.
 
@@ -35,16 +38,16 @@ My wife, who was thankfully silent till now, suppressed a laugh. She gave me a *
 
 "You don't think they will charge us for that, do you?" My wife asked. I wasn't sure.
 
-The same to options show up again, patronizing me.
+The same two options show up again, patronizing me.
 
 1. Get Account Balance
 1. Cancel
 
 I have already made myself look like an idiot, and I **know** picking option one is just going to infuriate me further. I'll hit *Cancel* and see what happens. This machine couldn't damage my pride any further. That is, if there is no line behind us now. Whew, there wasn't.
 
-So I pressed *Cancel* and watched. Instead of spitting out my card again, it gave me a new menu. A **real menu** with more that two options. I could withdraw different amounts, and, you guessed it **get my account balance**. Oh the humanity. I breathed out heavily and jabbed at the button that promised twenty bucks. Yes I'll take a receipt. Stupid machine.
+So I pressed *Cancel* and watched. Instead of spitting out my card again, it gave me a new menu. A **real menu** with more that two options. I could withdraw different amounts of money, and, you guessed it **get my account balance**. Oh the humanity. I breathed out heavily and jabbed at the button that promised twenty bucks. Yes I'll take a receipt. Stupid machine.
 
-With a no-nonsense attitude  my pocket full of receipts, I *finally* bought my wife a mojito. It was too salty and had entirely too much ice, but I don't know if I should have expected much better. We enjoyed what was left of the evening, dancing, chatting, and strolling around the beautiful premises.
+With a no-nonsense attitude and my pocket full of receipts, I *finally* bought my wife a mojito. It was too salty and had entirely too much ice, but I don't know if I should have expected much better. We enjoyed what was left of the evening, dancing, chatting, and strolling around the beautiful premises.
 
 It was roughly an hour drive home, and I thought more about my battle with the cash machine. It was a remarkably poor user experience, especially in an environment where the user's blood-alcohol content was bound to be higher than normal. I had better check whether they charged me for those account balance inquiries.
 
