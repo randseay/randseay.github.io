@@ -55,6 +55,7 @@
     &.cross {@include bg-images($image-name: "cross", $position: center -125px);}
     &.exhibition {@include bg-images($image-name: "exhibition", $overlay-opacity: 0.92, $position: center -225px);}
     &.facts {@include bg-images($image-name: "facts", $overlay-opacity: 0.92, $position: center -300px);}
+    &.fuselage {@include bg-images($image-name: "fuselage", $overlay-opacity: 0.92, $position: center -100px);}
     &.gallop {@include bg-images($image-name: "gallop", $position: center -275px);}
     &.grunt {@include bg-images($image-name: "grunt");}
     &.illustrator {@include bg-images($image-name: "illustrator");}

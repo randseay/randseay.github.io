@@ -1,0 +1,123 @@
+---
+author: Rand Seay
+categories: Case
+comments: true
+date: 2015-10-26 10:10:10
+deck: "Fuselage is a sass-based, mobile-first front-end framework aimed at developer productivity and structural composability. With a sensible grid, refreshing typography, and nifty features, it's a great starting point for almost any project."
+imgclass: fuselage
+layout: post
+permalink: /cases/fuselage
+published: true
+sitemap:
+    lastmod: 2015-10-26
+tags: [Web Framework]
+title: "Fuselage: A Front-End Framework"
+---
+
+Although the world may not need another front-end framework, it became apparent over the years that I personally needed one. I needed to form opinions on the liberties that other frameworks take, recreate some common conventions with my own optimizations, and control dependencies.<!--more--> If it only ends up being used on my own projects, I sill consider it a successful endeavor. As you may have guessed, this site is built using Fuselage.
+
+<a class='button secondary' href='http://fuselage.skosh.io' target='_blank'>
+    <i class='fa fa-external-link'></i> Visit project site
+</a>
+
+<figure class="image">
+    <img src="{{ '/img/work/fuselage/fuselage-drawing.svg' | prepend: site.baseurl }}" alt='Fuselage Illustraion'>
+    <figcaption>A fuselage illustration for the project</figcaption>
+</figure>
+
+## Typography
+
+The typographic style and vertical rhythm was most important to me in this framework. Individual letterforms articulated into words form the backbone of web content as we know it. The font-size, font-weight, and vertical rhythm needed to be just right, as well as customizable. Typesetting in printed materials is the basis of web typography, and it carries many useful correlations that we can apply to the styling of words on the web. Where the space between lines (*leading*) was set before each run on a printing press, a web framework can similarly control that value dynamically, giving us more control over our type. Other bits of inspiration can be gleaned from the conventions developed in journalistic materials, where information has been organized into articles for many years. Headlines, bylines, decks (introductory paragraphs), and headings are all conventions that are well-established and helpful in improving online readin experiences.
+
+<q class='pull-quote'>Individual letterforms articulated into words form the backbone of web content as we know it.</q>
+
+My graphic design roots would never allow me to overlook the important details of carefully crafted type. In the context of a web framework, however, type doesn't stay put. It needs to change size, typeface, spacing, and weight, but should do so in a predictable manner that yields consistently engaging type. Fuselage does just this.
+
+### Modular Scale
+I leaned on <a href='http://alistapart.com/article/more-meaningful-typography' target='_blank'>Tim Brown's thoughts</a> regarding the creation of more meaningful type on the web through the use of modular scale and ratios. This methodology allowed me to translate my high standards in typesetting to the web. I collected the following ratios as a starting point for the foundation of my typographic system.
+
+<table>
+    <thead>
+        <tr>
+            <th>Ratio</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td data-th="Ratio">Golden (Phi)</td>
+            <td data-th="Value">1.618034</td>
+        </tr>
+        <tr>
+            <td data-th="Ratio">Double Octave</td>
+            <td data-th="Value">4</td>
+        </tr>
+        <tr>
+            <td data-th="Ratio">Major Twelfth</td>
+            <td data-th="Value">3</td>
+        </tr>
+        <tr>
+            <td data-th="Ratio">Major Eleventh</td>
+            <td data-th="Value">2.666666667</td>
+        </tr>
+        <tr>
+            <td data-th="Ratio">Major Tenth</td>
+            <td data-th="Value">1.5</td>
+        </tr>
+        <tr>
+            <td data-th="Ratio">Octave</td>
+            <td data-th="Value">2</td>
+        </tr>
+        <tr>
+            <td data-th="Ratio">Major Seventh</td>
+            <td data-th="Value">1.875</td>
+        </tr>
+        <tr>
+            <td data-th="Ratio">Minor Seventh</td>
+            <td data-th="Value">1.777777778</td>
+        </tr>
+        <tr>
+            <td data-th="Ratio">Major Sixth</td>
+            <td data-th="Value">1.666666667</td>
+        </tr>
+        <tr>
+            <td data-th="Ratio">Minor Sixth</td>
+            <td data-th="Value">1.6</td>
+        </tr>
+        <tr>
+            <td data-th="Ratio">Fifth</td>
+            <td data-th="Value">1.5</td>
+        </tr>
+        <tr>
+            <td data-th="Ratio">Augmented Fourth</td>
+            <td data-th="Value">1.41421</td>
+        </tr>
+        <tr>
+            <td data-th="Ratio">Fourth</td>
+            <td data-th="Value">1.333333333</td>
+        </tr>
+        <tr>
+            <td data-th="Ratio">Major Third</td>
+            <td data-th="Value">1.25</td>
+        </tr>
+        <tr>
+            <td data-th="Ratio">Minor Third</td>
+            <td data-th="Value">1.2</td>
+        </tr>
+        <tr>
+            <td data-th="Ratio">Major Second</td>
+            <td data-th="Value">1.125</td>
+        </tr>
+        <tr>
+            <td data-th="Ratio">Minor Second</td>
+            <td data-th="Value">1.066666667</td>
+        </tr>
+    </tbody>
+</table>
+
+### Typographic scaffolding
+
+The default scale is the golden ratio (1.618043), but can be adjusted easily. This ratio, combined with the chosen font-size (defaulted to 18px), **constructs the entire typographic system** &mdash;headlines, headings, subheadings, bylines, decks, captions, definitions, blockquotes, leading (space between lines) &mdash;the whole project. It also sets the visual spacing for all of the other visual elements controlled by the framework such as buttons, forms, tables, grid, and other helpers. You can find the <a href='http://fuselage.skosh.io/docs/typography/' target='_blank'>full documentation</a> for typography within Fuselage on the project site.
+
+## Widths <small>i.e. Grid</small>
+
