@@ -2,6 +2,7 @@
 author: Rand Seay
 categories: Case
 comments: true
+css: /css/examples/fuselage-examples.css
 date: 2015-10-26 10:10:10
 deck: "Fuselage is a sass-based, mobile-first front-end framework aimed at developer productivity and structural composability. With a sensible grid, refreshing typography, and nifty features, it's a great starting point for almost any project."
 imgclass: fuselage
@@ -14,7 +15,7 @@ tags: [Web Framework]
 title: "Fuselage: A Front-End Framework"
 ---
 
-Although the world may not need another front-end framework, it became apparent over the years that I personally needed one. I needed to form opinions on the liberties that other frameworks take, recreate some common conventions with my own optimizations, and control dependencies.<!--more--> If it only ends up being used on my own projects, I sill consider it a successful endeavor. As you may have guessed, this site is built using Fuselage.
+Although the world may not need another front-end framework, it became apparent over the years that I personally needed one. I needed to form opinions on the liberties that other frameworks take, recreate some common conventions with my own optimizations, and control dependencies.<!--more--> If it only ends up being used on my own projects, I sill consider it a successful endeavor. As you may have guessed, this site is built using Fuselage. I am proud to say it currently has no javascript dependencies :smiley:.
 
 <a class='button secondary' href='http://fuselage.skosh.io' target='_blank'>
     <i class='fa fa-external-link'></i> Visit project site
@@ -37,6 +38,7 @@ My graphic design roots would never allow me to overlook the important details o
 I leaned on <a href='http://alistapart.com/article/more-meaningful-typography' target='_blank'>Tim Brown's thoughts</a> regarding the creation of more meaningful type on the web through the use of modular scale and ratios. This methodology allowed me to translate my high standards in typesetting to the web. I collected the following ratios as a starting point for the foundation of my typographic system.
 
 <table>
+    <caption>Ratios within Fuselage</caption>
     <thead>
         <tr>
             <th>Ratio</th>
@@ -120,4 +122,66 @@ I leaned on <a href='http://alistapart.com/article/more-meaningful-typography' t
 The default scale is the golden ratio (1.618043), but can be adjusted easily. This ratio, combined with the chosen font-size (defaulted to 18px), **constructs the entire typographic system** &mdash;headlines, headings, subheadings, bylines, decks, captions, definitions, blockquotes, leading (space between lines) &mdash;the whole project. It also sets the visual spacing for all of the other visual elements controlled by the framework such as buttons, forms, tables, grid, and other helpers. You can find the <a href='http://fuselage.skosh.io/docs/typography/' target='_blank'>full documentation</a> for typography within Fuselage on the project site.
 
 ## Widths <small>i.e. Grid</small>
+Every good framework has a useful grid, and Fuselage is no different. Its mobile-first, nestable grid system, referred to as **widths** gives you a robust skeleton to hold your project together. The class names are human-friendly and *fractional*, rather than *columned* like [Foundation](http://foundation.zurb.com/docs/components/grid.html) or [Bootstrap](http://getbootstrap.com/css/#grid). The entire system handles responsive design beautifully, and new subdivisions can be created easily, as shown in <a href='#figure-1b'><em>Figure 1</em></a>.
 
+<figure id='figure-1' class='code'>
+{% highlight html %}
+<div class="row">
+    <div class="column one-whole medium-one-half large-two-thirds">
+        <p>a</p>
+        <div class="row">
+            <div class="column one-whole large-one-third">
+                <p>a.a</p>
+            </div><!-- /.row -->
+            <div class="column one-whole large-two-thirds">
+                <p>a.b</p>
+            </div><!-- /.row -->
+        </div><!-- /.row -->
+    </div><!-- /.column -->
+    <div class="column one-whole medium-one-half large-one-third">
+        <p>b</p>
+        <div class="row">
+            <div class="column one-half large-one-third">
+                <p>b.a</p>
+            </div><!-- /.row -->
+            <div class="column one-half large-two-thirds">
+                <p>b.b</p>
+            </div><!-- /.row -->
+        </div><!-- /.row -->
+    </div><!-- /.column -->
+</div><!-- /.row -->
+{% endhighlight %}
+<figcaption>Figure 1</figcaption>
+</figure>
+
+Here's the output.
+
+<figure id="fuselage-widths-example" class="code">
+    <div class="row">
+        <div class="column one-whole medium-one-half large-two-thirds">
+            <p>a</p>
+            <div class="row">
+                <div class="column one-whole large-one-third">
+                    <p>a.a</p>
+                </div><!-- /.row -->
+                <div class="column one-whole large-two-thirds">
+                    <p>a.b</p>
+                </div><!-- /.row -->
+            </div><!-- /.row -->
+        </div><!-- /.column -->
+        <div class="column one-whole medium-one-half large-one-third">
+            <p>b</p>
+            <div class="row">
+                <div class="column one-half large-one-third">
+                    <p>b.a</p>
+                </div><!-- /.row -->
+                <div class="column one-half large-two-thirds">
+                    <p>b.b</p>
+                </div><!-- /.row -->
+            </div><!-- /.row -->
+        </div><!-- /.column -->
+    </div><!-- /.row -->
+    <figcaption>
+        <a href='http://fuselage.skosh.io/docs/widths/' target='_blank'>Fuselage widths</a> (grid alternative)
+    </figcaption>
+</figure>

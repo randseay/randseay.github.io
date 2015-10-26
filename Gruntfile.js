@@ -233,5 +233,5 @@ module.exports = function(grunt) {
         'newer:copy:styles'
     ]);
 
-    grunt.registerTask('default', ['build']);
+    grunt.registerTask('default', ['serve']);
 }

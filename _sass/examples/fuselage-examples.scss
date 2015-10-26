@@ -1,0 +1,23 @@
+
+@charset "utf-8";
+@import "functions";
+@import "normalize";
+@import "reset";
+@import "ratios";
+@import "defaults";
+@import "../settings";
+@import "mixins";
+
+#fuselage-widths-example {
+    .row {
+        .column p {
+            background: $brand-primary;
+            color: $white;
+            padding: $spacing-unit / 4;
+        }
+
+        .row .column p {
+            background: $brand-secondary;
+        }
+    }
+}
