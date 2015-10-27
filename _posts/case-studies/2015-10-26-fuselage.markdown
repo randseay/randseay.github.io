@@ -409,3 +409,6 @@ The composable core infrastructure of Fuselage easily accommodates powerful and 
 ## Final Thoughts
 
 This project is still being [actively maintained](https://github.com/TeamSkosh/fuselage), and tends to change based on my needs or desires. I do, however, keep detailed release notes, and avoid making backward-breaking changes. I would love to know if anyone out there finds any value in this project, has any feedback, or would just like to start a conversation about anything written here. Feel free to reach out here, on [GitHub](https://github.com/randseay), or on [Twitter](https://twitter.com/randseay) The goal at the outset of this project was to create a straightforward, composable base on which projects can build upon. It has been enjoyable to see that ideal play out as I have used it for my own projects to great success. :tada:
+
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Learn about Fuselage –a composable and mobile-first front-end framework I built using <a href="https://twitter.com/SassCSS">@SassCSS</a> <a href="https://t.co/MV5yLHIx11">https://t.co/MV5yLHIx11</a></p>&mdash; Rand Seay (@randseay) <a href="https://twitter.com/randseay/status/658847424937521153">October 27, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
