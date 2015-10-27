@@ -5,25 +5,23 @@
 @mixin bg-images(
     $image-name: "../img/backgrounds/bg-macbook.jpg",
     $overlay-opacity: 0.85,
-    $position: center -200px,
     $main: false) {
 
     $image-path: "../img/backgrounds/bg-" + $image-name + ".jpg";
     @if $main == true {
         animation: bgFadeIn 1s ease-in both;
     }
+    background: linear-gradient(
+              rgba(255, 255, 255, $overlay-opacity),
+              rgba(255, 255, 255, $overlay-opacity)
+            );
     position: relative;
 
     &:before {
-        background:
-            linear-gradient(
-              rgba(255, 255, 255, $overlay-opacity),
-              rgba(255, 255, 255, $overlay-opacity)
-            ),
-            url($image-path);
+        background: url($image-path);
         background-color: $gray-tint;
         background-attachment: fixed;
-        background-position: $position;
+        background-position: center center;
         background-repeat: no-repeat;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -46,24 +44,24 @@
 
 @mixin bgs() {
     @include bg-images($image-name: "macbook", $main: true);
-    &.art {@include bg-images($image-name: "art", $position: center -150px);}
-    &.acig {@include bg-images($image-name: "acig", $position: center -250px);}
+    &.art {@include bg-images($image-name: "art");}
+    &.acig {@include bg-images($image-name: "acig");}
     &.bible {@include bg-images($image-name: "bible");}
-    &.camera {@include bg-images($image-name: "camera", $position: center -125px);}
-    &.church {@include bg-images($image-name: "church", $position: center -135px);}
+    &.camera {@include bg-images($image-name: "camera");}
+    &.church {@include bg-images($image-name: "church");}
     &.contact {@include bg-images($image-name: "contact", $overlay-opacity: 0.9);}
-    &.cross {@include bg-images($image-name: "cross", $position: center -125px);}
-    &.exhibition {@include bg-images($image-name: "exhibition", $overlay-opacity: 0.92, $position: center -225px);}
-    &.facts {@include bg-images($image-name: "facts", $overlay-opacity: 0.92, $position: center -300px);}
-    &.fuselage {@include bg-images($image-name: "fuselage", $overlay-opacity: 0.92, $position: center -100px);}
-    &.gallop {@include bg-images($image-name: "gallop", $position: center -275px);}
+    &.cross {@include bg-images($image-name: "cross");}
+    &.exhibition {@include bg-images($image-name: "exhibition", $overlay-opacity: 0.92);}
+    &.facts {@include bg-images($image-name: "facts", $overlay-opacity: 0.92);}
+    &.fuselage {@include bg-images($image-name: "fuselage", $overlay-opacity: 0.92);}
+    &.gallop {@include bg-images($image-name: "gallop");}
     &.grunt {@include bg-images($image-name: "grunt");}
     &.illustrator {@include bg-images($image-name: "illustrator");}
-    &.intramurals {@include bg-images($image-name: "intramurals", $position: center -250px);}
-    &.literary {@include bg-images($image-name: "literary", $position: center -250px);}
+    &.intramurals {@include bg-images($image-name: "intramurals");}
+    &.literary {@include bg-images($image-name: "literary");}
     &.notebook {@include bg-images($image-name: "notebook");}
-    &.money {@include bg-images($image-name: "money", $position: center -100px);}
-    &.proctoring {@include bg-images($image-name: "proctoring", $position: center -60px);}
+    &.money {@include bg-images($image-name: "money");}
+    &.proctoring {@include bg-images($image-name: "proctoring");}
     &.react {@include bg-images($image-name: "react");}
     &.sass {@include bg-images($image-name: "sass", $overlay-opacity: 0.9);}
     &.sheep {@include bg-images($image-name: "sheep");}
@@ -71,7 +69,7 @@
     &.sketch {@include bg-images($image-name: "sketch");}
     &.tablet {@include bg-images($image-name: "tablet");}
     &.und-type {@include bg-images($image-name: "und-type", $overlay-opacity: 0.9);}
-    &.wheat {@include bg-images($image-name: "wheat", $overlay-opacity: 0.9, $position: center -300px);}
-    &.wonder {@include bg-images($image-name: "wonder", $overlay-opacity: 0.75, $position: center -150px);}
-    &.woodworking {@include bg-images($image-name: "woodworking", $overlay-opacity: 0.8, $position: center -350px);}
+    &.wheat {@include bg-images($image-name: "wheat", $overlay-opacity: 0.9);}
+    &.wonder {@include bg-images($image-name: "wonder", $overlay-opacity: 0.75);}
+    &.woodworking {@include bg-images($image-name: "woodworking", $overlay-opacity: 0.8);}
 }

@@ -23,12 +23,12 @@ Although the world may not need another front-end framework, it became apparent 
 
 <figure class="image">
     <img src="{{ '/img/work/fuselage/fuselage-drawing.svg' | prepend: site.baseurl }}" alt='Fuselage Illustraion'>
-    <figcaption>A fuselage illustration for the project</figcaption>
+    <figcaption>An illustration for the project</figcaption>
 </figure>
 
 ## Typography
 
-The typographic style and vertical rhythm was most important to me in this framework. Individual letterforms articulated into words form the backbone of web content as we know it. The font-size, font-weight, and vertical rhythm needed to be just right, as well as customizable. Typesetting in printed materials is the basis of web typography, and it carries many useful correlations that we can apply to the styling of words on the web. Where the space between lines (*leading*) was set before each run on a printing press, a web framework can similarly control that value dynamically, giving us more control over our type. Other bits of inspiration can be gleaned from the conventions developed in journalistic materials, where information has been organized into articles for many years. Headlines, bylines, decks (introductory paragraphs), and headings are all conventions that are well-established and helpful in improving online readin experiences.
+The typographic style and vertical rhythm was most important to me in this framework. Individual letterforms articulated into words form the backbone of web content as we know it. The font-size, font-weight, and vertical rhythm needed to be just right, as well as customizable. Typesetting in printed materials is the basis of web typography, and it carries many useful correlations that we can apply to styling words on the web. Where the space between lines (*leading*) was set before each run on a printing press, a web framework can similarly control that value dynamically, giving us more control over our type. Other bits of inspiration can be gleaned from the conventions developed in journalistic materials, where information has been organized into articles for many years. Headlines, bylines, decks (introductory paragraphs), and headings are all conventions that are well-established and helpful in improving online reading experiences.
 
 <q class='pull-quote'>Individual letterforms articulated into words form the backbone of web content as we know it.</q>
 
@@ -121,8 +121,51 @@ I leaned on <a href='http://alistapart.com/article/more-meaningful-typography' t
 
 The default scale is the golden ratio (1.618043), but can be adjusted easily. This ratio, combined with the chosen font-size (defaulted to 18px), **constructs the entire typographic system** &mdash;headlines, headings, subheadings, bylines, decks, captions, definitions, blockquotes, leading (space between lines) &mdash;the whole project. It also sets the visual spacing for all of the other visual elements controlled by the framework such as buttons, forms, tables, grid, and other helpers. You can find the <a href='http://fuselage.skosh.io/docs/typography/' target='_blank'>full documentation</a> for typography within Fuselage on the project site.
 
+## Media Queries
+
+Adopting a "mobile-first" mentality for user experience design is a trendy thing to do, but it also offers some major advantages. Content must be leaner, and priorities must be established. Oftentimes this means the design has more thought put into it, and a consistent experience is had across a much larger user base.
+
+How this played out in Fuselage was fairly straightforward; namespaces were assigned across an array of breakpoints, from very small to very large. These namespaces are prepended to class names within fuselage to create the full spectrum of styles needed for a fully responsive project. The following table outlines the namespaces and and their values.
+
+<table>
+    <caption>Fuselage Media Queries</caption>
+    <thead>
+        <tr>
+            <th>Namespace</th>
+            <th>Breakpoint</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td data-th="Namespace">xsmall</td>
+            <td data-th="Breakpoint">0</td>
+        </tr>
+        <tr>
+            <td data-th="Namespace">small</td>
+            <td data-th="Breakpoint">320px</td>
+        </tr>
+        <tr>
+            <td data-th="Namespace">medium</td>
+            <td data-th="Breakpoint">640px</td>
+        </tr>
+        <tr>
+            <td data-th="Namespace">large</td>
+            <td data-th="Breakpoint">960px</td>
+        </tr>
+        <tr>
+            <td data-th="Namespace">xlarge</td>
+            <td data-th="Breakpoint">1280px</td>
+        </tr>
+        <tr>
+            <td data-th="Namespace">xxlarge</td>
+            <td data-th="Breakpoint">1500px</td>
+        </tr>
+    </tbody>
+</table>
+
 ## Widths <small>i.e. Grid</small>
-Every good framework has a useful grid, and Fuselage is no different. Its mobile-first, nestable grid system, referred to as **widths** gives you a robust skeleton to hold your project together. The class names are human-friendly and *fractional*, rather than *columned* like [Foundation](http://foundation.zurb.com/docs/components/grid.html) or [Bootstrap](http://getbootstrap.com/css/#grid). The entire system handles responsive design beautifully, and new subdivisions can be created easily, as shown in <a href='#figure-1b'><em>Figure 1</em></a>.
+
+Every good framework has a useful grid, and Fuselage is no different. Its mobile-first, nestable grid system, referred to as **widths** gives you a robust skeleton to hold your project together. The class names are human-friendly and *fractional*, rather than *columned* like [Foundation](http://foundation.zurb.com/docs/components/grid.html) or [Bootstrap](http://getbootstrap.com/css/#grid). The entire system handles responsive design beautifully, and new subdivisions can be created easily using [provided mixins](http://fuselage.skosh.io/docs/mixins/). Shown in <a class='secondary-text' href='#figure-1'><em>Figure 1</em></a>, the *widths* system is understandable and clean. I took inspiration from [Harry Roberts](https://github.com/inuitcss/tools.widths/blob/master/_tools.widths.scss) regarding the use of fractions over columns.
 
 <figure id='figure-1' class='code'>
 {% highlight html %}
@@ -185,3 +228,184 @@ Here's the output.
         <a href='http://fuselage.skosh.io/docs/widths/' target='_blank'>Fuselage widths</a> (grid alternative)
     </figcaption>
 </figure>
+
+## Tables
+
+Displaying tabular data is best done using tables, but `<table>`s are notoriously troublesome when it comes to responding to different viewport sizes. Therefore, a must-have in Fuselage was beautiful, fully responsive tables &mdash;without javascript.
+
+Solutions created out of this mindset might very well foster some very hacky code, but I feel that the CSS is rather elegant. It makes use of data attributes and `:nth-of-type` selectors to pull in the necessary information for tables with a large number of columns. The state &mdash;that is, the *responsive* view or the *normal* view&mdash; of the table is controlled using the same media queries as the rest of the project, meaning the developer decides in advance where the table should break out of its responsive view. There are a few examples of tables in this article, but the [full documentation](http://fuselage.skosh.io/docs/tables/) for tables can be found on the project's site. The following table is achieved by adding the `medium-responsive` class to the `<table>` element, which breaks the table out of the responsive view at the medium media query. Test it by changing your browser width.
+
+<figure id="fuselage-table-example" class="code">
+    <table class="medium-responsive">
+        <thead>
+            <tr>
+                <th>Vegetable</th>
+                <th>Color</th>
+                <th>Popularity</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-th="Vegetable">Tomato</td>
+                <td data-th="Color">Red</td>
+                <td data-th="Popularity">9</td>
+                <td data-th="Description">
+                    Consectetur adipiscing elit. Aenean a lectus dui. Sed posuere elit sem, at eleifend massa dignissim nec.
+                </td>
+            </tr>
+            <tr>
+                <td data-th="Vegetable">Summer Squash</td>
+                <td data-th="Color">Yellow</td>
+                <td data-th="Popularity">6</td>
+                <td data-th="Description">
+                    Aenean a lectus dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </td>
+            </tr>
+            <tr>
+                <td data-th="Vegetable">Pumpkin</td>
+                <td data-th="Color">Orange</td>
+                <td data-th="Popularity">5</td>
+                <td data-th="Description">
+                    Sed posuere elit sem, at
+                    eleifend massa dignissim nec.
+                </td>
+            </tr>
+            <tr>
+                <td data-th="Vegetable">Zucchini</td>
+                <td data-th="Color">Green</td>
+                <td data-th="Popularity">7</td>
+                <td data-th="Description">
+                    Lorem ipsum dolor sit amet, at
+                    eleifend massa dignissim nec.
+                </td>
+                </tr>
+            <tr>
+                <td data-th="Vegetable">Eggplant</td>
+                <td data-th="Color">Purple</td>
+                <td data-th="Popularity">2</td>
+                <td data-th="Description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Aenean a lectus dui.
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Vegetable</th>
+                <th>Color</th>
+                <th>Popularity</th>
+                <th>Description</th>
+            </tr>
+        </tfoot>
+    </table>
+    <figcaption>Fuselage responsive tables</figcaption>
+</figure>
+
+## Buttons
+
+Buttons take on many different forms, colors, shapes, and sizes. Fuselage creates a *composable* way to create buttons through modifying classes. These classes can imply color: `primary`, `secondary`, `tertiary`, `success`, `warn`,  `alert`. Or they can modify the size: `tiny`, `small`, `large`, `extended`. They can also be `rounded`, `disabled`, `filled`, or any combination thereof. New buttons can be made easily using some handy mixins, all of which are [documented](http://fuselage.skosh.io/docs/buttons/) on the project site. Here are some examples.
+
+<a href='#' class='button primary tiny'>Primary Tiny</a>
+<a href='#' class='button secondary small'>Secondary Small</a>
+<a href='#' class='button tertiary medium'>Tertiary Medium</a>
+<a href='#' class='button success large'>Success Large</a>
+<hr>
+<a href='#' class='button warn rounded filled'>Warn Rounded Filled</a>
+<a href='#' class='button secondary disabled'>Secondary Disabled</a>
+<hr>
+<a href='#' class='button alert extended'>Alert Extended</a>
+<hr>
+
+## Forms
+
+The composable core infrastructure of Fuselage easily accommodates powerful and ready-made [responsive forms](http://fuselage.skosh.io/docs/forms/). The same simple grid translates well into creating robust forms. Here's an example.
+
+<figure id="fuselage-forms-example" class="code">
+    <form>
+        <fieldset>
+            <legend>Account Information</legend>
+            <div class="row">
+                <div class="column one-whole medium-one-third">
+                     <label for="name">Name
+                         <input type="text" name="name" id="name" tabindex="1" placeholder=".column.medium-one-third">
+                     </label>
+                </div>
+
+                <div class="column one-whole medium-one-third">
+                     <label for="email">Email <small>Required</small>
+                         <input type="email" name="email" id="email" tabindex="2" placeholder=".column.medium-one-half" required>
+                     </label>
+                </div>
+
+                <div class="column one-whole medium-one-third">
+                     <label for="phone">Phone
+                         <input type="tel" name="phone" id="phone" value="" tabindex="3" placeholder=".column.medium-one-half (disabled)" disabled>
+                     </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column one-whole medium-one-fourth">
+                    <label for="select-choice">Pick Something
+                        <select name="select-choice" id="select-choice" tab-index="4">
+                            <option value="Choice 1">Choice 1</option>
+                            <option value="Choice 2">Choice 2</option>
+                            <option value="Choice 3">Choice 3</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="column one-whole medium-one-fourth">
+                    <label for="age">Age
+                        <input type="number" name="age" id="age" tabindex="5">
+                    </label>
+                </div>
+
+                <div class="column one-whole medium-one-half">
+                     <label for="occupation">Occupation
+                         <input type="text" name="occupation" id="occupation" value="" tabindex="6" placeholder=".column.medium-one-half (disabled)" disabled>
+                     </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column one-whole medium-one-half">
+                     <label>Radio Buttons</label>
+
+                     <input type="radio" name="radio-choice" id="radio-choice-1" value="choice-1" tabindex="7" disabled>
+                     <label for="radio-choice-1">Choice 1</label>
+
+                     <input type="radio" name="radio-choice" id="radio-choice-2" value="choice-2" tabindex="8">
+                     <label for="radio-choice-2">Choice 2</label>
+
+                     <input type="radio" name="radio-choice" id="radio-choice-3" value="choice-3" tabindex="9">
+                     <label for="radio-choice-3">Choice 3</label>
+                </div>
+
+                <div class="column one-whole medium-one-fourth">
+                    <label>Agreement <small>Required</small></label>
+                    <input type="checkbox" name="checkbox" id="checkbox" tabindex="9" required>
+                    <label for="checkbox">I accept
+                    </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column one-whole">
+                    <label for="textarea">Textarea:
+                        <textarea cols="40" rows="4" name="textarea" id="textarea" tabindex="10" readonly>.column.one-whole (readonly)</textarea>
+                    </label>
+                </div>
+            </div>
+
+            <input class="button" type="submit" value="Submit"> or
+            <input class="button secondary small" type="reset" value="Clear All">
+        </fieldset>
+    </form>
+    <figcaption>Fuselage responsive forms</figcaption>
+</figure>
+
+## Final Thoughts
+
+This project is still being [actively maintained](https://github.com/TeamSkosh/fuselage), and tends to change based on my needs or desires. I do, however, keep detailed release notes, and avoid making backward-breaking changes. I would love to know if anyone out there finds any value in this project, has any feedback, or would just like to start a conversation about anything written here. Feel free to reach out here, on [GitHub](https://github.com/randseay), or on [Twitter](https://twitter.com/randseay) The goal at the outset of this project was to create a straightforward, composable base on which projects can build upon. It has been enjoyable to see that ideal play out as I have used it for my own projects to great success. :tada:
