@@ -3,10 +3,24 @@
  */
 section.about {
     background: $gray-tint;
+
+    h1 {
+        color: $brand-secondary;
+        text-align: center;
+    }
 }
 
 section.technologies {
-    background: $white;
+    background: $brand-primary;
+    color: $white;
+
+    a {
+        @include text-link(darken($white,25%));
+    }
+
+    h1 {
+        text-align: center;
+    }
 }
 
 .headshot {
@@ -16,4 +30,9 @@ section.technologies {
     margin-right: auto;
     max-width: 400px;
     width: 100%;
+}
+
+section.colophon h1 {
+    color: $brand-secondary;
+    text-align: center;
 }

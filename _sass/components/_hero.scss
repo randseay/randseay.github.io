@@ -4,6 +4,10 @@
 .hero {
     padding: $spacing-unit 0 ($spacing-unit * 2);
 
+    .deck {
+        color: $gray;
+    }
+
     .home-nav {
         a {
             text-align: center;
@@ -11,7 +15,7 @@
         }
 
         @include mq($large) {
-            margin-top: $spacing-unit * 2;
+            margin-top: $spacing-unit * 1.5;
         }
     }
 

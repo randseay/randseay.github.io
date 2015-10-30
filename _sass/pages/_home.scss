@@ -4,6 +4,15 @@
 section.process {
     background: $gray;
     color: $white;
+
+    .drop-cap span.initial-phrase,
+    .drop-cap:first-letter {
+        color: $white;
+    }
+
+    h1 {
+        text-align: center;
+    }
 }
 
 .process-icons {
@@ -25,4 +34,10 @@ section.process {
             }
         }
     }
+}
+
+section.cases h1,
+section.articles h1 {
+    color: $brand-secondary;
+    text-align: center;
 }
