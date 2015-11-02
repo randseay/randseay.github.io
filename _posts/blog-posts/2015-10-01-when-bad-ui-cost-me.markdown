@@ -4,12 +4,13 @@ categories: blog
 comments: true
 date: 2015-10-01 16:50:00
 deck: "An interaction with an ill-thought-out ATM machine cost me more than just my pride and composure."
+image: "/img/backgrounds/bg-money.jpg"
 imgclass: money
 layout: post
 permalink: /articles/when-bad-ui-cost-me
 published: true
 sitemap:
-    lastmod: 2015-10-05 10:30:00
+    lastmod: 2015-11-02 16:47:55
     priority: 0.75
 tags: [UI]
 title: "When Bad User Experience Cost Me"

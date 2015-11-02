@@ -3,6 +3,7 @@ author: Rand Seay
 categories: Case
 date: 2012-08-22 10:17:10
 deck: "The University of North Dakota Wellness Center always has a great turnout for their RecSports leagues, but we wanted generate excitement around campus nonetheless."
+image: "/img/work/fall-intramurals-2012/fall-intramurals-1.jpg"
 imgclass: intramurals
 layout: post
 permalink: /cases/fall-intramurals-2012
@@ -10,7 +11,7 @@ published: true
 redirect_from:
     - /case/fall-intramurals-2012/
 sitemap:
-    lastmod: 2015-09-22 09:00:00
+    lastmod: 2015-11-02 16:46:30
 tags: [Campaign]
 title: "Fall Intramurals 2012 Campaign"
 ---

@@ -3,6 +3,7 @@ author: Rand Seay
 categories: Case
 date: 2012-11-19 17:21:43
 deck: "The University of North Dakota Health & Wellness Unit needed a way to raise awareness about the effects of alcohol and other drugs. The result was a bold fact campaign in a barrage of mediums."
+image: "/img/work/just-the-facts/jtf-1.jpg"
 imgclass: facts
 layout: post
 permalink: /cases/just-the-facts
@@ -10,7 +11,7 @@ published: true
 redirect_from:
     - /case/just-the-facts/
 sitemap:
-    lastmod: 2015-09-22 09:00:00
+    lastmod: 2015-11-02 16:45:25
 title: "Just the Facts Campaign"
 tags: [Campaign]
 ---

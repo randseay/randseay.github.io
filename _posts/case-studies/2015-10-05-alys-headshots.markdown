@@ -2,13 +2,19 @@
 author: Rand Seay
 categories: Case
 comments: true
+date: 2015-10-05 18:15:24
 deck: "My awesome sister needed some more professional headshots to include in her applications for Physician Assistant programs, so we pulled out the tripod and I snapped a few. In addition to being extremely smart, she keeps a great <a href='https://alysseay.wordpress.com/'>weblog</a> and writes some wonderful poetry."
+image: "/img/work/alys-headshots/alys-3.jpg"
 imgclass: camera
 layout: post
 permalink: /cases/alys-headshots
 published: true
+sitemap:
+    lastmod: 2015-11-02
 tags: [Photography]
 title: "Alys Seay Headshots"
+twitter:
+    card: "photo"
 ---
 
 Upon initial setup, the sun was casting a harsh light on one side of her face, so we had to get creative. I ended up setting the camera and the chair up in a way to diffuse the sun through some leaves, which worked out rather well<!--more-->.

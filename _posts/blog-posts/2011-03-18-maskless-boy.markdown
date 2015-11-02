@@ -4,12 +4,13 @@ categories: Blog
 comments: true
 date: 2011-03-11 02:04:00
 deck: "“Let’s leave Timothy for a while; turn with me to Proverbs twenty, verse one,” the lively young pastor instructed us."
+image: "/img/backgrounds/bg-literary.jpg"
 imgclass: literary
 layout: post
 permalink: /articles/maskless-boy
 published: true
 sitemap:
-    lastmod: 2015-09-29 00:47:19
+    lastmod: 2015-11-02 16:53:50
 tags: [Literary]
 title: "The Maskless Boy"
 ---

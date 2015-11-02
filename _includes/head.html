@@ -2,10 +2,54 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:site_name" content="{{ site.title }}">
+    {% if page.categories %}
+        <meta property="og:type" content="article">
+        <meta property="og:article:author" content="https://www.facebook.com/randseay">
 
-    <title>{% if page.title != "Home" %}{{ page.title }} | Rand Seay{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="description" content="{{ site.description }}">
+        {% if page.date %}
+            <meta property="og:article:published_time" content="{{ page.date }}">
+        {% endif %}
+    {% else %}
+        <meta property="og:type" content="website">
+    {% endif %}
+
+    {% if page.title != "Home" %}
+        <title>{{ page.title }} | Rand Seay</title>
+        <meta property="og:title" content="{{ page.title }}">
+        <meta name="twitter:title" content="{{ page.title }}">
+    {% else %}
+        <title>{{ site.title }}</title>
+        <meta property="og:title" content="{{ site.title }}">
+        <meta name="twitter:title" content="{{ site.title }}">
+    {% endif %}
+
+    {% if page.deck %}
+        <meta property="og:description" content="{{ page.deck }}">
+        <meta name="description" content="{{ page.deck }}">
+        <meta name="twitter:description" content="{{ page.deck }}">
+    {% else %}
+        <meta property="og:description" content="{{ site.description }}">
+        <meta name="description" content="{{ site.description }}">
+        <meta name="twitter:description" content="{{ site.description }}">
+    {% endif %}
     <meta name="twitter:widgets:link-color" content="#C94534">
+    <meta name="twitter:site" content="@{{ site.twitter_username }}">
+    <meta name="twitter:creator" content="@{{ site.twitter_username }}">
+
+    {% if page.twitter.card %}
+        <meta name="twitter:card" content="{{ page.twitter.card }}">
+    {% else %}
+        <meta name="twitter:card" content="summary">
+    {% endif %}
+
+    {% if page.image %}
+        <meta property="og:image" content="{{ site.url}}{{ page.image }}">
+        <meta name="twitter:image" content="{{ site.url}}{{ page.image }}">
+    {% else %}
+        <meta name="og:image" content="{{ site.url }}{{ '/img/2013-logo-big.svg' }}">
+        <meta name="twitter:image" content="{{ site.url }}{{ '/img/2013-logo-big.svg' }}">
+    {% endif %}
 
     <link href='{{ site.url }}/feed.xml' rel='alternate' type='application/atom+xml'>
     <link rel="shortcut icon" href="{{ '/img/favicon.ico' | prepend: site.baseurl }}">
@@ -16,5 +60,6 @@
     <link rel="stylesheet" href="{{ '/css/main.min.css' | prepend: site.baseurl }}">
     <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,600' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'/>
+    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 </head>

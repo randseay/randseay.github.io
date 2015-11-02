@@ -5,14 +5,18 @@ comments: true
 css: /css/examples/fuselage-examples.css
 date: 2015-10-26 10:10:10
 deck: "Fuselage is a sass-based, mobile-first front-end framework aimed at developer productivity and structural composability. With a sensible grid, refreshing typography, and nifty features, it's a great starting point for almost any project."
+image: "/img/work/fuselage/fuselage-drawing.svg"
 imgclass: fuselage
 layout: post
 permalink: /cases/fuselage
 published: true
 sitemap:
-    lastmod: 2015-10-26
+    lastmod: 2015-11-02
+    priority: 1.0
 tags: [Web Framework]
 title: "Fuselage: A Front-End Framework"
+twitter: 
+    card: "summary"
 ---
 
 Although the world may not need another front-end framework, it became apparent over the years that I personally needed one. I needed to form opinions on the liberties that other frameworks take, recreate some common conventions with my own optimizations, and control dependencies.<!--more--> If it only ends up being used on my own projects, I sill consider it a successful endeavor. As you may have guessed, this site is built using Fuselage. I am proud to say it currently has no javascript dependencies :smiley:.

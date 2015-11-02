@@ -3,6 +3,7 @@ author: Rand Seay
 categories: Case
 date: 2014-06-10 19:43:38
 deck: "The Anderson-Crain Investment Group was looking for a logo that they could establish a brand around, and decided to work with us at Skosh. After moving through the creative process, we were quite happy with the outcome."
+image: "/img/work/acig-logo/acig-full.jpg"
 imgclass: acig
 layout: post
 permalink: /cases/acig-logo
@@ -10,7 +11,7 @@ published: true
 redirect_from:
     - /case/acig-logo/
 sitemap:
-    lastmod: 2015-09-22 09:00:00
+    lastmod: 2015-11-02 16:42:16
     priority: 0.75
 tags: [Branding]
 title: "Anderson Crain Investment Group Logo Design"

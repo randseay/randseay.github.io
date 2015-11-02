@@ -4,6 +4,7 @@ categories: Blog
 comments: true
 date: 2014-09-08 18:37:21
 deck: "Combine Grunt, Sass, and SVG to create a dynamic, efficient, and intuitive development environment. Here's one way to do it."
+image: "/img/backgrounds/bg-grunt.jpg"
 imgclass: grunt
 layout: post
 permalink: /articles/grunt-sass-svg-workflow
@@ -11,7 +12,7 @@ published: true
 redirect_from:
     - /posts/grunt-sass-svg-workflow/
 sitemap:
-    lastmod: 2015-09-22 09:00:00
+    lastmod: 2015-11-02 16:50:30
     priority: 0.75
 tags: [Code, SVG, Grunt, Sass]
 title: "A Grunt, Sass, and SVG Workflow"

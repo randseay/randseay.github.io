@@ -3,6 +3,7 @@ author: Rand Seay
 categories: Case
 date: 2012-12-13 23:32:14
 deck: "The final step in my Bachelor of Fine Arts in Graphic Design & New Art Media, my Senior Exhibition was a culmination of my art education."
+image: "/img/work/bfa-exhibition/bfa-flagraising.jpg"
 imgclass: exhibition
 layout: post
 permalink: /cases/bfa-exhibition
@@ -10,7 +11,7 @@ published: true
 redirect_from:
     - /case/bfa-exhibition/
 sitemap:
-    lastmod: 2015-09-22 09:00:00
+    lastmod: 2015-11-02 16:45:18
 tags: [Exhibition]
 title: "BFA Senior Exhibition: Pictures Worth Countless Words"
 ---
