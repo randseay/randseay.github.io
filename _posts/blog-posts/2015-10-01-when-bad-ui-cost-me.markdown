@@ -4,7 +4,7 @@ categories: blog
 comments: true
 date: 2015-10-01 16:50:00
 deck: "An interaction with an ill-thought-out ATM machine cost me more than just my pride and composure."
-image: "/img/backgrounds/bg-money.jpg"
+image: imgclass
 imgclass: money
 layout: post
 permalink: /articles/when-bad-ui-cost-me

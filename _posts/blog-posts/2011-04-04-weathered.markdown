@@ -4,7 +4,7 @@ categories: Blog
 comments: true
 date: 2011-04-04 17:47:00
 deck: "Stepping outside, I am greeted by the warm sunshine. Ninety-three million miles separates me from the source of that light, but I can still feel the heat carried with it through the frozen emptiness of space."
-image: "/img/backgrounds/bg-literary.jpg"
+image: imgclass
 imgclass: literary
 layout: post
 permalink: /articles/weathered

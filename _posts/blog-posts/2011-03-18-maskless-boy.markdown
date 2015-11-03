@@ -4,7 +4,7 @@ categories: Blog
 comments: true
 date: 2011-03-11 02:04:00
 deck: "“Let’s leave Timothy for a while; turn with me to Proverbs twenty, verse one,” the lively young pastor instructed us."
-image: "/img/backgrounds/bg-literary.jpg"
+image: imgclass
 imgclass: literary
 layout: post
 permalink: /articles/maskless-boy

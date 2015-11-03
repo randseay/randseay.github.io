@@ -5,7 +5,7 @@ comments: true
 css: /css/examples/fuselage-examples.css
 date: 2015-10-26 10:10:10
 deck: "Fuselage is a sass-based, mobile-first front-end framework aimed at developer productivity and structural composability. With a sensible grid, refreshing typography, and nifty features, it's a great starting point for almost any project."
-image: "/img/work/fuselage/fuselage-drawing.svg"
+image: "/img/work/fuselage/fuselage-drawing-square.jpg"
 imgclass: fuselage
 layout: post
 permalink: /cases/fuselage

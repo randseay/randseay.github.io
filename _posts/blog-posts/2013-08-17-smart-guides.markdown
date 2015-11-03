@@ -4,7 +4,7 @@ categories: Blog
 comments: true
 date: 2013-08-17 15:19:47
 deck: "You won't drive collaborating designers crazy, and everything will be lined up in a simple, dependable, and clean way."
-image: "/img/backgrounds/bg-illustrator.jpg"
+image: imgclass
 imgclass: illustrator
 layout: post
 permalink: /articles/please-use-smart-guides

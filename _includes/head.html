@@ -43,12 +43,15 @@
         <meta name="twitter:card" content="summary">
     {% endif %}
 
-    {% if page.image %}
+    {% if page.image == "imgclass" %}
+        <meta property="og:image" content="{{ site.url}}/img/backgrounds/bg-{{ page.imgclass }}.jpg">
+        <meta name="twitter:image" content="{{ site.url}}/img/backgrounds/bg-{{ page.imgclass }}.jpg">
+    {% elsif page.image %}
         <meta property="og:image" content="{{ site.url}}{{ page.image }}">
         <meta name="twitter:image" content="{{ site.url}}{{ page.image }}">
     {% else %}
-        <meta name="og:image" content="{{ site.url }}{{ '/img/2013-logo-big.svg' }}">
-        <meta name="twitter:image" content="{{ site.url }}{{ '/img/2013-logo-big.svg' }}">
+        <meta name="og:image" content="{{ site.url }}{{ '/img/logo-symbol.jpg' }}">
+        <meta name="twitter:image" content="{{ site.url }}{{ '/img/logo-symbol.jpg' }}">
     {% endif %}
 
     <link href='{{ site.url }}/feed.xml' rel='alternate' type='application/atom+xml'>
