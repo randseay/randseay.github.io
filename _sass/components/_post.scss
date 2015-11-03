@@ -60,3 +60,8 @@ figure.code {
         }
     }
 }
+
+#disqus_thread p,
+#disqus_thread a {
+    color: $brand-primary;
+}
