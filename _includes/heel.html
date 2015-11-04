@@ -1,6 +1,8 @@
-<script src="{{ "/js/jquery.min.js" | prepend: site.baseurl }}"></script>
-<script src="{{ "/js/directory.js" | prepend: site.baseurl }}"></script>
-<script src="{{ "/js/main.js" | prepend: site.baseurl }}"></script>
+<script src='{{ "/js/jquery.min.js" | prepend: site.baseurl }}'></script>
+<script src='{{ "/js/classie.js" | prepend: site.baseurl }}'></script>
+<script src='{{ "/js/directory.js" | prepend: site.baseurl }}'></script>
+<script src='{{ "/js/main.js" | prepend: site.baseurl }}'></script>
+<script src='{{ "/js/svganimation.js" | prepend: site.baseurl }}'></script>
 {% for script in page.js %}
     <script src='{{ page.js | prepend: site.baseurl }}'></script>
 {% endfor %}

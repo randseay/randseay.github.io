@@ -22,7 +22,8 @@ section.process {
         padding: 0 $spacing-unit;
         text-align: center;
 
-        img {
+        img,
+        svg {
             margin-bottom: $spacing-unit / 2;
             max-width: 100px;
             width: 100%;
