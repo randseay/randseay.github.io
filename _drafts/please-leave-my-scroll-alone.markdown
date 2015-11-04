@@ -12,3 +12,7 @@ published: false
 tags: [User Experience]
 title: "Please Leave my Scroll Alone"
 ---
+
+- Until you can handle this responsibly, you do not have permission to do this.
+
+http://thelab.bleacherreport.com/he-reminds-me-of-me-wide-receivers/

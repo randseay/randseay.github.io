@@ -1,6 +1,15 @@
 /**
  * Home Page
  */
+
+.latest {
+    color: $brand-secondary;
+}
+
+.latest-tweet body {
+    display: none;
+}
+
 section.process {
     background: $gray;
     color: $white;
