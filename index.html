@@ -72,29 +72,30 @@ js: /js/nav.js
         <hr class="primary mini">
 
         <div class="latest">
-            <div class="row">
-                <div class="column one-whole medium-one-half">
-                    <h1 class="column-header">
-                        <i class="fa fa-twitter"></i> Twitter
-                    </h1>
+            <h1 class="column-header">
+                <i class="fa fa-newspaper-o"></i> Latest
+            </h1>
 
-                    <div id="latest-tweet">
-                        <a class="twitter-timeline primary-text"
-                            href="https://twitter.com/randseay"
-                            data-widget-id="647151935640879104"
-                            data-chrome="noheader nofooter noborders noscrollbar transparent"
-                            data-tweet-limit="1">
-                            <i class='fa fa-circle-o-notch fa-spin'></i>
-                        </a>
-                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-                    </div>
-                </div><!-- /.column -->
-                <div class="column one-whole medium-one-half">
-                    <h1 class="column-header">
-                        <i class="fa fa-newspaper-o"></i> Latest
-                    </h1>
-                </div><!-- /.column -->
-            </div><!-- /.row -->
+            {% for post in site.posts limit:8 %}
+                <div class="post-preview row">
+                    <div class="column one-whole medium-one-fourth">
+                        <div class="crop">
+                            {% if post.image == "imgclass" %}
+                                <img src="{{ site.url}}/img/backgrounds/bg-{{ post.imgclass }}.jpg" alt="{{ post.title }}">
+                            {% elsif post.image %}
+                                <img src="{{ post.image }}" alt="{{ post.title }}">
+                            {% else %}
+                                <img src="{{ site.url }}{{ '/img/logo-symbol.jpg' }}" alt="{{ post.title }}">
+                            {% endif %}
+                        </div>
+                    </div><!-- /.column -->
+
+                    <div class="column one-whole medium-three-fourths">
+                        <h4>{{ post.date | date: '%B %d, %Y' }}</h4>
+                        <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+                    </div><!-- /.column -->
+                </div><!-- /.row -->
+            {% endfor %}
         </div><!-- /.latest -->
     </div><!-- /.container -->
 </section><!-- /.hero -->

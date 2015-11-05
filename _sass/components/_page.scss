@@ -42,3 +42,17 @@
     border-bottom: 1px solid $gray-tint;
     margin-bottom: $spacing-unit;
 }
+
+.post-preview {
+    .crop {
+        overflow: hidden;
+        padding-bottom: 75%;
+        position: relative;
+        width: 100%;
+    }
+
+    img {
+        position: absolute;
+        width: 100%;
+    }
+}
