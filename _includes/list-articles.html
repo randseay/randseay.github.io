@@ -9,11 +9,25 @@
     <div class="column one-whole post-list">
         {% for post in site.categories.blog limit:include.limit %}
             {% if post.title != page.title %}
-                <div class="post-preview">
-                    <h4>{{ post.date | date: '%B %d, %Y' }}</h4>
-                    <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-                    {{ post.excerpt | remove: '</p>' }}
-                    &hellip; <a href="{{ post.url | prepend: site.baseurl }}">read more</a></p>
+                <div class="post-preview row">
+                    <div class="column one-whole medium-one-fourth">
+                        {% if post.image %}
+                            <a href="{{ post.url | prepend: site.baseurl }}">
+                                <img class="drop-shadow" src="{{ site.baseurl}}/img/backgrounds/bg-{{ post.imgclass }}.jpg" alt="{{ post.title }}">
+                            </a>
+                        {% else %}
+                            <a href="{{ post.url | prepend: site.baseurl }}">
+                                <img src="{{ site.baseurl }}{{ '/img/logo-symbol.jpg' }}" alt="{{ post.title }}">
+                            </a>
+                        {% endif %}
+                    </div><!-- /.column -->
+
+                    <div class="column one-whole medium-three-fourths">
+                        <h4>{{ post.date | date: '%B %d, %Y' }}</h4>
+                        <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+                        {{ post.excerpt | remove: '</p>' }}
+                        &hellip; <a href="{{ post.url | prepend: site.baseurl }}">read more</a></p>
+                    </div><!-- /.column -->
                 </div>
             {% endif %}
         {% endfor %}

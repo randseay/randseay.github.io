@@ -5,6 +5,7 @@
 @mixin bg-images(
     $image-name: "../img/backgrounds/bg-macbook.jpg",
     $overlay-opacity: 0.85,
+    $overlay-rgba: rgba(255, 255, 255, $overlay-opacity),
     $main: false) {
 
     $image-path: "../img/backgrounds/bg-" + $image-name + ".jpg";
@@ -12,8 +13,8 @@
         animation: bgFadeIn 1s ease-in both;
     }
     background: linear-gradient(
-              rgba(255, 255, 255, $overlay-opacity),
-              rgba(255, 255, 255, $overlay-opacity)
+              $overlay-rgba,
+              $overlay-rgba
             );
     position: relative;
 

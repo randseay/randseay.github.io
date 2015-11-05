@@ -75,6 +75,19 @@ code, pre, kbd {
 /**
  * Helpers
  */
+ .center-button {
+     margin-left: auto;
+     margin-right: auto;
+     padding: 0 0 ($spacing-unit * 2);
+     position: relative;
+
+     a {
+         position: absolute;
+         left: 50%;
+         transform: translate(-50%, 0);
+     }
+ }
+
 .lock-position {
     overflow: hidden;
 }
