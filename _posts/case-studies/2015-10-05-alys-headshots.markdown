@@ -12,6 +12,7 @@ published: true
 sitemap:
     lastmod: 2015-11-02
 tags: [Photography]
+thumb: "/img/work/alys-headshots/alys-thumb.jpg"
 title: "Alys Seay Headshots"
 twitter:
     card: "photo"

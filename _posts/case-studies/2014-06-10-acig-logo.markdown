@@ -14,6 +14,7 @@ sitemap:
     lastmod: 2015-11-02 16:42:16
     priority: 0.75
 tags: [Branding]
+thumb: "/img/work/acig-logo/acig-thumb.jpg"
 title: "Anderson Crain Investment Group Logo Design"
 ---
 
