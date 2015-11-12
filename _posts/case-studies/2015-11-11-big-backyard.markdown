@@ -98,4 +98,5 @@ This event happened once a week for four weeks, with a different theme for each 
 
 This event was fun to work on and a blast to participate in. From start to finish, the aim was to be welcoming and lighthearted. It was well attended, and will continue to be held annually. Nailing the first concept was nice, but that doesn't always happen. Thanks for checking out this case study!
 
-
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">I got to help design a campaign for <a href="https://twitter.com/FaithFreeChurch">@FaithFreeChurch</a> and their Big Backyard event this summer! Check it out <a href="https://t.co/RXg8OiMZaQ">https://t.co/RXg8OiMZaQ</a></p>&mdash; Rand Seay (@randseay) <a href="https://twitter.com/randseay/status/664633594833309696">November 12, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
