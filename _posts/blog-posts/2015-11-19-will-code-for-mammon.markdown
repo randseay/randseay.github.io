@@ -16,7 +16,6 @@ tags: [Life, Code, Design]
 title: "Will Code for Mammon"
 ---
 
-If I'm honest, I'm trying to [be seen]({{ "/cases/" | prepend: baseurl }}) (and [heard](https://twitter.com/{{ site.twitter_username }})) on the internet. I attempt to market myself, create positive impressions, and make connections.
+<em>Mammon</em> is a funny word, and one that enjoyed a peak in popularity around 1850 (or so Google informs me). It has its roots in the New Testament, and <!--more-->
 
- 
-It all started with a mojito, or rather lack thereof. My lovely wife and I were at a wedding recently &mdash;without children, no less (Thanks Mimi and Bapa <i class='fa fa-smile-o'></i>). To my embarrassment, I neglected to buy her a drink almost the entire night<!--more-->. Having been struck by this thought much later than I should have, I was eager to remedy the situation as quickly and directly as possible. Would she like a mojito? She would. Let's head to the bar.
+If I'm honest, I'm trying to [be seen]({{ "/cases/" | prepend: baseurl }}) (and [heard](https://twitter.com/{{ site.twitter_username }})) on the internet. I attempt to market myself, create positive impressions, and make connections.
