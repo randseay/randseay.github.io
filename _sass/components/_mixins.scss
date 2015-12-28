@@ -55,6 +55,7 @@
     &.cross {@include bg-images($image-name: "cross");}
     &.exhibition {@include bg-images($image-name: "exhibition", $overlay-opacity: 0.92);}
     &.facts {@include bg-images($image-name: "facts", $overlay-opacity: 0.92);}
+    &.family {@include bg-images($image-name: "family");}
     &.fuselage {@include bg-images($image-name: "fuselage", $overlay-opacity: 0.92);}
     &.gallop {@include bg-images($image-name: "gallop");}
     &.grunt {@include bg-images($image-name: "grunt");}
