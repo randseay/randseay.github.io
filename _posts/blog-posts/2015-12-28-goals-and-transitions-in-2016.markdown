@@ -78,3 +78,6 @@ My wife is facing [a very daunting transition](https://jessicaseay.wordpress.com
 ## Closing Thoughts
 
 Developing and pursuing goals has grown to be a very important part of life for me. I feel my role within my family is to provide direction, and know I can do that more effectively when my thoughts are organized in this way. I'm not one to stick to goals or rules at all costs, but having something measurable to move and gauge against toward has served has served us well. Here's to 2016! :confetti_ball:
+
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">I spent some time reflecting on 2015 and looking toward 2016 –exciting stuff! <a href="https://t.co/ce4VppsrAp">https://t.co/ce4VppsrAp</a></p>&mdash; Rand Seay (@randseay) <a href="https://twitter.com/randseay/status/681700967767797760">December 29, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
