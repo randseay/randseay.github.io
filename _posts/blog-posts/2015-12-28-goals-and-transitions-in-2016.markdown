@@ -45,6 +45,8 @@ Another recent development has been the purchase of a new home. We weren't activ
 
 Throwing this on top of the growing heap of irons we have in the fire is definitely a big decision, and sometimes I feel like we're crazy for even thinking about it. But we see ourselves being able to stay in this new home for quite a while &mdash;the neighborhood is great (Mimi and Bapa are in the lot behind it :smile:), it would have a devoted office for me, and there would be enough space to for us to grow. Speaking of which&hellip;
 
+**EDIT**: To our frustration, closing on this home fell through. We came to an agreement, but the sellers ended up selling it to someone else :disappointed:. Perhaps we'll find another!
+
 ## Our Third Child
 
 We're firmly planting ourselves in a sea of diapers with the addition of our third child come June, but are definitely excited. While it wasn't an explicit goal of ours, we are looking forward to expanding our tribe and meeting a new little person. I would be lying if I said I wasn't terrified every now and then, but that is more the exception than the rule. Gulp.
