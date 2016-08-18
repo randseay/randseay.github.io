@@ -1,6 +1,6 @@
 ---
 author: Rand Seay
-categories: Case
+categories: case
 date: 2012-08-22 10:17:10
 deck: "The University of North Dakota Wellness Center always has a great turnout for their RecSports leagues, but we wanted generate excitement around campus nonetheless."
 image: "/img/work/fall-intramurals-2012/fall-intramurals-1.jpg"

@@ -1,6 +1,6 @@
 ---
 author: Rand Seay
-categories: Blog
+categories: blog
 comments: true
 date: 2011-03-11 02:04:00
 deck: "“Let’s leave Timothy for a while; turn with me to Proverbs twenty, verse one,” the lively young pastor instructed us."
@@ -61,4 +61,3 @@ The proud grandma nodded, “Yeah, he is sharp.” I couldn’t agree more.
 
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">I recently posted some old pieces of writing from my undergraduate days. Check them out! <a href="http://t.co/bUgkiwD6jP">http://t.co/bUgkiwD6jP</a> <a href="http://t.co/3dQVwvZqNN">http://t.co/3dQVwvZqNN</a></p>&mdash; Rand Seay (@randseay) <a href="https://twitter.com/randseay/status/648903434997927936">September 29, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-

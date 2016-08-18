@@ -1,6 +1,6 @@
 ---
 author: Rand Seay
-categories: Case
+categories: case
 comments: true
 date: 2015-10-05 18:15:24
 deck: "My awesome sister needed some more professional headshots to include in her applications for Physician Assistant programs, so we pulled out the tripod and I snapped a few. In addition to being extremely smart, she keeps a great <a href='https://alysseay.wordpress.com/'>weblog</a> and writes some wonderful poetry."
@@ -46,4 +46,3 @@ This was all a bit too serious, so we made sure to laugh a little bit too.
     <img class="drop-shadow" src="{{ '/img/work/alys-headshots/alys-5.jpg' | prepend: site.baseurl }}" alt="Alys Headshot #5">
     <figcaption>Headshot #5</figcaption>
 </figure>
-

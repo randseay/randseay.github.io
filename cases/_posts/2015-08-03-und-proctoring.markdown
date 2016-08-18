@@ -1,6 +1,6 @@
 ---
 author: Rand Seay
-categories: Case
+categories: case
 date: 2015-08-03 11:06:01
 deck: "The University of North Dakota Online & Distance Education needed a new system to manage test proctoring for term-based online & distance courses. We built it."
 image: "/img/work/proctoring/screenshot-3-logging-in.png"

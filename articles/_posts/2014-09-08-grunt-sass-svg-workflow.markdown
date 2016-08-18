@@ -1,6 +1,6 @@
 ---
 author: Rand Seay
-categories: Blog
+categories: blog
 comments: true
 date: 2014-09-08 18:37:21
 deck: "Combine Grunt, Sass, and SVG to create a dynamic, efficient, and intuitive development environment. Here's one way to do it."

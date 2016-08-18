@@ -1,6 +1,6 @@
 ---
 author: Rand Seay
-categories: Blog
+categories: blog
 comments: true
 date: 2013-08-17 15:19:47
 deck: "You won't drive collaborating designers crazy, and everything will be lined up in a simple, dependable, and clean way."

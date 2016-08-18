@@ -1,6 +1,6 @@
 ---
 author: Rand Seay
-categories: Blog
+categories: blog
 comments: true
 css: /css/examples/forms-with-react.css
 date: 2015-09-17 14:05:59
@@ -159,10 +159,10 @@ var Form = React.createClass({
                     <InputGroup id={'name'} type={'text'} title={'Name'} />
                     <InputGroup id={'email'} type={'email'} title={'Email Address'} />
 
-                    <Dropdown 
-                        id={'diet'} 
-                        type={'select'} 
-                        title={'Dietary Needs'} 
+                    <Dropdown
+                        id={'diet'}
+                        type={'select'}
+                        title={'Dietary Needs'}
                         options={DIETARY_OPTIONS} />
 
                     <input type='submit' />
@@ -242,11 +242,11 @@ var Form = React.createClass({
                     <InputGroup id={'name'} type={'text'} title={'Name'} />
                     <InputGroup id={'email'} type={'email'} title={'Email Address'} />
 
-                    <Dropdown 
-                        id={'diet'} 
-                        type={'select'} 
-                        title={'Dietary Considerations'} 
-                        options={DIETARY_OPTIONS} 
+                    <Dropdown
+                        id={'diet'}
+                        type={'select'}
+                        title={'Dietary Considerations'}
+                        options={DIETARY_OPTIONS}
                         handleChange={this.handleChangeDiet} /> {/* Set up the change handler */}
 
                     {this.state.otherDiet
@@ -301,7 +301,7 @@ var Repeatable = React.createClass({
     },
     handleClick: function(cmd) {
         var newItems = this.state.repeatedItems;
-        
+
         // The list is added to or removed from based on the user controls
         if (cmd == 'inc' && newItems.length < this.props.maxRepeat) {
             newItems.push(new Array().concat(this.props.children));
@@ -401,16 +401,16 @@ var Form = React.createClass({
 
                     {/* Pass in minimum, maximum, and title for each repeating unit */}
                     <Repeatable minRepeat={1} maxRepeat={5} titleRepeat='Invitee'>
-                            <InputGroup 
-                                id={'inviteeName'} 
-                                type='text' 
-                                title='Invite Name' 
+                            <InputGroup
+                                id={'inviteeName'}
+                                type='text'
+                                title='Invite Name'
                                 key={'inviteeName'} />
 
-                            <InputGroup 
-                                id={'inviteeEmail'} 
-                                type='email' 
-                                title='Invitee Email' 
+                            <InputGroup
+                                id={'inviteeEmail'}
+                                type='email'
+                                title='Invitee Email'
                                 key={'inviteeEmail'} />
                     </Repeatable>
 

@@ -1,6 +1,6 @@
 ---
 author: Rand Seay
-categories: Blog
+categories: blog
 comments: true
 date: 2011-04-04 17:47:00
 deck: "Stepping outside, I am greeted by the warm sunshine. Ninety-three million miles separates me from the source of that light, but I can still feel the heat carried with it through the frozen emptiness of space."
@@ -42,4 +42,3 @@ After locking the door I throw on my coat and shove my hands deep into my pocket
 
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">I recently posted some old pieces of writing from my undergraduate days. Check them out! <a href="http://t.co/bUgkiwD6jP">http://t.co/bUgkiwD6jP</a> <a href="http://t.co/3dQVwvZqNN">http://t.co/3dQVwvZqNN</a></p>&mdash; Rand Seay (@randseay) <a href="https://twitter.com/randseay/status/648903434997927936">September 29, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-

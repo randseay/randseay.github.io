@@ -12,6 +12,7 @@ linkedin_username: randseay
 excerpt_separator: <!--more-->
 
 # Build settings
+future: true
 markdown: kramdown
 new_array: []
 gems:

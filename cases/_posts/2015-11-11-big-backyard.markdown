@@ -1,6 +1,6 @@
 ---
 author: Rand Seay
-categories: Case
+categories: case
 comments: true
 date: 2015-11-11 13:30:00
 deck: "<a href='http://www.faithfree.com/'>Faith Evangelical Free Church</a> has a great series of outreach events to the local neighborhood each summer, but this year we worked together to promote it. A campaign was born."
@@ -15,7 +15,7 @@ sitemap:
 tags: [Campaign]
 thumb: "/img/work/big-backyard/big-backyard-thumb.jpg"
 title: "Big Backyard Outreach Event"
-twitter: 
+twitter:
     card: "summary"
 ---
 

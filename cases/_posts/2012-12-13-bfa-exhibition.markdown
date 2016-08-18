@@ -1,6 +1,6 @@
 ---
 author: Rand Seay
-categories: Case
+categories: case
 date: 2012-12-13 23:32:14
 deck: "The final step in my Bachelor of Fine Arts in Graphic Design & New Art Media, my Senior Exhibition was a culmination of my art education."
 image: "/img/work/bfa-exhibition/bfa-flagraising.jpg"
