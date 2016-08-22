@@ -13,7 +13,7 @@ layout: post
 permalink: /articles/css-media-query-debugger
 published: true
 sitemap:
-    lastmod: 2016-08-21 20:20:00
+    lastmod: 2016-08-21 21:23:00
     priority: 0.75
 tags: [Code]
 title: "CSS Media Query Debugger"
@@ -21,13 +21,13 @@ title: "CSS Media Query Debugger"
 
 I've made differing variations of this simple debugger based on name conventions in each project. Whether I use "small", "medium", "large", or "mobile", "tablet", "desktop", this is easy to customize<!--more-->.
 
-This particular example uses <a href="http://fontawesome.io/">Font Awesome</a> and device widths in the naming convention, but the debugger in my CSS framework <a href="http://fuselage.skosh.io">Fuselage</a> uses "small", "medium", "large", etc. You can see it in action on this page :smile:
+This particular example uses <a href="http://fontawesome.io/">Font Awesome</a> and device widths in the naming convention, but the debugger in my CSS framework <a href="http://fuselage.skosh.io">Fuselage</a> uses "small", "medium", "large", etc. I implemented this debugger on this page, which you can find in the bottom left-corner on this page. :smile:
 
 <figure id='figure-1' class='code'>
 {% highlight html %}
 <p id="debug-breakpoints"></p>
 {% endhighlight %}
-<figcaption>Figure 1. You need a little HTML. It's easy to show or hide conditionally based on the development environment.</figcaption>
+<figcaption>Figure 1. You need a little HTML. It's easy to show or hide conditionally based on your environment.</figcaption>
 </figure>
 
 <figure id='figure-2' class='code'>
