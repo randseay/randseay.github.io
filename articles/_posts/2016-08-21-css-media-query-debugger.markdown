@@ -76,4 +76,7 @@ This particular example uses <a href="http://fontawesome.io/">Font Awesome</a> a
 
 Obviously this can be made easier with preprocessors such as <a href="http://sass-lang.com/">Sass</a> or <a href="http://lesscss.org/">Less</a>. Hope this helps your responsive debugging!
 
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I made this handy little CSS media query debugger and wrote about it briefly: <a href="https://t.co/tQBe0fqnLb">https://t.co/tQBe0fqnLb</a></p>&mdash; Rand Seay (@randseay) <a href="https://twitter.com/randseay/status/767537170299097088">August 22, 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 <p id="debug-breakpoints"></p>
