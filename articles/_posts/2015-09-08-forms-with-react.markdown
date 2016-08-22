@@ -16,7 +16,7 @@ redirect_from:
 sitemap:
     lastmod: 2015-11-02 16:50:55
     priority: 1.0
-tags: [Code, React]
+tags: [Code, React, JS]
 title: "Not-so-simple Forms with React"
 ---
 

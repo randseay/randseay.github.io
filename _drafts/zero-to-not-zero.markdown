@@ -1,11 +1,11 @@
 ---
 author: Rand Seay
-categories: Blog
+categories: blog
 comments: true
-date: 
+date:
 deck: ""
-image: 
-imgclass: 
+image:
+imgclass:
 layout: post
 permalink: /articles/zero-to-not-zero
 published: false

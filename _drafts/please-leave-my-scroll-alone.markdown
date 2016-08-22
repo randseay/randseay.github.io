@@ -1,8 +1,8 @@
 ---
 author: Rand Seay
-categories: Blog
+categories: blog
 comments: true
-date: 
+date:
 deck: "As a developer, hijacking the typical scroll mechanic should not be taken lightly. It brings focus to an otherwise thoughtless motion, which isn't necessarily helpful."
 image: imgclass
 imgclass: notebook

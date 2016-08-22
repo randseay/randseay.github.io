@@ -61,6 +61,19 @@ figure.code {
     }
 }
 
+.post-note {
+    background: $info-color;
+    border: 1px inset $white;
+    color: $white;
+    padding: ($spacing-unit / 2) ($spacing-unit / 2) ($spacing-unit / 2);
+    position: relative;
+
+    &:before {
+        content: '\f05a';
+        font-family: FontAwesome;
+    }
+}
+
 #disqus_thread p,
 #disqus_thread a {
     color: $brand-primary;

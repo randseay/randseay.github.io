@@ -1,20 +1,19 @@
 ---
 author: Rand Seay
-categories: Case
+categories: case
 comments: true
-date: 
-deck: 
-image: 
-imgclass: 
+date:
+deck:
+image:
+imgclass:
 layout: post
 permalink: /cases/fbcw-logo
 published: false
 sitemap:
-    lastmod: 
-    priority: 
+    lastmod:
+    priority:
 tags: [Branding]
 title: "First Baptist Church Weymouth Logo"
-twitter: 
+twitter:
     card: "summary"
 ---
-

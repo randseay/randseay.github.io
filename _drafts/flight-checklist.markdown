@@ -1,11 +1,11 @@
 ---
 author: Rand Seay
-categories: Blog
+categories: blog
 comments: true
-date: 
+date:
 deck: ""
-image: 
-imgclass: 
+image:
+imgclass:
 layout: post
 permalink: /articles/flight-checklist
 published: false

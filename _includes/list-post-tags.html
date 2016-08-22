@@ -4,10 +4,18 @@
         include list-post-tags.html post=post
 -->
 
+{% for category in post.categories %}
+    {% if category == "blog" %}
+        {% assign category_path = "/articles" %}
+    {% elsif category == "case" %}
+        {% assign category_path = "articles" %}
+    {% endif %}
+{% endfor %}
+
 {% for tag in post.tags %}
     {% assign tag_slug = tag | slugify | downcase %}
 
-    <a href='{{ site.baseurl | append: path | append: "/" | append: tag_slug }}' class="button tiny radius inline">
+    <a href='{{ site.baseurl | append: category_path | append: "/" | append: tag_slug }}' class="button tiny radius inline">
         {{ tag | downcase }}
     </a>
 {% endfor %}

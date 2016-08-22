@@ -1,20 +1,20 @@
 ---
 author: Rand Seay
-categories: Case
+categories: case
 comments: true
-date: 
-deck: 
-image: 
-imgclass: 
+date:
+deck:
+image:
+imgclass:
 layout: post
 permalink: /cases/gfredc-it-audit
 published: false
 sitemap:
-    lastmod: 
-    priority: 
+    lastmod:
+    priority:
 tags: [Consulting]
 title: "Grand Forks Region Economic Development Corporation IT Audit"
-twitter: 
+twitter:
     card: "summary"
 ---
 

@@ -1,6 +1,6 @@
 ---
 author: Rand Seay
-categories: Blog
+categories: blog
 comments: true
 css:
 date:

@@ -1,20 +1,20 @@
 ---
 author: Rand Seay
-categories: Case
+categories: case
 comments: true
-date: 
-deck: 
-image: 
-imgclass: 
+date:
+deck:
+image:
+imgclass:
 layout: post
 permalink: /cases/archives-coffeehouse
 published: false
 sitemap:
-    lastmod: 
-    priority: 
+    lastmod:
+    priority:
 tags: [Web Site]
 title: "Archives Coffeehouse Website"
-twitter: 
+twitter:
     card: "summary"
 ---
 
