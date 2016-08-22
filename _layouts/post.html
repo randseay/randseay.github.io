@@ -18,7 +18,7 @@ layout: default
 <section class="post">
     <header class="post-header {% if page.imgclass %}{{ page.imgclass }}{% endif %}">
         <div class="container">
-            <h4><a href='{{ page.dir | prepend: site.baseurl }}'><i class='fa fa-arrow-circle-o-left'></i> Back to {{ prev_page }}</a></h4>
+            <h4><a href='{{ category_path | prepend: site.baseurl }}'><i class='fa fa-arrow-circle-o-left'></i> Back to {{ prev_page }}</a></h4>
             <h1>{{ page.title }}</h1>
 
             <p class="byline">

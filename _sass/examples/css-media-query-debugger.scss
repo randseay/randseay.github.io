@@ -1,0 +1,42 @@
+#debug-breakpoints {
+    position: absolute;
+}
+
+// mobile first
+#debug-breakpoints:after {
+    font-family: FontAwesome;
+    background: #EEEEEE;
+    bottom: 0;
+    border: 1px solid #AAAAAA;
+    border-radius: 0 8px 0 0;
+    box-shadow: 0 0 20px -5px rgba(153,153,153,0.9);
+    color: #333333;
+    content: "\f10b";
+    font-size: 16px;
+    font-weight: 700;
+    left: 0;
+    padding: 5px;
+    position: fixed;
+    z-index: 99999;
+}
+
+// tablet
+@media screen and (min-width: 480px) {
+    #debug-breakpoints:after {
+        content: "\f10a";
+    }
+}
+
+// desktop
+@media screen and (min-width: 780px) {
+    #debug-breakpoints:after {
+        content: "\f108";
+    }
+}
+
+// large desktop
+@media screen and (min-width: 1040px) {
+    #debug-breakpoints:after {
+        content: "\f108   \f067";
+    }
+}

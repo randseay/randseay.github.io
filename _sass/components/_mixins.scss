@@ -4,7 +4,7 @@
 
 @mixin bg-images(
     $image-name: "../img/backgrounds/bg-macbook.jpg",
-    $overlay-opacity: 0.85,
+    $overlay-opacity: 0.9,
     $overlay-rgba: rgba(255, 255, 255, $overlay-opacity),
     $main: false) {
 
@@ -49,6 +49,7 @@
     &.acig {@include bg-images($image-name: "acig");}
     &.bible {@include bg-images($image-name: "bible");}
     &.bigbackyard {@include bg-images($image-name: "bigbackyard");}
+    &.css {@include bg-images($image-name: "css");}
     &.camera {@include bg-images($image-name: "camera");}
     &.church {@include bg-images($image-name: "church");}
     &.contact {@include bg-images($image-name: "contact", $overlay-opacity: 0.9);}
