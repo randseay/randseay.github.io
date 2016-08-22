@@ -82,3 +82,8 @@ Although not very elaborate, here is a quick example of a self-contained JavaScr
 {% endhighlight %}
 <figcaption>Figure 1. A little dirty, but completely self-contained!</figcaption>
 </figure>
+
+Hopefully this can make your development a little smoother :smile:
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I made a quick JS error debugger, and thought I would share: <a href="https://t.co/C2jmaYf0kQ">https://t.co/C2jmaYf0kQ</a></p>&mdash; Rand Seay (@randseay) <a href="https://twitter.com/randseay/status/767609823357726720">August 22, 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
