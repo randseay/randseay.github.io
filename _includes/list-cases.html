@@ -20,7 +20,9 @@
                     </div><!-- /.column -->
 
                     <div class="column one-whole medium-three-fourths">
-                        <h4>{{ post.date | date: '%B %d, %Y' }}</h4>
+                        <h4 class="post-date">
+                            {{ post.date | date: '%B %d, %Y' }} in {% include list-post-tags.html tags=post.tags %}
+                        </h4>
                         <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
                         {{ post.excerpt | remove: '</p>' }}
                         &hellip; <a href="{{ post.url | prepend: site.baseurl }}">read more</a></p>

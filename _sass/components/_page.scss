@@ -42,3 +42,11 @@
     border-bottom: 1px solid $gray-tint;
     margin-bottom: $spacing-unit * 2;
 }
+
+.post-date {
+    margin-top: $spacing-unit;
+
+    @include mq($medium) {
+        margin-top: 0;
+    }
+}
