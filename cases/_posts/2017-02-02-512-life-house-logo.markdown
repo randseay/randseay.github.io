@@ -4,6 +4,7 @@ categories: case
 comments: true
 date: 2017-02-02 11:00:00
 deck: "Doing work that matters is a priority for me, so when an opportunity arose for me to design a logo for a local ministry called 5:12 Life House, I was thrilled to be able to help. Their unique vision was a joy and challenge to convey, and I hope I did it justice."
+image: "/img/work/512-lifehouse/512-lifehouse-thumb.jpg"
 imgclass: lifehouse
 layout: post
 permalink: /cases/512-life-house-logo
@@ -45,3 +46,6 @@ It is inspiring to be part of 5:12 Life House's story, and I am thrilled to have
 
 > Whoever has the Son has life; whoever does not have the Son of God does not have life.
 > <br>1 John 5:12 (the inspiration for the 5:12 Life House)
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I loved having the opportunity to make a logo for 5:12 Life House. I wrote about it here: <a href="https://t.co/n8lk1ebvUb">https://t.co/n8lk1ebvUb</a></p>&mdash; Rand Seay (@randseay) <a href="https://twitter.com/randseay/status/827401483943415812">February 3, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
