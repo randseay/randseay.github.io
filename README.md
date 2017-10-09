@@ -2,7 +2,7 @@
 
 Welcome to my [online portfolio](http://www.randseay.com/)! My name is Rand, and I am a husband, father, designer, and developer. I [write about](http://www.randseay.com/articles/) design &amp; development, design cool things, hack on code, and [tweet about](https://twitter.com/randseay) my experiences.
 
-I co-founded [Skosh Interactive](http://skosh.io), but you can also find me working as a front-end developer for the [North Dakota University System](http://cts.ndus.edu/). I built and actively maintain the front-end framework [Fuselage](http://fuselage.skosh.io).
+I co-founded [Skosh Interactive](http://skosh.io), but you can also find me working as a front-end engineer for the [Kaggle](https://www.kaggle.com). I built and actively maintain the front-end framework [Fuselage](http://fuselage.skosh.io).
 
 ## Setup
 
@@ -16,6 +16,7 @@ $ which npm
 # /path/to/npm
 
 $ which bundler
+# /path/to/bundler
 ```
 
 Clone the repository.

@@ -65,8 +65,9 @@
     &.js {@include bg-images($image-name: "js");}
     &.lifehouse {@include bg-images($image-name: "lifehouse");}
     &.literary {@include bg-images($image-name: "literary");}
-    &.notebook {@include bg-images($image-name: "notebook");}
     &.money {@include bg-images($image-name: "money");}
+    &.nccc-wheat {@include bg-images($image-name: "nccc-wheat");}
+    &.notebook {@include bg-images($image-name: "notebook");}
     &.proctoring {@include bg-images($image-name: "proctoring");}
     &.react {@include bg-images($image-name: "react");}
     &.sass {@include bg-images($image-name: "sass", $overlay-opacity: 0.9);}
