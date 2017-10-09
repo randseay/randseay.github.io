@@ -81,3 +81,6 @@ As a non-profit, Northland relies on the generosity of others to continue provid
 ## Final Thoughts
 
 I treasured the opportunity to help such a sincere organization put a fresh coat of paint on their "virtual front door". Traffic to the site has been promising, and they are adding counselors left and right! They continue to bring compelling speakers to the area, and are generally a wonderful presence in the community.
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Had the chance to rebuild <a href="https://twitter.com/Northland_CCC?ref_src=twsrc%5Etfw">@Northland_CCC</a>&#39;s website! Really happy with the way it turned out! <a href="https://t.co/dVmRw9mxAB">https://t.co/dVmRw9mxAB</a></p>&mdash; Rand Seay (@randseay) <a href="https://twitter.com/randseay/status/917259324061253632?ref_src=twsrc%5Etfw">October 9, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
